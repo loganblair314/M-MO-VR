@@ -690,6 +690,82 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &1002351575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1002351578}
+  - component: {fileID: 1002351577}
+  - component: {fileID: 1002351576}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1002351576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002351575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab68ce6587aab0146b8dabefbd806791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_ClickSpeed: 0.3
+  m_MoveDeadzone: 0.6
+  m_RepeatDelay: 0.5
+  m_RepeatRate: 0.1
+  m_TrackedDeviceDragThresholdMultiplier: 1.4
+  m_MaxTrackedDeviceRaycastDistance: 1000
+  m_EnableXRInput: 1
+  m_EnableMouseInput: 0
+  m_EnableTouchInput: 1
+  m_EnableGamepadInput: 0
+  m_EnableJoystickInput: 0
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+--- !u!114 &1002351577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002351575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1002351578
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002351575}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.7425852, y: -1.4008617, z: -0.91975117}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1090623835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,9 +1220,9 @@ MonoBehaviour:
   m_PlayHapticsOnSelectCanceled: 0
   m_HapticSelectCancelIntensity: 0
   m_HapticSelectCancelDuration: 0
-  m_PlayHapticsOnHoverEntered: 0
-  m_HapticHoverEnterIntensity: 0
-  m_HapticHoverEnterDuration: 0
+  m_PlayHapticsOnHoverEntered: 1
+  m_HapticHoverEnterIntensity: 1
+  m_HapticHoverEnterDuration: 1
   m_PlayHapticsOnHoverExited: 0
   m_HapticHoverExitIntensity: 0
   m_HapticHoverExitDuration: 0
@@ -2081,6 +2157,7 @@ GameObject:
   - component: {fileID: 1845013888}
   - component: {fileID: 1845013887}
   - component: {fileID: 1845013886}
+  - component: {fileID: 1845013890}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Untagged
@@ -2144,8 +2221,8 @@ MonoBehaviour:
     m_RotationOrder: 4
   m_ValidColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
+    key0: {r: 0.854902, g: 0.15294118, b: 0.2392157, a: 1}
+    key1: {r: 0.854902, g: 0.15294118, b: 0.2392157, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -2173,9 +2250,9 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   m_InvalidColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0, b: 0, a: 1}
-    key1: {r: 1, g: 0, b: 0, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 1, g: 1, b: 1, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
@@ -2183,7 +2260,7 @@ MonoBehaviour:
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
     ctime1: 65535
-    ctime2: 0
+    ctime2: 25250
     ctime3: 0
     ctime4: 0
     ctime5: 0
@@ -2197,7 +2274,7 @@ MonoBehaviour:
     atime5: 0
     atime6: 0
     atime7: 0
-    m_Mode: 0
+    m_Mode: 1
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   m_SmoothMovement: 0
@@ -2364,9 +2441,9 @@ MonoBehaviour:
   m_AudioClipForOnHoverExited: {fileID: 0}
   m_PlayAudioClipOnHoverCanceled: 0
   m_AudioClipForOnHoverCanceled: {fileID: 0}
-  m_PlayHapticsOnSelectEntered: 0
-  m_HapticSelectEnterIntensity: 0
-  m_HapticSelectEnterDuration: 0
+  m_PlayHapticsOnSelectEntered: 1
+  m_HapticSelectEnterIntensity: 1
+  m_HapticSelectEnterDuration: 2
   m_PlayHapticsOnSelectExited: 0
   m_HapticSelectExitIntensity: 0
   m_HapticSelectExitDuration: 0
@@ -2590,6 +2667,20 @@ MonoBehaviour:
     m_Reference: {fileID: 875253871413052681, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!114 &1845013890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845013884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed71f7110959fad4eaff264f75c6a8ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensity: 0.499
+  duration: 1
 --- !u!1 &1970393086
 GameObject:
   m_ObjectHideFlags: 0
