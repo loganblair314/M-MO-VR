@@ -560,7 +560,7 @@
                     "path": "<XRController>{LeftHand}/Primary2DAxis",
                     "interactions": "Sector(directions=-1)",
                     "processors": "StickDeadzone",
-                    "groups": "Noncontinuous Move",
+                    "groups": "Continuous Move",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": false
