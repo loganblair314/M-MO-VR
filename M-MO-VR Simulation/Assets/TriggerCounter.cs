@@ -11,24 +11,36 @@ public class TriggerCounter : MonoBehaviour
     private int count;
     public TextMeshProUGUI textField;
     private Animator animatorController;
+    private InputDevice targetDevice;
 
+    /*
     private void Start()
     {
-        animatorController = GetComponent<Animator>();
+        
     }
+    */
 
     private void Update()
     {
-        //get & print the trigger value
-        float triggerValue;
-        controller.inputDevice.TryGetFeatureValue(CommonUsages.trigger, out triggerValue);
-        if (triggerValue >= 0.1f) Debug.Log($"Trigger Pressed, value {triggerValue}");
-        if (triggerValue >= 0.1f) animatorController.SetFloat("Trigger", triggerValue);
+        List<InputDevice> devices = new List<InputDevice>();
+        InputDeviceCharacteristics rightControllerCharacteristics = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
+        InputDevices.GetDevicesWithCharacteristics(rightControllerCharacteristics, devices);
 
-        //get & print the grip value
-        float gripValue;
-        controller.inputDevice.TryGetFeatureValue(CommonUsages.grip, out gripValue);
-        if (gripValue >= 0.1f) Debug.Log($"Grip Pressed, value {gripValue}");
-        if (gripValue >= 0.1f) animatorController.SetFloat("Grip", gripValue);
+        foreach (var item in devices)
+        {
+            Debug.Log(item.name + item.characteristics);
+        }
+
+        if (devices.Count > 0)
+        {
+            targetDevice = devices[0];
+        }
+
+        if (targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue) && triggerValue > 0.1f)
+        {
+            count++;
+        }
+
+        textField.text = "Trigger Pulled - " + count;
     }
 }
