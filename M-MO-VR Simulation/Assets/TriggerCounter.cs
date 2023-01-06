@@ -84,6 +84,7 @@ public class TriggerCounter : MonoBehaviour
                 // 1 < x <= 1.5
                 // 1.5 < x <= 2
 
+                // The closer the object, the greater the vibration's strength.
                 if (distance > 0 && distance <= 0.5)
                 {
                     Debug.Log("Item is between 0 and 0.5 units away.");
