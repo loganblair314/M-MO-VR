@@ -13,6 +13,7 @@ public class HapticsTest : MonoBehaviour
     private Animator animatorController;
     private InputDevice targetDevice;
     public Transform raycastOrigin;
+    //public GameObject Floor;
 
     /*
     private void Start()
@@ -83,34 +84,36 @@ public class HapticsTest : MonoBehaviour
                 // 1 < x <= 1.5
                 // 1.5 < x <= 2
 
+                // Now, as long as the floor is not being pointed at, Haptics function.
                 // The closer the object, the greater the vibration's strength.
-                if (distance > 0 && distance <= 0.5)
+                if (hit.transform.name != "Floor" || hit.transform.name != "LeftHand Controller")
                 {
-                    Debug.Log("Item is between 0 and 0.5 units away.");
-                    targetDevice.SendHapticImpulse(0, 1.0f, 1.0f);
+                    if (distance > 0 && distance <= 0.5)
+                    {
+                        Debug.Log("Item is between 0 and 0.5 units away.");
+                        targetDevice.SendHapticImpulse(0, 1.0f, 1.0f);
 
-                }
-                else if (distance > 0.5 && distance <= 1.0)
-                {
-                    Debug.Log("Item is between 0.5 and 1 units away.");
-                    targetDevice.SendHapticImpulse(0, 0.75f, 1.0f);
+                    }
+                    else if (distance > 0.5 && distance <= 1.0)
+                    {
+                        Debug.Log("Item is between 0.5 and 1 units away.");
+                        targetDevice.SendHapticImpulse(0, 0.75f, 1.0f);
 
-                }
-                else if (distance > 1.0 && distance <= 1.5)
-                {
-                    Debug.Log("Item is between 1 and 1.5 units away.");
-                    targetDevice.SendHapticImpulse(0, 0.5f, 1.0f);
+                    }
+                    else if (distance > 1.0 && distance <= 1.5)
+                    {
+                        Debug.Log("Item is between 1 and 1.5 units away.");
+                        targetDevice.SendHapticImpulse(0, 0.5f, 1.0f);
 
-                }
-                else if (distance > 1.5 && distance < 2.0)
-                {
-                    Debug.Log("Item is between 1.5 and 2.0 units away.");
-                    targetDevice.SendHapticImpulse(0, 0.25f, 1.0f);
+                    }
+                    else if (distance > 1.5 && distance < 2.0)
+                    {
+                        Debug.Log("Item is between 1.5 and 2.0 units away.");
+                        targetDevice.SendHapticImpulse(0, 0.25f, 1.0f);
+                    }
                 }
             }
         }
-
-
         //textField.text = "Trigger Pulled - " + count;
     }
 }
