@@ -13,6 +13,7 @@ public class UI : MonoBehaviour
     public string text;
     public int size = 32;
     private bool hidden;
+    private bool menuButtonPress;
 
     [SerializeField] XRController controller;
     private InputDevice targetDevice;
@@ -37,6 +38,10 @@ public class UI : MonoBehaviour
         {
             targetDevice = devices[0];
         }
+
+         if (targetDevice.TryGetFeatureValue(CommonUsages.menuButton, out menuButtonPress ) && menuButtonPress){
+            Debug.Log("Button Pressed");
+         } 
     }
     
 
