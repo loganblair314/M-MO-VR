@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+
 public class CustomTeleporter : MonoBehaviour
 {
 	//teleport instantly upon entering trigger?
@@ -44,7 +45,7 @@ public class CustomTeleporter : MonoBehaviour
 	{
 		//Set the countdown ready to the time you chose
 		curTeleportTime = teleportTime;
-	}
+}
 
 
 	void Update ()
@@ -52,10 +53,11 @@ public class CustomTeleporter : MonoBehaviour
 		//check if theres something/someone inside
 		if(inside)
 		{
-			//if that object hasnt just arrived from another pad, teleport it
-			if(!arrived && teleportPadOn)
+
+            //if that object hasnt just arrived from another pad, teleport it
+            if(!arrived && teleportPadOn)
 			Teleport();
-		}
+        }
 	}
 
 	void Teleport()
