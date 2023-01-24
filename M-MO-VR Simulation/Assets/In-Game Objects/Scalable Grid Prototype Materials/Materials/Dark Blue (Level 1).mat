@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Prototype_Scaling_Dark_Blue
+  m_Name: Dark Blue (Level 1)
   m_Shader: {fileID: -6465566751694194690, guid: 74686ab863fe0dc4598560e65eb847eb,
     type: 3}
   m_ValidKeywords: []
