@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EndSim : MonoBehaviour
 {
-    void OnTriggerEnter(Collider trig)
+    void OnTriggerEnter(Collider col)
     {
-        if (trig.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Player")
         {
             Application.Quit();
         }
