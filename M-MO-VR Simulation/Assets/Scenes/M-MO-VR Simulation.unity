@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589245, b: 0.2978263, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731941, g: 0.13414887, b: 0.12107834, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -255,12 +255,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154279021}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &163177454 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6085243955163010514, guid: adbad71032cea8a49b7ecb74b0d96add,
-    type: 3}
-  m_PrefabInstance: {fileID: 237037428}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &174880463
 GameObject:
   m_ObjectHideFlags: 0
@@ -1349,7 +1343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801851325}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: 1, z: 1}
+  m_LocalPosition: {x: 5, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1498,8 +1492,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f08a49be46dfa344a8dbd94acadd157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 163177454}
-  Current_Spawn: {fileID: 0}
+  Player: {fileID: 1277678888}
+  Current_Spawn: {fileID: 801851325}
   DDR_Spawn: {fileID: 801851325}
 --- !u!1 &952159825
 GameObject:
@@ -1749,7 +1743,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1037784171
 Transform:
   m_ObjectHideFlags: 0
@@ -2209,6 +2203,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244731067}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1277678888 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6085243954435161942, guid: adbad71032cea8a49b7ecb74b0d96add,
+    type: 3}
+  m_PrefabInstance: {fileID: 237037428}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1284102437
 GameObject:
   m_ObjectHideFlags: 0
@@ -3691,7 +3691,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &480484476987400325
 MonoBehaviour:
   m_ObjectHideFlags: 0
