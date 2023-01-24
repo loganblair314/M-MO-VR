@@ -19,7 +19,7 @@ public class TeleportManager : MonoBehaviour
     void Start()
     {
         //For initial testing, we will set the spawn to the display room
-        //Current_Spawn = DDR_Spawn;
+        Current_Spawn = DDR_Spawn;
     }
 
     // Update is called once per frame
@@ -30,6 +30,5 @@ public class TeleportManager : MonoBehaviour
 
     public void resetPosition(){
         Player.transform.position = Current_Spawn.transform.position;
-        //Player.transform.LookAt();
     }
 }
