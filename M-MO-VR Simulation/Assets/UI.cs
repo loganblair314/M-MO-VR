@@ -12,15 +12,15 @@ public class UI : MonoBehaviour
     public Slider mainSlider;
     public string[] text;
     public int size = 32;
-    private bool hidden = false;
+    //private bool hidden = false;
     private bool menuButtonPress;
 
     public int index = 0;
 
-    [SerializeField] XRController controller;
-    private InputDevice targetDevice;
+    //[SerializeField] XRController controller;
+    //private InputDevice targetDevice;
 
-    public GameObject UILayer;
+    //public GameObject UILayer;
 
     
     // Start is called before the first frame update
@@ -75,7 +75,7 @@ public class UI : MonoBehaviour
 
         uiDisplay.text = text[index];
     }
-
+    /*
     public void toggle(){
 
         if(hidden){
@@ -87,6 +87,8 @@ public class UI : MonoBehaviour
             hidden = true;
         }
     }
+    */
+
 
     public void changeFontSize(){
         size = (int)mainSlider.value;
