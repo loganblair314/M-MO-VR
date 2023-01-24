@@ -30,6 +30,7 @@ public class TeleportManager : MonoBehaviour
 
     public void resetPosition(){
         Player.transform.position = Current_Spawn.transform.position;
+        Player.transform.rotation = Current_Spawn.transform.rotation;
         //Player.transform.LookAt();
     }
 }
