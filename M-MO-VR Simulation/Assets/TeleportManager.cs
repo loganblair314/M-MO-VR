@@ -5,12 +5,12 @@ using UnityEngine;
 public class TeleportManager : MonoBehaviour
 {
     public GameObject Player;
-    public GameObject Current_Spawn;
+    private GameObject Current_Spawn;
+    public GameObject[] Spawns;
+
+    public int index = 0;
     
-    
-    
-    
-    public GameObject DDR_Spawn;
+    //public GameObject DDR_Spawn;
 
    
 
@@ -19,7 +19,7 @@ public class TeleportManager : MonoBehaviour
     void Start()
     {
         //For initial testing, we will set the spawn to the display room
-        //Current_Spawn = DDR_Spawn;
+        Current_Spawn = Spawns[index];
     }
 
     // Update is called once per frame
@@ -32,5 +32,17 @@ public class TeleportManager : MonoBehaviour
         Player.transform.position = Current_Spawn.transform.position;
         Player.transform.rotation = Current_Spawn.transform.rotation;
         //Player.transform.LookAt();
+    }
+
+    public void previousRoom(){
+        if(index != 0){
+            index --;
+        }
+    }
+
+    public void nextRoom(){
+        if(index != 6){
+            index ++;
+        }
     }
 }
