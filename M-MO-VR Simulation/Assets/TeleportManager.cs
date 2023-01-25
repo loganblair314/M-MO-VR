@@ -37,12 +37,14 @@ public class TeleportManager : MonoBehaviour
     public void previousRoom(){
         if(index != 0){
             index --;
+            Current_Spawn = Spawns[index];
         }
     }
 
     public void nextRoom(){
         if(index != 6){
             index ++;
+            Current_Spawn = Spawns[index];
         }
     }
 }
