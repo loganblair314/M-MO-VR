@@ -10,6 +10,8 @@ public class UI : MonoBehaviour
 {   
     public TextMeshProUGUI uiDisplay;
     public Slider mainSlider;
+    public GameObject nextButton;
+    public GameObject prevButton;
     public string[] text;
     public int size = 32;
     //private bool hidden = false;
@@ -27,6 +29,7 @@ public class UI : MonoBehaviour
     void Start()
     {
         uiDisplay.text = text[index];
+        prevButton.SetActive(false);
     }
     
 
@@ -54,26 +57,34 @@ public class UI : MonoBehaviour
     }
 
     public void testNext(){
-        if(index == 6){
-            index = 0;
-        }
-        else{
+        if(index != 6){
             index ++;
+            uiDisplay.text = text[index];
+            if(index == 6){
+                nextButton.SetActive(false);
+            }
+            if(index == 1){
+                prevButton.SetActive(true);
+            }
         }
+        
 
-        uiDisplay.text = text[index];
+        
 
     }
 
     public void testPrev(){
-        if(index == 0){
-            index = 6;
-        }
-        else{
+        if(index != 0){
             index --;
+            uiDisplay.text = text[index];
+            if(index == 0){
+                prevButton.SetActive(false);
+            }
+            if(index == 5){
+                nextButton.SetActive(true);
+            }
         }
 
-        uiDisplay.text = text[index];
     }
     /*
     public void toggle(){

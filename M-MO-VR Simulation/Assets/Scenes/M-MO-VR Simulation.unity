@@ -12967,6 +12967,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiDisplay: {fileID: 480484477659818818}
   mainSlider: {fileID: 480484477870488946}
+  nextButton: {fileID: 480484478086242418}
+  prevButton: {fileID: 480484477023719065}
   text:
   - This is the description for the data display room
   - This is the description for room 1
