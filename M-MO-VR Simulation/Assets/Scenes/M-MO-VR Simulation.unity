@@ -2259,6 +2259,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1558259664}
     m_Modifications:
+    - target: {fileID: 6224126357865106197, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224126357865106199, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6224126359412896004, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
         type: 3}
       propertyPath: m_Name
@@ -3899,6 +3909,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224126357865106197, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224126357865106199, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6224126359412896004, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
         type: 3}
@@ -8344,6 +8364,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 953535274}
     m_Modifications:
+    - target: {fileID: 6224126357865106197, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224126357865106199, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6224126359412896004, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
         type: 3}
       propertyPath: m_Name
@@ -12786,6 +12816,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 238933990}
     m_Modifications:
+    - target: {fileID: 6224126357865106197, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224126357865106199, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6224126359412896004, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
         type: 3}
       propertyPath: m_Name

@@ -31,6 +31,7 @@ public class TeleportScript : MonoBehaviour
 		if(inside)
 		{
 			Teleport();
+            inside = false;
         }
 	}
 
@@ -40,7 +41,7 @@ public class TeleportScript : MonoBehaviour
 		manager.nextRoom(); 
         manager.resetPosition();
 		//play teleport sound
-		teleportSound.Play();
+		//teleportSound.Play();
         Debug.Log("Player Entered the Teleporter");
 			
 	}
