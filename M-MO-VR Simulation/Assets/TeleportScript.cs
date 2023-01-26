@@ -18,10 +18,12 @@ public class TeleportScript : MonoBehaviour
 	public bool teleportPadOn = true;
 
     TeleportManager manager;
+    UI uiManager;
 
 	void Start ()
 	{
         manager = GameObject.FindGameObjectWithTag("TeleportManager").GetComponent<TeleportManager>();
+        uiManager = GameObject.FindGameObjectWithTag("UI-Manager").GetComponent<UI>();
     }
 
 
@@ -40,6 +42,7 @@ public class TeleportScript : MonoBehaviour
 		//and teleport the subject
 		manager.nextRoom(); 
         manager.resetPosition();
+        uiManager.testNext();
 		//play teleport sound
 		//teleportSound.Play();
         Debug.Log("Player Entered the Teleporter");
