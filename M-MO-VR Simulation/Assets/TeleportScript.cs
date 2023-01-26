@@ -41,6 +41,7 @@ public class TeleportScript : MonoBehaviour
         manager.resetPosition();
 		//play teleport sound
 		teleportSound.Play();
+        Debug.Log("Player Entered the Teleporter");
 			
 	}
 
