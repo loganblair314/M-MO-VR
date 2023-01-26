@@ -12,12 +12,15 @@ public class UI : MonoBehaviour
     public Slider mainSlider;
     public GameObject nextButton;
     public GameObject prevButton;
+    public GameObject lights;
     public string[] text;
     public int size = 32;
     //private bool hidden = false;
     private bool menuButtonPress;
 
     public int index = 0;
+
+
 
     //[SerializeField] XRController controller;
     //private InputDevice targetDevice;
@@ -105,5 +108,9 @@ public class UI : MonoBehaviour
         size = (int)mainSlider.value;
         uiDisplay.fontSize = size;
     }
-    
+
+
+    public void testLights(){
+        lights.SetActive(!lights.activeSelf);
+    }   
 }
