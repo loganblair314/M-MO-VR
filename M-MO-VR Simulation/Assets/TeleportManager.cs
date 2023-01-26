@@ -20,6 +20,7 @@ public class TeleportManager : MonoBehaviour
     {
         //For initial testing, we will set the spawn to the display room
         Current_Spawn = Spawns[index];
+        resetPosition();
     }
 
     // Update is called once per frame
@@ -43,11 +44,29 @@ public class TeleportManager : MonoBehaviour
         }
     }
 
+    public void previousRoomTP(){
+        if(index != 0){
+            index --;
+            Current_Spawn = Spawns[index];
+            Debug.Log("The current index is" + index);
+            resetPosition();
+        }
+    }
+
     public void nextRoom(){
         if(index != 6){
             index ++;
             Current_Spawn = Spawns[index];
             Debug.Log("The current index is" + index);
+        }
+    }
+
+    public void nextRoomTP(){
+        if(index != 6){
+            index ++;
+            Current_Spawn = Spawns[index];
+            Debug.Log("The current index is" + index);
+            resetPosition();
         }
     }
 }

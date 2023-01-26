@@ -788,6 +788,11 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6085243954426000327, guid: adbad71032cea8a49b7ecb74b0d96add,
+        type: 3}
+      propertyPath: m_MoveSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6085243954435161940, guid: adbad71032cea8a49b7ecb74b0d96add,
         type: 3}
       propertyPath: m_RootOrder
@@ -3874,13 +3879,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 1277678888}
   Spawns:
-  - {fileID: 801851325}
   - {fileID: 1583692888}
   - {fileID: 1723228549}
   - {fileID: 888340579}
   - {fileID: 2034813623}
   - {fileID: 1694093676}
   - {fileID: 1694093676}
+  - {fileID: 801851325}
   index: 0
 --- !u!1 &877985071
 GameObject:
@@ -10064,7 +10069,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 877571531}
         m_TargetAssemblyTypeName: TeleportManager, Assembly-CSharp
-        m_MethodName: previousRoom
+        m_MethodName: previousRoomTP
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10876,7 +10881,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 877571531}
         m_TargetAssemblyTypeName: TeleportManager, Assembly-CSharp
-        m_MethodName: nextRoom
+        m_MethodName: nextRoomTP
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11527,7 +11532,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Exit
+  m_text: Close
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12970,13 +12975,13 @@ MonoBehaviour:
   nextButton: {fileID: 480484478086242418}
   prevButton: {fileID: 480484477023719065}
   text:
-  - This is the description for the data display room
   - This is the description for room 1
   - This is the description for room 2
   - This is the description for room 3
   - This is the description for room 4
   - This is the description for room 5
   - This is the description for room 6
+  - This is the description for the data display room
   size: 32
   index: 0
 --- !u!1001 &9121940783859578951
