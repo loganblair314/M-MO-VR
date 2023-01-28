@@ -1490,6 +1490,20 @@ MonoBehaviour:
   teleportationHeightOffset: 1
   teleportSound: {fileID: 0}
   teleportPadOn: 1
+--- !u!114 &334458880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314635925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16ba9c5e780587b42b00c90a7ce87d2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTag: Player
+  textField1: {fileID: 0}
 --- !u!1 &349328823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2293,7 +2307,7 @@ PrefabInstance:
     - target: {fileID: 6224126359412896004, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
         type: 3}
       propertyPath: m_Name
-      value: Teleporter Pad
+      value: TeleporterPad3
       objectReference: {fileID: 0}
     - target: {fileID: 6224126359412993316, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
         type: 3}
@@ -8598,10 +8612,20 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6224126357866975991, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
+        type: 3}
+      propertyPath: m_TagString
+      value: TR2
+      objectReference: {fileID: 0}
     - target: {fileID: 6224126359412896004, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
         type: 3}
       propertyPath: m_Name
-      value: Teleporter Pad
+      value: TeleporterPad2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224126359412896004, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6224126359412993316, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
         type: 3}
@@ -13566,10 +13590,20 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6224126357866975991, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
+        type: 3}
+      propertyPath: m_TagString
+      value: TeleporterPad1
+      objectReference: {fileID: 0}
     - target: {fileID: 6224126359412896004, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
         type: 3}
       propertyPath: m_Name
-      value: Teleporter Pad
+      value: TeleporterPad1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224126359412896004, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6224126359412993316, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
         type: 3}
@@ -13780,7 +13814,7 @@ PrefabInstance:
     - target: {fileID: 2951877706181061785, guid: cf995dd17b72eff40b7eb24b4c388aac,
         type: 3}
       propertyPath: m_Name
-      value: Teleporter Pad
+      value: TeleporterPad4
       objectReference: {fileID: 0}
     - target: {fileID: 2951877706181423289, guid: cf995dd17b72eff40b7eb24b4c388aac,
         type: 3}

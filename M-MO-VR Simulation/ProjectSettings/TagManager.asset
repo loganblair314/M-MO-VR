@@ -6,6 +6,10 @@ TagManager:
   tags:
   - TeleportManager
   - UI-Manager
+  - TeleporterPad1
+  - TeleporterPad2
+  - TR1
+  - TR2
   layers:
   - Default
   - TransparentFX
