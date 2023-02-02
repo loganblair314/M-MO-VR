@@ -287,6 +287,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Sonar",
+                    "type": "Button",
+                    "id": "5a7dfe69-d7e1-4730-b7c9-6aaa3d1fefea",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -474,6 +483,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "35463845-5f14-46ac-994d-7234f4937338",
+                    "path": "<XRController>{LeftHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sonar",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
