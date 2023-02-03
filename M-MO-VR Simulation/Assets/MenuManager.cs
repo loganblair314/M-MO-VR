@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
 
 
 public class MenuManager : MonoBehaviour
@@ -18,6 +19,9 @@ public class MenuManager : MonoBehaviour
     public GameObject locomotion;
     PartialVis pv; 
 
+    ContinuousMoveProviderBase movement;
+    
+
     public bool MenuOpen;
 
     // Start is called before the first frame update
@@ -30,7 +34,11 @@ public class MenuManager : MonoBehaviour
         }
 
         if(pvManager.GetComponent<PartialVis>() != null){
-                pv = pvManager.GetComponent<PartialVis>();
+            pv = pvManager.GetComponent<PartialVis>();
+        }
+
+        if(locomotion.GetComponent<ContinuousMoveProviderBase>() != null){
+            movement = locomotion.GetComponent<ContinuousMoveProviderBase>();
         }
 
         MenuOpen = false;
@@ -54,7 +62,8 @@ public class MenuManager : MonoBehaviour
                         wasActive[i] = false;
                     }
                 }
-                locomotion.SetActive(false);
+                //locomotion.SetActive(false);
+                movement.moveSpeed = 0;
                 MenuOpen = true;
             }
             //If the menu is open
@@ -65,7 +74,8 @@ public class MenuManager : MonoBehaviour
                         OtherUi[i].SetActive(true);
                     }
                 }
-                locomotion.SetActive(true);
+                //locomotion.SetActive(true);
+                movement.moveSpeed = 2;
                 MenuOpen = false;
             }
             

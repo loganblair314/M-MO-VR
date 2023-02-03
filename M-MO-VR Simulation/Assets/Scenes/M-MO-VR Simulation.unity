@@ -1199,7 +1199,7 @@ GameObject:
   - component: {fileID: 281191881}
   - component: {fileID: 281191880}
   m_Layer: 5
-  m_Name: UI Display
+  m_Name: UI Display (Disableable)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9674,7 +9674,7 @@ Transform:
   m_Children:
   - {fileID: 281191882}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1548537457
 MonoBehaviour:
@@ -9761,6 +9761,7 @@ MonoBehaviour:
       type: 3}
   pvManager: {fileID: 1694093676}
   locomotion: {fileID: 1694093676}
+  MenuOpen: 0
 --- !u!1 &1558259663
 GameObject:
   m_ObjectHideFlags: 0
@@ -9828,7 +9829,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1576091976
 MonoBehaviour:
@@ -10778,7 +10779,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1706637934
 GameObject:
@@ -13729,6 +13730,7 @@ MonoBehaviour:
     m_Reference: {fileID: 0}
   pvManager: {fileID: 1548537455}
   locomotion: {fileID: 6085243954591651001}
+  MenuOpen: 0
 --- !u!1 &480484478088346017
 GameObject:
   m_ObjectHideFlags: 0
