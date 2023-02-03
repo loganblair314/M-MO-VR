@@ -18,6 +18,8 @@ public class MenuManager : MonoBehaviour
     public GameObject locomotion;
     PartialVis pv; 
 
+    public bool MenuOpen;
+
     // Start is called before the first frame update
     void Start()
     {   
@@ -30,6 +32,8 @@ public class MenuManager : MonoBehaviour
         if(pvManager.GetComponent<PartialVis>() != null){
                 pv = pvManager.GetComponent<PartialVis>();
         }
+
+        MenuOpen = false;
     }
 
     // Update is called once per frame
@@ -51,6 +55,7 @@ public class MenuManager : MonoBehaviour
                     }
                 }
                 locomotion.SetActive(false);
+                MenuOpen = true;
             }
             //If the menu is open
             else{
@@ -61,6 +66,7 @@ public class MenuManager : MonoBehaviour
                     }
                 }
                 locomotion.SetActive(true);
+                MenuOpen = false;
             }
             
 
