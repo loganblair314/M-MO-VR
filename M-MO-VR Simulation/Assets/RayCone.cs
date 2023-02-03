@@ -23,6 +23,10 @@ public class RayCone : MonoBehaviour
         {
             RaycastSweep();
         }
+        else if (Input.GetMouseButtonDown(0))
+        {
+            RaycastSweep();
+        }
     }
 
     void RaycastSweep()
@@ -38,14 +42,17 @@ public class RayCone : MonoBehaviour
 
 
         // step through and find each target point
-        for (int i = startAngle; i < finishAngle; i += inc) // Angle from forward
+        for (int i = startAngle; i <= finishAngle; i += inc) // Angle from forward
         {
-            targetPos = (Quaternion.Euler(0, i, 0) * cam.forward).normalized * distance;
+            targetPos = new Vector3(0, i, 0) + (cam.forward * 90);
+
+            Debug.Log(cam.forward);
+            Debug.Log(targetPos);
 
             // linecast between points
             if (Physics.Raycast(startPos, targetPos))
             {
-                Debug.Log("Hit ");
+                Debug.Log("Hit");
             }
 
             // to show ray just for testing
