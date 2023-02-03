@@ -32,7 +32,7 @@ public class TeleportManager : MonoBehaviour
     public void resetPosition(){
         Player.transform.position = Current_Spawn.transform.position;
         Player.transform.rotation = Current_Spawn.transform.rotation;
-        Debug.Log("Reseting");
+        //Debug.Log("Reseting");
         //Player.transform.LookAt();
     }
 
@@ -40,7 +40,7 @@ public class TeleportManager : MonoBehaviour
         if(index != 0){
             index --;
             Current_Spawn = Spawns[index];
-            Debug.Log("The current index is" + index);
+            //Debug.Log("The current index is" + index);
         }
     }
 
@@ -48,7 +48,7 @@ public class TeleportManager : MonoBehaviour
         if(index != 0){
             index --;
             Current_Spawn = Spawns[index];
-            Debug.Log("The current index is" + index);
+            //Debug.Log("The current index is" + index);
             resetPosition();
         }
     }
@@ -57,7 +57,7 @@ public class TeleportManager : MonoBehaviour
         if(index != 6){
             index ++;
             Current_Spawn = Spawns[index];
-            Debug.Log("The current index is" + index);
+            //Debug.Log("The current index is" + index);
         }
     }
 
@@ -65,7 +65,7 @@ public class TeleportManager : MonoBehaviour
         if(index != 6){
             index ++;
             Current_Spawn = Spawns[index];
-            Debug.Log("The current index is" + index);
+            //Debug.Log("The current index is" + index);
             resetPosition();
         }
     }

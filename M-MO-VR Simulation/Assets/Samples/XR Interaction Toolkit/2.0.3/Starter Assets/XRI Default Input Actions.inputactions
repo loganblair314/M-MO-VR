@@ -836,6 +836,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Partial Vision Display",
+                    "type": "Button",
+                    "id": "2da5a87b-8c27-4e1a-97c1-55d3fd1208ff",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Partial Vision Hide",
+                    "type": "Button",
+                    "id": "ccff2446-c86c-4010-9170-3466530c491d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1014,6 +1032,28 @@
                     "action": "Translate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "594032cf-13b6-43b2-a583-c2309b3c6aad",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Partial Vision Display",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5d1d89ec-ab3b-420f-8325-46196d9d95bf",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Partial Vision Hide",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
