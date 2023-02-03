@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
 
+
+
+
 public class PartialVis : MonoBehaviour
 {   
     public Transform raycastOrigin;
@@ -67,4 +70,10 @@ public class PartialVis : MonoBehaviour
             }
         }
     }
+    public void resetText(){
+        interactable.text = "";
+        details.text = "";
+    }
+    
 }
+

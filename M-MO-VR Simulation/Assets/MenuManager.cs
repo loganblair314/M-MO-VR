@@ -14,12 +14,20 @@ public class MenuManager : MonoBehaviour
     public InputActionProperty showButton;
     public InputActionProperty display;
     public InputActionProperty hide;
+    public GameObject pvManager;
+    PartialVis pv; 
 
     // Start is called before the first frame update
     void Start()
-    {
+    {   
+        //Initialize
         for(int i = 0;i<OtherUi.Length; i++){
+            //Set up the wasActive Array
             wasActive[i] = false;
+        }
+
+        if(pvManager.GetComponent<PartialVis>() != null){
+                pv = pvManager.GetComponent<PartialVis>();
         }
     }
 
@@ -35,6 +43,7 @@ public class MenuManager : MonoBehaviour
                     if(OtherUi[i].activeSelf){
                         wasActive[i] = true;
                         OtherUi[i].SetActive(false);
+                        pv.resetText();
                     }
                     else{
                         wasActive[i] = false;
