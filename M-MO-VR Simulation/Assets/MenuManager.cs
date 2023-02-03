@@ -15,6 +15,7 @@ public class MenuManager : MonoBehaviour
     public InputActionProperty display;
     public InputActionProperty hide;
     public GameObject pvManager;
+    public GameObject locomotion;
     PartialVis pv; 
 
     // Start is called before the first frame update
@@ -49,6 +50,7 @@ public class MenuManager : MonoBehaviour
                         wasActive[i] = false;
                     }
                 }
+                locomotion.SetActive(false);
             }
             //If the menu is open
             else{
@@ -58,6 +60,7 @@ public class MenuManager : MonoBehaviour
                         OtherUi[i].SetActive(true);
                     }
                 }
+                locomotion.SetActive(true);
             }
             
 

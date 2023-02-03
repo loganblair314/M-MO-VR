@@ -9760,6 +9760,7 @@ MonoBehaviour:
     m_Reference: {fileID: 8244008004421758509, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   pvManager: {fileID: 1694093676}
+  locomotion: {fileID: 1694093676}
 --- !u!1 &1558259663
 GameObject:
   m_ObjectHideFlags: 0
@@ -13727,6 +13728,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   pvManager: {fileID: 1548537455}
+  locomotion: {fileID: 6085243954591651001}
 --- !u!1 &480484478088346017
 GameObject:
   m_ObjectHideFlags: 0
