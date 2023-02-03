@@ -26,7 +26,9 @@ public class TeleportManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //If player fell through the map y < -1
+        if(Player.transform.position.y <-1)
+            resetPosition();
     }
 
     public void resetPosition(){

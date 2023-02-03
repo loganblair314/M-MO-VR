@@ -17,9 +17,12 @@ public class MenuManager : MonoBehaviour
     public InputActionProperty hide;
     public GameObject pvManager;
     public GameObject locomotion;
-    PartialVis pv; 
-
+    PartialVis pv;
     ContinuousMoveProviderBase movement;
+
+    GameObject[] walls;
+    GameObject[] inter;
+    GameObject[] nonInter;
     
 
     public bool MenuOpen;
@@ -42,6 +45,10 @@ public class MenuManager : MonoBehaviour
         }
 
         MenuOpen = false;
+
+        walls = GameObject.FindGameObjectsWithTag("Wall");
+        inter = GameObject.FindGameObjectsWithTag("Interactable");
+        nonInter = GameObject.FindGameObjectsWithTag("Not Interactable");
     }
 
     // Update is called once per frame
@@ -65,6 +72,21 @@ public class MenuManager : MonoBehaviour
                 //locomotion.SetActive(false);
                 movement.moveSpeed = 0;
                 MenuOpen = true;
+
+                foreach(GameObject collider in walls){
+                    if(collider.GetComponent<Collider>() != null)
+                        collider.GetComponent<Collider>().enabled = false;
+                }
+
+                foreach(GameObject collider in inter){
+                    if(collider.GetComponent<Collider>() != null)
+                        collider.GetComponent<Collider>().enabled = false;
+                }
+
+                foreach(GameObject collider in nonInter){
+                    if(collider.GetComponent<Collider>() != null)
+                        collider.GetComponent<Collider>().enabled = false;
+                }
             }
             //If the menu is open
             else{
@@ -77,6 +99,21 @@ public class MenuManager : MonoBehaviour
                 //locomotion.SetActive(true);
                 movement.moveSpeed = 2;
                 MenuOpen = false;
+
+                foreach(GameObject collider in walls){
+                    if(collider.GetComponent<Collider>() != null)
+                        collider.GetComponent<Collider>().enabled = true;
+                }
+
+                foreach(GameObject collider in inter){
+                    if(collider.GetComponent<Collider>() != null)
+                        collider.GetComponent<Collider>().enabled = true;
+                }
+
+                foreach(GameObject collider in nonInter){
+                    if(collider.GetComponent<Collider>() != null)
+                        collider.GetComponent<Collider>().enabled = true;
+                }
             }
             
 
