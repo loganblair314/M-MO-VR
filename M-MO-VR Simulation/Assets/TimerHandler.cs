@@ -7,41 +7,62 @@ using TMPro;
 
 public class TimerHandler : MonoBehaviour
 {
-    public string objectTag = "Player";
-    private bool timer1;
-    private bool timer2;
+    private bool timer1On, timer2On, timer3On;
+    private float timer1, timer2, timer3, timer4, timer5, timer6;
     private float minutes;
     private float seconds;
-    private float startTime;
-    private float currentTime;
+    private bool resetTime;
     public TextMeshProUGUI textField1;
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == objectTag)
-        {
-            startTime = Time.time;
-            timer1 = true;
-            timer2 = false;
-            Debug.Log("Successful Collision with Rings. Timer starting.");
-        }
-    }
 
     void Start()
     {
-        timer1 = false;
-        timer2 = false;
+        //timer1On = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (timer1 == true)
+        if ((TeleportManager.index == 0))
         {
-            currentTime = Time.time - startTime;
-            minutes = (int)(currentTime / 60f);
-            seconds = (int)(currentTime % 60f);
+            timer1 += Time.deltaTime;
+            minutes = (int)(timer1 / 60f);
+            seconds = (int)(timer1 % 60f);
             Debug.Log("Level 1 Time - " + minutes + ":" + seconds);
+        }
+        if ((TeleportManager.index == 1))
+        {
+            timer2 += Time.deltaTime;
+            minutes = (int)(timer2 / 60f);
+            seconds = (int)(timer2 % 60f);
+            Debug.Log("Level 2 Time - " + minutes + ":" + seconds);
+        }
+        if ((TeleportManager.index == 2))
+        {
+            timer3 += Time.deltaTime;
+            minutes = (int)(timer3 / 60f);
+            seconds = (int)(timer3 % 60f);
+            Debug.Log("Level 3 Time - " + minutes + ":" + seconds);
+        }
+        if ((TeleportManager.index == 3))
+        {
+            timer4 += Time.deltaTime;
+            minutes = (int)(timer4 / 60f);
+            seconds = (int)(timer4 % 60f);
+            Debug.Log("Level 3 Time - " + minutes + ":" + seconds);
+        }
+        if ((TeleportManager.index == 4))
+        {
+            timer5 += Time.deltaTime;
+            minutes = (int)(timer5 / 60f);
+            seconds = (int)(timer5 % 60f);
+            Debug.Log("Level 3 Time - " + minutes + ":" + seconds);
+        }
+        if ((TeleportManager.index == 5))
+        {
+            timer6 += Time.deltaTime;
+            minutes = (int)(timer6 / 60f);
+            seconds = (int)(timer6 % 60f);
+            Debug.Log("Level 3 Time - " + minutes + ":" + seconds);
         }
     }
 }
