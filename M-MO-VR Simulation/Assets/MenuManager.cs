@@ -25,7 +25,7 @@ public class MenuManager : MonoBehaviour
     GameObject[] nonInter;
     
 
-    public bool MenuOpen;
+    public static bool MenuOpen;
 
     // Start is called before the first frame update
     void Start()

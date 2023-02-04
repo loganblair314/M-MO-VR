@@ -16,7 +16,6 @@ public class UI : MonoBehaviour
     public string[] text;
     public int size = 32;
     //private bool hidden = false;
-    private bool menuButtonPress;
 
     public int index = 0;
 
