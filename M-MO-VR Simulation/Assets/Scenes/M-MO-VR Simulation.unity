@@ -10191,7 +10191,6 @@ MonoBehaviour:
       type: 3}
   pvManager: {fileID: 1694093676}
   locomotion: {fileID: 1694093676}
-  MenuOpen: 0
 --- !u!1 &1558259663
 GameObject:
   m_ObjectHideFlags: 0
@@ -14184,7 +14183,6 @@ MonoBehaviour:
     m_Reference: {fileID: 0}
   pvManager: {fileID: 1548537455}
   locomotion: {fileID: 6085243954591651001}
-  MenuOpen: 0
 --- !u!1 &480484478088346017
 GameObject:
   m_ObjectHideFlags: 0
@@ -15126,7 +15124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16ba9c5e780587b42b00c90a7ce87d2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textField1: {fileID: 0}
+  textField1: {fileID: 2083167006996080013}
   textField2: {fileID: 0}
   textField3: {fileID: 0}
   textField4: {fileID: 0}
