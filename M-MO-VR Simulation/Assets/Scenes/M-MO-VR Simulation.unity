@@ -4826,7 +4826,6 @@ MonoBehaviour:
   - {fileID: 1694093676}
   - {fileID: 1694093676}
   - {fileID: 801851325}
-  index: 0
 --- !u!1 &877985071
 GameObject:
   m_ObjectHideFlags: 0
@@ -12797,6 +12796,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2083167006880833580}
+        m_TargetAssemblyTypeName: TimerHandler, Assembly-CSharp
+        m_MethodName: ResetTimerOnLevelChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &480484477151399248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13586,6 +13597,18 @@ MonoBehaviour:
       - m_Target: {fileID: 877571531}
         m_TargetAssemblyTypeName: TeleportManager, Assembly-CSharp
         m_MethodName: nextRoomTP
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2083167006880833580}
+        m_TargetAssemblyTypeName: TimerHandler, Assembly-CSharp
+        m_MethodName: ResetTimerOnLevelChange
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14616,6 +14639,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2083167006880833578}
   - component: {fileID: 2083167006880833579}
+  - component: {fileID: 2083167006880833580}
   m_Layer: 0
   m_Name: Display Board (Data Display Room)
   m_TagString: Untagged
@@ -14659,6 +14683,24 @@ MonoBehaviour:
   text: This is the description for room 1
   mainSlider: {fileID: 2083167007843097233}
   size: 5
+--- !u!114 &2083167006880833580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083167006880833577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16ba9c5e780587b42b00c90a7ce87d2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textField1: {fileID: 0}
+  textField2: {fileID: 0}
+  textField3: {fileID: 0}
+  textField4: {fileID: 0}
+  textField5: {fileID: 0}
+  textField6: {fileID: 0}
 --- !u!1 &2083167006960717449
 GameObject:
   m_ObjectHideFlags: 0

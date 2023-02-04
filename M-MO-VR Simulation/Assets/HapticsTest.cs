@@ -88,6 +88,7 @@ public class HapticsTest : MonoBehaviour
                 // The closer the object, the greater the vibration's strength.
                 if (hit.transform.name != "Floor" || hit.transform.name != "LeftHand Controller")
                 {
+                    /*
                     if (distance > 0 && distance <= 0.5)
                     {
                         Debug.Log("Item is between 0 and 0.5 units away.");
@@ -110,6 +111,26 @@ public class HapticsTest : MonoBehaviour
                     {
                         Debug.Log("Item is between 1.5 and 2.0 units away.");
                         targetDevice.SendHapticImpulse(0, 0.25f, 1.0f);
+                    }
+                    */
+
+
+                    // Decreased amount of intervals by one in order to make distances
+                    // and strengths to make more distinguishable.
+                    if (distance > 0 && distance <= 0.67)
+                    {
+                        Debug.Log("Item is between 0 and 0.67 units away.");
+                        targetDevice.SendHapticImpulse(0, 1.0f, 1.0f);
+                    }
+                    else if (distance > 0.67 && distance <= 1.33)
+                    {
+                        Debug.Log("Item is between 0.67 and 1.33 units away.");
+                        targetDevice.SendHapticImpulse(0, 0.67f, 1.0f);
+                    }
+                    else if (distance > 1.33 && distance < 2.0)
+                    {
+                        Debug.Log("Item is between 1.33 and 2.0 units away.");
+                        targetDevice.SendHapticImpulse(0, 0.33f, 1.0f);
                     }
                 }
             }

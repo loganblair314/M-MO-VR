@@ -8,7 +8,7 @@ public class TeleportManager : MonoBehaviour
     private GameObject Current_Spawn;
     public GameObject[] Spawns;
 
-    public int index = 0;
+    public static int index = 0;
     
     //public GameObject DDR_Spawn;
 
