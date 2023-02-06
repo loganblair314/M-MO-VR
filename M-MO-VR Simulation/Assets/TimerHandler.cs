@@ -14,10 +14,32 @@ public class TimerHandler : MonoBehaviour
     private float smallestSec1;
     private bool resetTime;
     public TextMeshProUGUI textField1, textField2, textField3, textField4, textField5, textField6;
+    //private bool levelFinished;
+    public string objectTag = "Player";
+
+    void OnTriggerEnter(Collider other)
+    {
+        //if (TeleportManager.index == 0)
+        //{
+            if (other.gameObject.tag == objectTag)
+            {
+                if (TeleportManager.index == 0)
+                {
+                    textField1.text = "Level 1 Time - " + minutes1 + ":" + seconds1;
+                }
+                else if (TeleportManager.index == 1)
+                {
+                    textField1.text = "Level 2 Passed";
+                }
+                //Debug.Log("Collision.");
+                
+            }
+        //}
+    }
 
     void Start()
     {
-        //timer1On = true;
+        textField1.text = "Level 1 - Not Completed";
     }
 
     // Update is called once per frame
@@ -28,14 +50,6 @@ public class TimerHandler : MonoBehaviour
             timer1 += Time.deltaTime;
             minutes1 = (int)(timer1 / 60f);
             seconds1 = (int)(timer1 % 60f);
-            if (minutes1 == 0 && seconds1 < 5)
-            {
-                textField1.text = "Level 1 Time - ||:||";
-            }
-            else
-            {
-                textField1.text = "Level 1 Time - " + minutes1 + ":" + seconds1;
-            }
             //Debug.Log("Level 1 Time - " + minutes + ":" + seconds);
         }
         if ((TeleportManager.index == 1))
