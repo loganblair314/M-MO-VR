@@ -19,27 +19,23 @@ public class TimerHandler : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        //if (TeleportManager.index == 0)
-        //{
-            if (other.gameObject.tag == objectTag)
+        if (other.gameObject.tag == objectTag)
+        {
+            if (TeleportManager.index == 0)
             {
-                if (TeleportManager.index == 0)
-                {
-                    textField1.text = "Level 1 Time - " + minutes1 + ":" + seconds1;
-                }
-                else if (TeleportManager.index == 1)
-                {
-                    textField1.text = "Level 2 Passed";
-                }
-                //Debug.Log("Collision.");
-                
+                textField1.text = "Level 1 Time : " + minutes1 + "mins, " + seconds1 + "secs";
             }
-        //}
+            else if (TeleportManager.index == 1)
+            {
+                textField1.text = "Level 2 Time : " + minutes2 + "mins, " + seconds2 + "secs";
+            }
+            //Debug.Log("Collision."); 
+        }
     }
 
     void Start()
     {
-        textField1.text = "Level 1 - Not Completed";
+        
     }
 
     // Update is called once per frame
@@ -50,6 +46,7 @@ public class TimerHandler : MonoBehaviour
             timer1 += Time.deltaTime;
             minutes1 = (int)(timer1 / 60f);
             seconds1 = (int)(timer1 % 60f);
+            //textField1.text = "Level 1 - Not Completed";
             //Debug.Log("Level 1 Time - " + minutes + ":" + seconds);
         }
         if ((TeleportManager.index == 1))
@@ -57,6 +54,7 @@ public class TimerHandler : MonoBehaviour
             timer2 += Time.deltaTime;
             minutes2 = (int)(timer2 / 60f);
             seconds2 = (int)(timer2 % 60f);
+            //textField1.text = "Level 2 - Not Completed";
             /*if (minutes2 == 0 && seconds2 < 5)
             {
                 textField2.text = "Level 2 Time - ||:||";
