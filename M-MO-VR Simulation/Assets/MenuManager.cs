@@ -8,7 +8,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class MenuManager : MonoBehaviour
 {   
     public Transform head;
-    public float SpawnDistance = 2;
+    public float SpawnDistance;
     public GameObject menu;
     public GameObject[] OtherUi;
     public bool[] wasActive;
@@ -133,6 +133,20 @@ public class MenuManager : MonoBehaviour
         menu.transform.LookAt(new Vector3(head.position.x, menu.transform.position.y, head.position.z));
         menu.transform.forward *= -1;
         
+    }
+
+    public void zoomIn(){
+        if(SpawnDistance >= 1.25){
+            SpawnDistance -= (float)0.25;
+            Debug.Log("Zoomed in");
+        }
+    }
+
+    public void zoomOut(){
+        if(SpawnDistance <= 3.75){
+            SpawnDistance += (float)0.25;
+            Debug.Log("Zoomed Out");
+        }
     }
 
     public void quitGame(){
