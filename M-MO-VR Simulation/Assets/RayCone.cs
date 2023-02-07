@@ -40,23 +40,29 @@ public class RayCone : MonoBehaviour
         // the gap between each ray (increment)
         int inc = theAngle / segments;
 
-
-        // step through and find each target point
-        for (int i = startAngle; i <= finishAngle; i += inc) // Angle from forward
+        for (int j = startAngle; j <= finishAngle; j += inc) // Angle from forward
         {
-            targetPos = new Vector3(0, i, 0) + (cam.forward * 90);
-
-            Debug.Log(cam.forward);
-            Debug.Log(targetPos);
-
-            // linecast between points
-            if (Physics.Raycast(startPos, targetPos))
+            // step through and find each target point
+            for (int i = startAngle; i <= finishAngle; i += inc) // Angle from forward
             {
-                Debug.Log("Hit");
-            }
+                targetPos = new Vector3(j, i, 0) + (cam.forward * 90);
+                Vector3 newTarg = transform.TransformDirection(targetPos) / 10;
 
-            // to show ray just for testing
-            Debug.DrawRay(startPos, targetPos, Color.red, 8);
+                Debug.Log(cam.forward);
+                Debug.Log(targetPos);
+                Debug.Log(newTarg);
+
+                // linecast between points
+                if (Physics.Raycast(startPos, newTarg))
+                {
+                    Debug.Log("Hit");
+                }
+
+                //USE PERIMETER EQUATION TO SOLVE THIS
+
+                // to show ray just for testing
+                Debug.DrawRay(startPos, newTarg, Color.red, 8);
+            }
         }
     }
 }
