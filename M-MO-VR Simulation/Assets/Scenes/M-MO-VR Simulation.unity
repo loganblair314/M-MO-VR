@@ -2226,6 +2226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chisel
       objectReference: {fileID: 0}
+    - target: {fileID: 1017308439657246, guid: 74a52ff3cc18f844489a93c033cc4f69, type: 3}
+      propertyPath: m_TagString
+      value: Not Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 4431790218621932, guid: 74a52ff3cc18f844489a93c033cc4f69, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -6436,6 +6440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: File
       objectReference: {fileID: 0}
+    - target: {fileID: 1873792850386078, guid: 44dca16095177fc48a2c8a38cfabcca7, type: 3}
+      propertyPath: m_TagString
+      value: Not Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 4628172161808422, guid: 44dca16095177fc48a2c8a38cfabcca7, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -7752,6 +7760,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pen
       objectReference: {fileID: 0}
+    - target: {fileID: 5978910447518482905, guid: f7d49d5d637949741803377a17232282,
+        type: 3}
+      propertyPath: m_TagString
+      value: Not Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 6458161794608450097, guid: f7d49d5d637949741803377a17232282,
         type: 3}
       propertyPath: m_RootOrder
@@ -8612,6 +8625,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Laptop
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 164019ee72ba6df4b934f413f2374e40, type: 3}
+      propertyPath: m_TagString
+      value: Not Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 164019ee72ba6df4b934f413f2374e40, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -8913,6 +8930,10 @@ PrefabInstance:
     - target: {fileID: 1892442138515688, guid: 5107af7df784c6745920d67fc3675ef1, type: 3}
       propertyPath: m_Name
       value: Rasp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892442138515688, guid: 5107af7df784c6745920d67fc3675ef1, type: 3}
+      propertyPath: m_TagString
+      value: Not Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 4870444074187968, guid: 5107af7df784c6745920d67fc3675ef1, type: 3}
       propertyPath: m_RootOrder
@@ -10839,6 +10860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chisel
       objectReference: {fileID: 0}
+    - target: {fileID: 1069215874758778, guid: a342d99e47b41314382990be9f28fcfe, type: 3}
+      propertyPath: m_TagString
+      value: Not Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 4954631387241202, guid: a342d99e47b41314382990be9f28fcfe, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -12397,6 +12422,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pen
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
+        type: 3}
+      propertyPath: m_TagString
+      value: Not Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83042a5eb5c40da4197716921b77d573, type: 3}
@@ -20275,6 +20305,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chisel
       objectReference: {fileID: 0}
+    - target: {fileID: 1952515198744976, guid: 7f0ac61f2e78f14438a74d2cd1715f87, type: 3}
+      propertyPath: m_TagString
+      value: Not Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 4142845833602576, guid: 7f0ac61f2e78f14438a74d2cd1715f87, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -20374,6 +20408,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266086264383613275, guid: fb3e220f766859947b81df91ed527f96,
+        type: 3}
+      propertyPath: m_TagString
+      value: Not Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 7889252507155606644, guid: fb3e220f766859947b81df91ed527f96,
         type: 3}
@@ -23535,6 +23574,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pen
+      objectReference: {fileID: 0}
+    - target: {fileID: 7242734902216313324, guid: 205900fadbb091d4bb74b3a6253cfbdc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Not Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6204051434897261052, guid: 205900fadbb091d4bb74b3a6253cfbdc, type: 3}
