@@ -61,9 +61,9 @@ public class PartialVis : MonoBehaviour
             //If the object hit has an object script
             if(hit.collider.gameObject.GetComponent<Object>() != null){
                 objectInfo = hit.collider.gameObject.GetComponent<Object>();
-                Debug.Log("This is a "+objectInfo.size+" "+objectInfo.color+" "+objectInfo.type);
+                Debug.Log("This is a "+objectInfo.objectName);
 
-                details.text = objectInfo.type + "\n" + objectInfo.color + "\n" + objectInfo.size;
+                details.text = objectInfo.description + "\n";
             } 
             else {
                 details.text = "";

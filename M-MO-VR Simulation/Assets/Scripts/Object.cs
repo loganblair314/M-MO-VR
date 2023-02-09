@@ -4,24 +4,12 @@ using UnityEngine;
 
 public class Object : MonoBehaviour
 {
-    public string type;
-    public string color;
-    public string size;
-
-    private Material material;
+    public string objectName;
+    [SerializeField] public string description;
 
     void Start()
     {
-        type = gameObject.name;
-
-        color = gameObject.GetComponent<Renderer>().material.name;
-        int indexOfSpace = color.IndexOf(" ");
-        if (indexOfSpace >= 0) color = color.Substring(0, indexOfSpace);
-
-        float totalSize = gameObject.transform.localScale.x + gameObject.transform.localScale.y + gameObject.transform.localScale.z;
-        if (totalSize < 0.8) size = "Small";
-        else if(totalSize >= 0.8 && totalSize < 2) size = "Medium";
-        else if (totalSize > 2) size = "Large";
+        objectName = gameObject.name;
     }
 
     void Update()
