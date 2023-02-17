@@ -27,7 +27,23 @@ public class TimerHandler : MonoBehaviour
             }
             else if (TeleportManager.index == 1)
             {
-                textField1.text = "Level 2 Time : " + minutes2 + "mins, " + seconds2 + "secs";
+                textField2.text = "Level 2 Time : " + minutes2 + "mins, " + seconds2 + "secs";
+            }
+            else if (TeleportManager.index == 2)
+            {
+                textField3.text = "Level 3 Time : " + minutes3 + "mins, " + seconds3 + "secs";
+            }
+            else if (TeleportManager.index == 3)
+            {
+                textField4.text = "Level 4 Time : " + minutes4 + "mins, " + seconds4 + "secs";
+            }
+            else if (TeleportManager.index == 4)
+            {
+                textField5.text = "Level 5 Time : " + minutes5 + "mins, " + seconds5 + "secs";
+            }
+            else if (TeleportManager.index == 5)
+            {
+                textField6.text = "Level 6 Time : " + minutes6 + "mins, " + seconds6 + "secs";
             }
             //Debug.Log("Collision."); 
         }
@@ -46,84 +62,36 @@ public class TimerHandler : MonoBehaviour
             timer1 += Time.deltaTime;
             minutes1 = (int)(timer1 / 60f);
             seconds1 = (int)(timer1 % 60f);
-            //textField1.text = "Level 1 - Not Completed";
-            //Debug.Log("Level 1 Time - " + minutes + ":" + seconds);
         }
-        if ((TeleportManager.index == 1))
+        if ((TeleportManager.index == 1) && (!MenuManager.MenuOpen))
         {
             timer2 += Time.deltaTime;
             minutes2 = (int)(timer2 / 60f);
             seconds2 = (int)(timer2 % 60f);
-            //textField1.text = "Level 2 - Not Completed";
-            /*if (minutes2 == 0 && seconds2 < 5)
-            {
-                textField2.text = "Level 2 Time - ||:||";
-            }
-            else
-            {
-                textField2.text = "Level 2 Time - " + minutes2 + ":" + seconds2;
-            }*/
-            //Debug.Log("Level 2 Time - " + minutes + ":" + seconds);
         }
-        if ((TeleportManager.index == 2))
+        if ((TeleportManager.index == 2) && (!MenuManager.MenuOpen))
         {
             timer3 += Time.deltaTime;
             minutes3 = (int)(timer3 / 60f);
             seconds3 = (int)(timer3 % 60f);
-            /*if (minutes3 == 0 && seconds3 < 5)
-            {
-                textField3.text = "Level 3 Time - ||:||";
-            }
-            else
-            {
-                textField3.text = "Level 3 Time - " + minutes3 + ":" + seconds3;
-            }*/
-            //Debug.Log("Level 3 Time - " + minutes + ":" + seconds);
         }
-        if ((TeleportManager.index == 3))
+        if ((TeleportManager.index == 3) && (!MenuManager.MenuOpen))
         {
             timer4 += Time.deltaTime;
             minutes4 = (int)(timer4 / 60f);
             seconds4 = (int)(timer4 % 60f);
-            /*if (minutes4 == 0 && seconds4 < 5)
-            {
-                textField4.text = "Level 4 Time - ||:||";
-            }
-            else
-            {
-                textField4.text = "Level 4 Time - " + minutes4 + ":" + seconds4;
-            }*/
-            //Debug.Log("Level 4 Time - " + minutes + ":" + seconds);
         }
-        if ((TeleportManager.index == 4))
+        if ((TeleportManager.index == 4) && (!MenuManager.MenuOpen))
         {
             timer5 += Time.deltaTime;
             minutes5 = (int)(timer5 / 60f);
             seconds5 = (int)(timer5 % 60f);
-            /*if (minutes5 == 0 && seconds5 < 5)
-            {
-                textField5.text = "Level 5 Time - ||:||";
-            }
-            else
-            {
-                textField5.text = "Level 5 Time - " + minutes5 + ":" + seconds5;
-            }*/
-            //Debug.Log("Level 5 Time - " + minutes + ":" + seconds);
         }
-        if ((TeleportManager.index == 5))
+        if ((TeleportManager.index == 5) && (!MenuManager.MenuOpen))
         {
             timer6 += Time.deltaTime;
             minutes6 = (int)(timer6 / 60f);
             seconds6 = (int)(timer6 % 60f);
-            /*if (minutes6 == 0 && seconds6 < 5)
-            {
-                textField6.text = "Level 6 Time - ||:||";
-            }
-            else
-            {
-                textField6.text = "Level 6 Time - " + minutes6 + ":" + seconds6;
-            }*/
-            //Debug.Log("Level 6 Time - " + minutes + ":" + seconds);
         }
     }
 

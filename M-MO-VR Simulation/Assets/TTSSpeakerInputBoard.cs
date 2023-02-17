@@ -12,9 +12,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using Facebook.WitAi.TTS.Utilities;
 using TMPro;
+using System.Collections;
+using System.Linq;
 
 
-public class TTSSpeakerInput : MonoBehaviour
+public class TTSSpeakerInputBoard : MonoBehaviour
 {
     //[SerializeField] private Text _title;
     //[SerializeField] private InputField _input;
@@ -25,9 +27,7 @@ public class TTSSpeakerInput : MonoBehaviour
     // Either say the current phrase or stop talking/loading
     public void SayPhrase()
     {
-        _speaker.Speak(textField.text);
-
-        /*
+        
         if (_speaker.IsLoading || _speaker.IsSpeaking)
         {
             _speaker.Stop();
@@ -35,7 +35,6 @@ public class TTSSpeakerInput : MonoBehaviour
         else
         {
             _speaker.Speak(textField.text);
-        }
-        */
+        } 
     }
 }
