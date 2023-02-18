@@ -22,6 +22,21 @@ public class TTSSpeakerInputBoard : MonoBehaviour
     //[SerializeField] private InputField _input;
     [SerializeField] private TTSSpeaker _speaker;
     [SerializeField] private TextMeshProUGUI textField;
+    private int currLevel;
+
+    public void Start()
+    {
+        currLevel = TeleportManager.index;
+    }
+
+    public void Update()
+    {
+        if (currLevel != TeleportManager.index)
+        {
+            _speaker.Stop();
+            currLevel = TeleportManager.index;
+        }
+    }
 
 
     // Either say the current phrase or stop talking/loading

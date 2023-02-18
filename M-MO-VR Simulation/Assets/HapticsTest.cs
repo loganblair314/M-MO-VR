@@ -58,7 +58,7 @@ public class HapticsTest : MonoBehaviour
             }
         }
         */
-        if (((TeleportManager.index == 2) || (TeleportManager.index == 3) || (TeleportManager.index == 4) || (TeleportManager.index == 5)))
+        if (((TeleportManager.index == 2) || (TeleportManager.index == 3) || (TeleportManager.index == 4) || (TeleportManager.index == 5)) && (!MenuManager.MenuOpen))
         {
             // If we find a device we are looking for and if the trigger is pulled.
             if (targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue) && triggerValue > 0.1f)
