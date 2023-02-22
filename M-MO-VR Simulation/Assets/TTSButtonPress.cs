@@ -81,7 +81,8 @@ public class TTSButtonPress : MonoBehaviour
             }
             if (currLevel == 3)
             {
-                if (partialVis.activeSelf)
+                // Edge case: If details field is blank / clicking on walls.
+                if (partialVis.activeSelf && (pVDet.text != ""))
                 {
                     StartCoroutine(SpeakDetails());
                 }
@@ -92,11 +93,25 @@ public class TTSButtonPress : MonoBehaviour
             }
             if (currLevel == 4)
             {
-                _speaker.Speak(lvl5Des.text);
+                if (partialVis.activeSelf && (pVDet.text != ""))
+                {
+                    StartCoroutine(SpeakDetails());
+                }
+                else
+                {
+                    _speaker.Speak(lvl5Des.text);
+                }
             }
             if (currLevel == 5)
             {
-                _speaker.Speak(lvl6Des.text);
+                if (partialVis.activeSelf && (pVDet.text != ""))
+                {
+                    StartCoroutine(SpeakDetails());
+                }
+                else
+                {
+                    _speaker.Speak(lvl6Des.text);
+                }
             }
             if (currLevel == 6)
             {
