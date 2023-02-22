@@ -46,7 +46,7 @@ public class TTSButtonPress : MonoBehaviour
         }
         // For some reason there has to be a delay when utilizing this. No idea why.
         time += Time.deltaTime;
-        if (time >= 1)
+        if (time >= 2)
         {
             if (targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue) && primaryButtonValue == true)
             {
