@@ -30519,13 +30519,19 @@ MonoBehaviour:
   prevButton: {fileID: 480484477023719065}
   lights: {fileID: 2106930146}
   text:
-  - Level 1 Test
-  - Level 2 Test
-  - Level 3 Test
-  - Level 4 Test
-  - Level 5 Test
-  - Level 6 Test
-  - Level 7 Test
+  - 'In this first level, you will use the sonar tool by holding down the left trigger
+    to detect the distance of objects via auditory feedback. '
+  - "In this second level, the auditory feedback from the sonar tool will now give
+    additional information regarding the object\u2019s height."
+  - In this third level, you will be using the haptics tool by holding down the right
+    trigger to identify objects you point at via vibrations.
+  - In this fourth level, you will be using the partial vision script by pointing
+    at and pressing A on the different objects in the scene.
+  - 'In this fifth level, you will use all the tools to navigate to the end. '
+  - 'In this sixth level, you will once again use the tools learned thus far to reach
+    the end. '
+  - In this seventh room, the data display room, you can view the amount of time
+    it took you to traverse each level.
   size: 32
   index: 0
 --- !u!1001 &9121940783859578951
