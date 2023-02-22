@@ -9,6 +9,7 @@ TagManager:
   - Interactable
   - Not Interactable
   - Wall
+  - ParVis
   layers:
   - Default
   - TransparentFX
