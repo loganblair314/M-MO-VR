@@ -7768,7 +7768,7 @@ GameObject:
   - component: {fileID: 626819999}
   - component: {fileID: 626819998}
   - component: {fileID: 626819997}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Main Room Floor
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -28755,7 +28755,7 @@ GameObject:
   - component: {fileID: 5448462561151358291}
   - component: {fileID: 5457078133283451491}
   - component: {fileID: 5406933303999239801}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Exterior Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
