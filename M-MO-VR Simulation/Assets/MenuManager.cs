@@ -26,6 +26,7 @@ public class MenuManager : MonoBehaviour
     
 
     public static bool MenuOpen;
+    public static bool pVOpen;
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +44,7 @@ public class MenuManager : MonoBehaviour
         if(locomotion.GetComponent<ContinuousMoveProviderBase>() != null){
             movement = locomotion.GetComponent<ContinuousMoveProviderBase>();
         }
-
+        pVOpen = false;
         MenuOpen = false;
 
         walls = GameObject.FindGameObjectsWithTag("Wall");
@@ -71,7 +72,9 @@ public class MenuManager : MonoBehaviour
                 }
                 //locomotion.SetActive(false);
                 movement.moveSpeed = 0;
+                //pVOpen = true;
                 MenuOpen = true;
+                pVOpen = false;
 
                 foreach(GameObject collider in walls){
                     if(collider.GetComponent<Collider>() != null)
@@ -99,8 +102,9 @@ public class MenuManager : MonoBehaviour
                 //locomotion.SetActive(true);
                 movement.moveSpeed = 2;
                 MenuOpen = false;
+                pVOpen = true;
 
-                foreach(GameObject collider in walls){
+                foreach (GameObject collider in walls){
                     if(collider.GetComponent<Collider>() != null)
                         collider.GetComponent<Collider>().enabled = true;
                 }
