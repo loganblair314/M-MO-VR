@@ -10,6 +10,9 @@ TagManager:
   - Not Interactable
   - Wall
   - ParVis
+  - Floor
+  - Ceiling
+  - Obstacle
   layers:
   - Default
   - TransparentFX
