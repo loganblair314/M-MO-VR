@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 14494210}
   m_Layer: 0
   m_Name: Main Room Floor
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -906,7 +906,7 @@ GameObject:
   - component: {fileID: 72645132}
   m_Layer: 0
   m_Name: Main Room Floor 2
-  m_TagString: Ceiling
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1558,7 +1558,7 @@ GameObject:
   - component: {fileID: 154279023}
   m_Layer: 0
   m_Name: Main Room Ceiling
-  m_TagString: Ceiling
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2025,7 +2025,7 @@ GameObject:
   - component: {fileID: 181993710}
   m_Layer: 0
   m_Name: Main Room Floor 3
-  m_TagString: Ceiling
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2352,7 +2352,7 @@ GameObject:
   - component: {fileID: 199934997}
   m_Layer: 0
   m_Name: Second Main Hall Ceiling
-  m_TagString: Ceiling
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3035,7 +3035,7 @@ GameObject:
   - component: {fileID: 259828845}
   m_Layer: 0
   m_Name: Obstacle 1
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3132,7 +3132,7 @@ GameObject:
   - component: {fileID: 271610423}
   m_Layer: 0
   m_Name: Second Main Hall Floor
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3230,7 +3230,7 @@ GameObject:
   - component: {fileID: 277328373}
   m_Layer: 0
   m_Name: Obstacle 1
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3330,7 +3330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &281191880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3552,7 +3552,7 @@ GameObject:
   - component: {fileID: 287232894}
   m_Layer: 0
   m_Name: Obstacle 1
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4517,7 +4517,7 @@ GameObject:
   - component: {fileID: 351128046}
   m_Layer: 0
   m_Name: Left Side Ceiling
-  m_TagString: Ceiling
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4615,7 +4615,7 @@ GameObject:
   - component: {fileID: 356905401}
   m_Layer: 0
   m_Name: Obstacle 2
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5260,7 +5260,7 @@ GameObject:
   - component: {fileID: 391057306}
   m_Layer: 0
   m_Name: Entrance Ceiling
-  m_TagString: Ceiling
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5358,7 +5358,7 @@ GameObject:
   - component: {fileID: 403246903}
   m_Layer: 0
   m_Name: Main Hall Ceiling
-  m_TagString: Ceiling
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5512,7 +5512,7 @@ GameObject:
   - component: {fileID: 433380963}
   m_Layer: 0
   m_Name: Main Room Floor 4
-  m_TagString: Ceiling
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5646,7 +5646,7 @@ GameObject:
   - component: {fileID: 444093929}
   m_Layer: 0
   m_Name: Right Side Ceiling
-  m_TagString: Ceiling
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6675,7 +6675,7 @@ GameObject:
   - component: {fileID: 497855778}
   m_Layer: 0
   m_Name: Obstacle 2
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6772,7 +6772,7 @@ GameObject:
   - component: {fileID: 503006561}
   m_Layer: 0
   m_Name: Right Side Floor
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6978,7 +6978,7 @@ GameObject:
   - component: {fileID: 520785614}
   m_Layer: 0
   m_Name: Side Room Ceiling
-  m_TagString: Ceiling
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7310,7 +7310,7 @@ GameObject:
   - component: {fileID: 556961354}
   m_Layer: 0
   m_Name: Main Room Floor
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7539,7 +7539,7 @@ GameObject:
   - component: {fileID: 577646181}
   m_Layer: 0
   m_Name: Main Room Ceiling
-  m_TagString: Ceiling
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7770,7 +7770,7 @@ GameObject:
   - component: {fileID: 626819997}
   m_Layer: 0
   m_Name: Main Room Floor
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7868,7 +7868,7 @@ GameObject:
   - component: {fileID: 628054836}
   m_Layer: 0
   m_Name: Main Room Floor 2
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7999,7 +7999,7 @@ GameObject:
   - component: {fileID: 633101074}
   m_Layer: 0
   m_Name: Main Room Floor
-  m_TagString: Ceiling
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8097,7 +8097,7 @@ GameObject:
   - component: {fileID: 634066872}
   m_Layer: 0
   m_Name: Obstacle 3
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8885,7 +8885,7 @@ GameObject:
   - component: {fileID: 656639486}
   m_Layer: 0
   m_Name: Main Room Floor 3
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9655,7 +9655,7 @@ GameObject:
   - component: {fileID: 740811214}
   m_Layer: 0
   m_Name: Obstacle 3
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10046,7 +10046,7 @@ GameObject:
   - component: {fileID: 757418791}
   m_Layer: 0
   m_Name: Main Room Floor
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10144,7 +10144,7 @@ GameObject:
   - component: {fileID: 760590155}
   m_Layer: 0
   m_Name: Ceiling
-  m_TagString: Ceiling
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10538,7 +10538,7 @@ GameObject:
   - component: {fileID: 768691625}
   m_Layer: 0
   m_Name: Left Side Floor
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11901,7 +11901,7 @@ GameObject:
   - component: {fileID: 856833404}
   m_Layer: 0
   m_Name: Obstacle 3
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12493,7 +12493,7 @@ GameObject:
   - component: {fileID: 890282328}
   m_Layer: 0
   m_Name: Connecting Floor
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13187,7 +13187,7 @@ GameObject:
   - component: {fileID: 952159827}
   m_Layer: 0
   m_Name: Wall 1
-  m_TagString: Wall
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13323,7 +13323,7 @@ GameObject:
   - component: {fileID: 967121538}
   m_Layer: 0
   m_Name: Obstacle 1
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13664,7 +13664,7 @@ GameObject:
   - component: {fileID: 986685508}
   m_Layer: 0
   m_Name: Obstacle 1
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13866,7 +13866,7 @@ GameObject:
   - component: {fileID: 989843743}
   m_Layer: 0
   m_Name: Obstacle 3
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14235,7 +14235,7 @@ GameObject:
   - component: {fileID: 1009192718}
   m_Layer: 0
   m_Name: Obstacle 2
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14332,7 +14332,7 @@ GameObject:
   - component: {fileID: 1026842789}
   m_Layer: 0
   m_Name: Obstacle 4
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14462,7 +14462,7 @@ GameObject:
   - component: {fileID: 1041562346}
   m_Layer: 0
   m_Name: Obstacle 1
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14797,7 +14797,7 @@ GameObject:
   - component: {fileID: 1090344040}
   m_Layer: 0
   m_Name: Obstacle 4
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14992,7 +14992,7 @@ GameObject:
   - component: {fileID: 1111069778}
   m_Layer: 0
   m_Name: Connecting Ceiling
-  m_TagString: Ceiling
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16051,7 +16051,7 @@ GameObject:
   - component: {fileID: 1197618077}
   m_Layer: 0
   m_Name: Obstacle 2
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16655,7 +16655,7 @@ GameObject:
   - component: {fileID: 1232333013}
   m_Layer: 0
   m_Name: Obstacle 4
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16752,7 +16752,7 @@ GameObject:
   - component: {fileID: 1232433716}
   m_Layer: 0
   m_Name: Main Room Floor 4
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16850,7 +16850,7 @@ GameObject:
   - component: {fileID: 1244731069}
   m_Layer: 0
   m_Name: Side Room Floor
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17179,7 +17179,7 @@ GameObject:
   - component: {fileID: 1266985959}
   m_Layer: 0
   m_Name: Obstacle 1
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17515,7 +17515,7 @@ GameObject:
   - component: {fileID: 1284102439}
   m_Layer: 0
   m_Name: Side Room Ceiling
-  m_TagString: Ceiling
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17711,7 +17711,7 @@ GameObject:
   - component: {fileID: 1298708023}
   m_Layer: 0
   m_Name: Obstacle 2
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17906,7 +17906,7 @@ GameObject:
   - component: {fileID: 1320094909}
   m_Layer: 0
   m_Name: Obstacle 1
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18267,7 +18267,7 @@ GameObject:
   - component: {fileID: 1351497962}
   m_Layer: 0
   m_Name: Main Room Floor 5
-  m_TagString: Ceiling
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18462,7 +18462,7 @@ GameObject:
   - component: {fileID: 1369590970}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18792,7 +18792,7 @@ GameObject:
   - component: {fileID: 1405429944}
   m_Layer: 0
   m_Name: Main Room Ceiling
-  m_TagString: Ceiling
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18890,7 +18890,7 @@ GameObject:
   - component: {fileID: 1413428192}
   m_Layer: 0
   m_Name: Entrance Floor
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19160,7 +19160,7 @@ GameObject:
   - component: {fileID: 1432008129}
   m_Layer: 0
   m_Name: Obstacle 2
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20218,7 +20218,7 @@ GameObject:
   - component: {fileID: 1581754121}
   m_Layer: 0
   m_Name: Obstacle 2
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20529,7 +20529,7 @@ GameObject:
   - component: {fileID: 1590822308}
   m_Layer: 0
   m_Name: Obstacle 3
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21358,7 +21358,7 @@ GameObject:
   - component: {fileID: 1652674454}
   m_Layer: 0
   m_Name: Obstacle 1
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21554,7 +21554,7 @@ GameObject:
   - component: {fileID: 1665034125}
   m_Layer: 0
   m_Name: Wall 2
-  m_TagString: Wall
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21787,7 +21787,7 @@ GameObject:
   - component: {fileID: 1674885131}
   m_Layer: 0
   m_Name: Obstacle 2
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23204,7 +23204,7 @@ GameObject:
   - component: {fileID: 1817644555}
   m_Layer: 0
   m_Name: Side Room Floor
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23649,7 +23649,7 @@ GameObject:
   - component: {fileID: 1905560513}
   m_Layer: 0
   m_Name: Main Room Floor
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23747,7 +23747,7 @@ GameObject:
   - component: {fileID: 1905819312}
   m_Layer: 0
   m_Name: Wall 4
-  m_TagString: Wall
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24053,7 +24053,7 @@ GameObject:
   - component: {fileID: 1939558170}
   m_Layer: 0
   m_Name: Obstacle 2
-  m_TagString: Obstacle
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24319,7 +24319,7 @@ GameObject:
   - component: {fileID: 1970662205}
   m_Layer: 0
   m_Name: Main Hall Floor
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25063,7 +25063,7 @@ GameObject:
   - component: {fileID: 2075207464}
   m_Layer: 0
   m_Name: Main Room Ceiling
-  m_TagString: Ceiling
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25493,7 +25493,7 @@ GameObject:
   - component: {fileID: 2093667814}
   m_Layer: 0
   m_Name: Wall 3
-  m_TagString: Wall
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25787,7 +25787,7 @@ GameObject:
   - component: {fileID: 2100638541}
   m_Layer: 0
   m_Name: Main Room Floor 5
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
