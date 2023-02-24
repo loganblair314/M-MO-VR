@@ -2788,6 +2788,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
+  count: 0
+  animatorController: {fileID: 0}
   raycastOrigin: {fileID: 6085243953673564519}
 --- !u!1 &238933989
 GameObject:
@@ -10789,7 +10791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &782946900
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12959,7 +12961,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &942835694
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22104,6 +22106,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 671895048}
     m_Modifications:
+    - target: {fileID: 7045975189010341101, guid: ce507b0043d01df4182a13d6d7eec7b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9016400248071283241, guid: ce507b0043d01df4182a13d6d7eec7b7,
         type: 3}
       propertyPath: m_AnchorMax.x

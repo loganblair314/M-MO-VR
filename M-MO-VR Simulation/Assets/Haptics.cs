@@ -5,7 +5,7 @@ using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 using TMPro;
 
-public class HapticsTest : MonoBehaviour
+public class Haptics : MonoBehaviour
 {
     [SerializeField] XRController controller;
     private int count;
