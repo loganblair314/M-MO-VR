@@ -26,13 +26,6 @@ public class RayCone : MonoBehaviour
 
     void Update()
     {
-<<<<<<< Updated upstream
-        if (coneBut.action.WasPressedThisFrame())
-        {
-            RaycastSweep();
-        }
-        else if (Input.GetMouseButtonDown(0))
-=======
         note = GetComponent<AudioSource>();
         if (Input.GetKey("space"))
         {
@@ -51,7 +44,6 @@ public class RayCone : MonoBehaviour
 
         // If we find a device we are looking for and if the trigger is pulled.
         if (targetDevice.TryGetFeatureValue(UnityEngine.XR.CommonUsages.trigger, out float triggerValue) && triggerValue > 0.1f)
->>>>>>> Stashed changes
         {
             RaycastSweep();
         }
@@ -65,8 +57,9 @@ public class RayCone : MonoBehaviour
         int startAngle = -theAngle / 2; // half the angle to the Left of the forward
         int finishAngle = theAngle / 2; // half the angle to the Right of the forward
 
-        // the gap between each ray (increment)
-        int inc = theAngle / segments;
+        int inc = theAngle / segments; // the gap between each ray (increment)
+
+        float ClDis = 999; // the closest distance between the object and a player
 
         for (int j = startAngle; j <= finishAngle; j += inc) // Angle from forward
         {
@@ -74,31 +67,33 @@ public class RayCone : MonoBehaviour
             for (int i = startAngle; i <= finishAngle; i += inc) // Angle from forward
             {
                 targetPos = new Vector3(j, i, 0) + (cam.forward * 90);
-                Vector3 newTarg = transform.TransformDirection(targetPos) / 10;
+                Vector3 newTarg = transform.TransformDirection(targetPos);
+                RaycastHit hit;
+                Ray ray = new Ray(startPos, targetPos);
 
-<<<<<<< Updated upstream
-                Debug.Log(cam.forward);
-                Debug.Log(targetPos);
-                Debug.Log(newTarg);
-
-                // linecast between points
-                if (Physics.Raycast(startPos, newTarg))
-=======
                 // If a Raycast of length 1 detectes a hit.
                 if (Physics.Raycast(startPos, newTarg, out hit, 1))
->>>>>>> Stashed changes
                 {
-                    Debug.Log("Hit");
+                    var hitPoint = hit.point;
+                    hitPoint.y = 0;
+
+                    var playerPosition = startPos;
+                    playerPosition.y = 0;
+
+                    // Distance between player and object
+                    float distance = Vector3.Distance(hitPoint, playerPosition);
+
+                    // Update the closest distance
+                    // As long as it is not detecting the floor or the controllers, and the distance is shorter
+                    if (distance < ClDis && (hit.transform.name != "Floor" && hit.transform.name != "LeftHand Controller" && hit.transform.name != "RightHand Controller"))
+                    {
+                        ClDis = distance;
+                    }
                 }
-
-                //USE PERIMETER EQUATION TO SOLVE THIS
-
                 // to show ray just for testing
                 Debug.DrawRay(startPos, newTarg, Color.red);
             }
         }
-<<<<<<< Updated upstream
-=======
 
         // Intervals below:
         // 0 < x <= 0.25 (Consistent)
@@ -131,6 +126,5 @@ public class RayCone : MonoBehaviour
         {
             Debug.Log("No object detected");
         }
->>>>>>> Stashed changes
     }
 }
