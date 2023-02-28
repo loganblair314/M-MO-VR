@@ -1,15 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit;
+using TMPro;
 
 public class RayCone : MonoBehaviour
 {
-    public float distance;
     public int theAngle;
     public int segments;
     public Transform cam;
+    [SerializeField] XRController controller;
     public InputActionProperty coneBut;
+    private UnityEngine.XR.InputDevice targetDevice;
+    AudioSource note;
 
     // Start is called before the first frame update
     void Start()
@@ -17,13 +23,35 @@ public class RayCone : MonoBehaviour
 
     }
 
+
     void Update()
     {
+<<<<<<< Updated upstream
         if (coneBut.action.WasPressedThisFrame())
         {
             RaycastSweep();
         }
         else if (Input.GetMouseButtonDown(0))
+=======
+        note = GetComponent<AudioSource>();
+        if (Input.GetKey("space"))
+        {
+            RaycastSweep();
+        }
+
+        // Quest 2 takes a few seconds to show up in Unity, so have to intialize all of this in Update.
+        List<UnityEngine.XR.InputDevice> devices = new List<UnityEngine.XR.InputDevice>();
+        InputDeviceCharacteristics leftControllerCharacteristics = InputDeviceCharacteristics.Left | InputDeviceCharacteristics.Controller;
+        InputDevices.GetDevicesWithCharacteristics(leftControllerCharacteristics, devices);
+
+        if (devices.Count > 0)
+        {
+            targetDevice = devices[0];
+        }
+
+        // If we find a device we are looking for and if the trigger is pulled.
+        if (targetDevice.TryGetFeatureValue(UnityEngine.XR.CommonUsages.trigger, out float triggerValue) && triggerValue > 0.1f)
+>>>>>>> Stashed changes
         {
             RaycastSweep();
         }
@@ -48,12 +76,17 @@ public class RayCone : MonoBehaviour
                 targetPos = new Vector3(j, i, 0) + (cam.forward * 90);
                 Vector3 newTarg = transform.TransformDirection(targetPos) / 10;
 
+<<<<<<< Updated upstream
                 Debug.Log(cam.forward);
                 Debug.Log(targetPos);
                 Debug.Log(newTarg);
 
                 // linecast between points
                 if (Physics.Raycast(startPos, newTarg))
+=======
+                // If a Raycast of length 1 detectes a hit.
+                if (Physics.Raycast(startPos, newTarg, out hit, 1))
+>>>>>>> Stashed changes
                 {
                     Debug.Log("Hit");
                 }
@@ -61,8 +94,43 @@ public class RayCone : MonoBehaviour
                 //USE PERIMETER EQUATION TO SOLVE THIS
 
                 // to show ray just for testing
-                Debug.DrawRay(startPos, newTarg, Color.red, 8);
+                Debug.DrawRay(startPos, newTarg, Color.red);
             }
         }
+<<<<<<< Updated upstream
+=======
+
+        // Intervals below:
+        // 0 < x <= 0.25 (Consistent)
+        // 0.25 < x <= 0.5 (0.33 second)
+        // 0.5 < x <= 0.75 (0.66 second)
+        // 0.75 < x <= 1 (1 second)
+        // 1 < x (no sound)
+        // The closer the object, the more frequent the beeps.
+        if (ClDis > 0 && ClDis <= 0.25)
+        {
+            Debug.Log("Object is between 0 and 0.5 units away.");
+            note.Play();
+        }
+        else if (ClDis > 0.25 && ClDis <= 0.5)
+        {
+            Debug.Log("Object is between 0.5 and 1 units away.");
+            note.PlayDelayed((float)0.33);
+        }
+        else if (ClDis > 0.5 && ClDis <= 0.75)
+        {
+            Debug.Log("Object is between 1 and 1.5 units away.");
+            note.PlayDelayed((float)0.66);
+        }
+        else if (ClDis > 0.75 && ClDis <= 1)
+        {
+            Debug.Log("Object is between 1.5 and 2.0 units away.");
+            note.PlayDelayed((float)1);
+        }
+        else
+        {
+            Debug.Log("No object detected");
+        }
+>>>>>>> Stashed changes
     }
 }
