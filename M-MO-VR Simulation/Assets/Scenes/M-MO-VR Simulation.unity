@@ -2788,8 +2788,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
-  count: 0
-  animatorController: {fileID: 0}
   raycastOrigin: {fileID: 6085243953673564519}
 --- !u!1 &238933989
 GameObject:
@@ -20181,10 +20179,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c546c0588f0ab8c4a889791227360a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 5
   theAngle: 60
   segments: 10
   cam: {fileID: 6085243954930217639}
+  controller: {fileID: 0}
   coneBut:
     m_UseReference: 1
     m_Action:
@@ -28713,7 +28711,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 2.0000005, z: 1.0000005}
+  m_Size: {x: 2, y: 4, z: 2}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940699}
 --- !u!1 &5471010930162277219
 GameObject:
