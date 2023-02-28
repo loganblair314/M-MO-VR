@@ -6,6 +6,12 @@ using UnityEngine.InputSystem;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 using TMPro;
+using Unity.VisualScripting;
+using Facebook.WitAi;
+using static Unity.VisualScripting.Member;
+using UnityEditor.Experimental.GraphView;
+using System.Security.Claims;
+using System.Net;
 
 public class RayCone : MonoBehaviour
 {
@@ -13,25 +19,19 @@ public class RayCone : MonoBehaviour
     public int segments;
     public Transform cam;
     [SerializeField] XRController controller;
-    public InputActionProperty coneBut;
     private UnityEngine.XR.InputDevice targetDevice;
-    AudioSource note;
+    AudioSource AudSrc;
+    public AudioClip note;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        AudSrc = GetComponent<AudioSource>();
     }
-
 
     void Update()
     {
-        note = GetComponent<AudioSource>();
-        if (Input.GetKey("space"))
-        {
-            RaycastSweep();
-        }
-
+ 
         // Quest 2 takes a few seconds to show up in Unity, so have to intialize all of this in Update.
         List<UnityEngine.XR.InputDevice> devices = new List<UnityEngine.XR.InputDevice>();
         InputDeviceCharacteristics leftControllerCharacteristics = InputDeviceCharacteristics.Left | InputDeviceCharacteristics.Controller;
@@ -43,7 +43,7 @@ public class RayCone : MonoBehaviour
         }
 
         // If we find a device we are looking for and if the trigger is pulled.
-        if (targetDevice.TryGetFeatureValue(UnityEngine.XR.CommonUsages.trigger, out float triggerValue) && triggerValue > 0.1f)
+        if ((targetDevice.TryGetFeatureValue(UnityEngine.XR.CommonUsages.trigger, out float triggerValue) && triggerValue > 0.1f) || Input.GetKey("space"))
         {
             RaycastSweep();
         }
@@ -51,7 +51,7 @@ public class RayCone : MonoBehaviour
 
     void RaycastSweep()
     {
-        Vector3 startPos = cam.position; // umm, start position !
+        Vector3 startPos = cam.position + (cam.forward); // start position
         Vector3 targetPos = Vector3.zero; // variable for calculated end position
 
         int startAngle = -theAngle / 2; // half the angle to the Left of the forward
@@ -84,9 +84,11 @@ public class RayCone : MonoBehaviour
                     float distance = Vector3.Distance(hitPoint, playerPosition);
 
                     // Update the closest distance
-                    // As long as it is not detecting the floor or the controllers, and the distance is shorter
-                    if (distance < ClDis && (hit.transform.name != "Floor" && hit.transform.name != "LeftHand Controller" && hit.transform.name != "RightHand Controller"))
+                    // As long as it is not detecting the floor or the player, and the distance is shorter
+                    if (distance < ClDis && (hit.transform.tag != "Floor" && hit.transform.name != "LeftHand Controller" && hit.transform.name != "RightHand Controller" && hit.transform.name != "Main Camera" && hit.transform.name != "Feet (For Collision)" && hit.transform.name != "Capsule" && hit.transform.name != "XR Origin V2"))
                     {
+                        Debug.Log(distance);
+                        Debug.Log(hit.transform.name);
                         ClDis = distance;
                     }
                 }
@@ -102,29 +104,33 @@ public class RayCone : MonoBehaviour
         // 0.75 < x <= 1 (1 second)
         // 1 < x (no sound)
         // The closer the object, the more frequent the beeps.
-        if (ClDis > 0 && ClDis <= 0.25)
+
+        if (AudSrc.isPlaying == false)
         {
-            Debug.Log("Object is between 0 and 0.5 units away.");
-            note.Play();
-        }
-        else if (ClDis > 0.25 && ClDis <= 0.5)
-        {
-            Debug.Log("Object is between 0.5 and 1 units away.");
-            note.PlayDelayed((float)0.33);
-        }
-        else if (ClDis > 0.5 && ClDis <= 0.75)
-        {
-            Debug.Log("Object is between 1 and 1.5 units away.");
-            note.PlayDelayed((float)0.66);
-        }
-        else if (ClDis > 0.75 && ClDis <= 1)
-        {
-            Debug.Log("Object is between 1.5 and 2.0 units away.");
-            note.PlayDelayed((float)1);
-        }
-        else
-        {
-            Debug.Log("No object detected");
+            if (ClDis > 0 && ClDis <= 0.25)
+            {
+                Debug.Log("Object is between 0 and 0.25 units away.");
+                AudSrc.PlayOneShot(note);
+            }
+            else if (ClDis > 0.25 && ClDis <= 0.5)
+            {
+                Debug.Log("Object is between 0.25 and 0.5 units away.");
+                AudSrc.PlayDelayed(0.33F);
+            }
+            else if (ClDis > 0.5 && ClDis <= 0.75)
+            {
+                Debug.Log("Object is between 0.5 and 0.75 units away.");
+                AudSrc.PlayDelayed(0.66F);
+            }
+            else if (ClDis > 0.75 && ClDis <= 1)
+            {
+                Debug.Log("Object is between 0.75 and 1 units away.");
+                AudSrc.PlayDelayed(1F);
+            }
+            else
+            {
+                Debug.Log("No object detected");
+            }
         }
     }
 }
