@@ -13,6 +13,7 @@ TagManager:
   - Floor
   - Ceiling
   - Obstacle
+  - Waypoint
   layers:
   - Default
   - TransparentFX
