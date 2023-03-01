@@ -6,12 +6,6 @@ using UnityEngine.InputSystem;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 using TMPro;
-using Unity.VisualScripting;
-using Facebook.WitAi;
-using static Unity.VisualScripting.Member;
-using UnityEditor.Experimental.GraphView;
-using System.Security.Claims;
-using System.Net;
 
 public class RayCone : MonoBehaviour
 {
@@ -51,7 +45,7 @@ public class RayCone : MonoBehaviour
 
     void RaycastSweep()
     {
-        Vector3 startPos = cam.position + (cam.forward); // start position
+        Vector3 startPos = cam.position; // start position
         Vector3 targetPos = Vector3.zero; // variable for calculated end position
 
         int startAngle = -theAngle / 2; // half the angle to the Left of the forward
@@ -66,13 +60,13 @@ public class RayCone : MonoBehaviour
             // step through and find each target point
             for (int i = startAngle; i <= finishAngle; i += inc) // Angle from forward
             {
-                targetPos = new Vector3(j, i, 0) + (cam.forward * 90);
+                targetPos = new Vector3(j, i, j) + (cam.forward * 90);
                 Vector3 newTarg = transform.TransformDirection(targetPos);
                 RaycastHit hit;
                 Ray ray = new Ray(startPos, targetPos);
 
                 // If a Raycast of length 1 detectes a hit.
-                if (Physics.Raycast(startPos, newTarg, out hit, 1))
+                if (Physics.Raycast(startPos, targetPos, out hit, 1))
                 {
                     var hitPoint = hit.point;
                     hitPoint.y = 0;
@@ -92,8 +86,10 @@ public class RayCone : MonoBehaviour
                         ClDis = distance;
                     }
                 }
+
+                Debug.Log(targetPos);
                 // to show ray just for testing
-                Debug.DrawRay(startPos, newTarg, Color.red);
+                Debug.DrawRay(startPos, targetPos, Color.red);
             }
         }
 
