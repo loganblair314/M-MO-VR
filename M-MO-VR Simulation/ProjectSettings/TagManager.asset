@@ -24,7 +24,7 @@ TagManager:
   - Raycast
   - Interactable
   - Non-Interactable
-  - Waypoint
+  - Ignore Sonar
   - 
   - 
   - 
