@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 using TMPro;
+using Unity.VisualScripting;
 
 public class RayCone : MonoBehaviour
 {
@@ -14,13 +15,25 @@ public class RayCone : MonoBehaviour
     public Transform cam;
     [SerializeField] XRController controller;
     private UnityEngine.XR.InputDevice targetDevice;
+    public AudioClip[] audioClips;
     AudioSource AudSrc;
-    public AudioClip note;
+    AudioClip note;
+    public AudioClip a4;
+    public AudioClip a5;
+    public AudioClip b4;
+    public AudioClip b5;
+    public AudioClip c4;
+    public AudioClip c5;
+    public AudioClip d4;
+    public AudioClip d5;
+    public AudioClip e4;
+    public AudioClip e5;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        AudSrc = GetComponent<AudioSource>();
+        AudSrc = gameObject.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -45,7 +58,7 @@ public class RayCone : MonoBehaviour
 
     void RaycastSweep()
     {
-        int ignoreLayer = 1 << 2;
+        int ignoreLayer = 1 << 9;
         ignoreLayer = ~ignoreLayer;
         Vector3 startPos = cam.position; // start position
         Vector3 targetPos = Vector3.zero; // variable for calculated end position
@@ -73,6 +86,7 @@ public class RayCone : MonoBehaviour
                     if (Physics.Raycast(startPos, targetPos, out RaycastHit hit, 15, ignoreLayer))
                     {
                         var hitPoint = hit.point;
+                        float ObjY = hit.transform.position.y;
                         hitPoint.y = 0;
 
                         var playerPosition = startPos;
@@ -88,6 +102,48 @@ public class RayCone : MonoBehaviour
                             Debug.Log(distance);
                             Debug.Log(hit.transform.name);
                             ClDis = distance;
+
+                            //Selects audio Clip by Height
+                            if (ObjY > 0 && ObjY < 0.3)
+                            {
+                                note = a4;
+                            }
+                            else if (ObjY >= 0.3 && ObjY < 0.6)
+                            {
+                                note = b4;
+                            }
+                            else if (ObjY >= 0.6 && ObjY < 0.9)
+                            {
+                                note = c4;
+                            }
+                            else if (ObjY >= 0.9 && ObjY < 1.2)
+                            {
+                                note = d4;
+                            }
+                            else if (ObjY >= 1.2 && ObjY < 1.5)
+                            {
+                                note = e4;
+                            }
+                            else if (ObjY >= 1.5 && ObjY < 1.8)
+                            {
+                                note = a5;
+                            }
+                            else if (ObjY >= 1.8 && ObjY < 2.1)
+                            {
+                                note = b5;
+                            }
+                            else if (ObjY >= 2.1 && ObjY < 2.4)
+                            {
+                                note = c5;
+                            }
+                            else if (ObjY >= 2.4 && ObjY < 2.7)
+                            {
+                                note = d5;
+                            }
+                            else
+                            {
+                                note = e5;
+                            }
                         }
                     }
                     // to show ray just for testing
@@ -96,7 +152,6 @@ public class RayCone : MonoBehaviour
             }
         }
 
-        // PUTTING NOTE AS THE CLIP TEMPORARILY UNTIL AUDITOY TOOL IMPLEMENTED
         AudSrc.clip = note;
 
         // Intervals (Delay):

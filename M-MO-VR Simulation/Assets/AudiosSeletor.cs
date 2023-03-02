@@ -19,7 +19,9 @@ public class AudioSelector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Selects The Audio Clip To Play In Order By Height
+        /*
+         * 
+         * //Selects The Audio Clip To Play In Order By Height
         //Finds the Y value Hit By a Ray
         if (Physics.Raycast(startPos, newTarg, out hit, 1)) {
                 hitY = hit.point.y;
@@ -56,5 +58,7 @@ public class AudioSelector : MonoBehaviour
         else{
             note = audioClips[9];
         }
+
+        */
     }
 }
