@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731941, g: 0.13414887, b: 0.12107834, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731892, g: 0.13414863, b: 0.12107824, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -674,7 +674,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 53181398}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Feet (For Collision)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3975,7 +3975,7 @@ GameObject:
   - component: {fileID: 308030056}
   m_Layer: 0
   m_Name: Ceiling
-  m_TagString: Untagged
+  m_TagString: Ceiling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4435,7 +4435,7 @@ GameObject:
   - component: {fileID: 319984478}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5720,7 +5720,7 @@ GameObject:
   - component: {fileID: 438611473}
   m_Layer: 0
   m_Name: Ceiling
-  m_TagString: Untagged
+  m_TagString: Ceiling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10841,7 +10841,7 @@ GameObject:
   - component: {fileID: 766604841}
   m_Layer: 0
   m_Name: Ceiling
-  m_TagString: Untagged
+  m_TagString: Ceiling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12016,7 +12016,7 @@ GameObject:
   - component: {fileID: 840985439}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13177,7 +13177,7 @@ GameObject:
   - component: {fileID: 922812020}
   - component: {fileID: 922812299}
   - component: {fileID: 922812298}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Capsule
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -13802,7 +13802,7 @@ GameObject:
   - component: {fileID: 977006216}
   - component: {fileID: 977006218}
   - component: {fileID: 977006217}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: UI Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15271,7 +15271,7 @@ GameObject:
   - component: {fileID: 1077649807}
   m_Layer: 0
   m_Name: Ceiling
-  m_TagString: Untagged
+  m_TagString: Ceiling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16059,7 +16059,7 @@ GameObject:
   - component: {fileID: 1155538215}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16484,7 +16484,7 @@ GameObject:
   - component: {fileID: 1189290716}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20431,7 +20431,7 @@ GameObject:
   - component: {fileID: 1489126924}
   m_Layer: 0
   m_Name: Ceiling
-  m_TagString: Untagged
+  m_TagString: Ceiling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22164,7 +22164,7 @@ GameObject:
   - component: {fileID: 1637672724}
   - component: {fileID: 1637672726}
   - component: {fileID: 1637672725}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: RayCastCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23955,7 +23955,7 @@ GameObject:
   - component: {fileID: 1786689809}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25941,7 +25941,7 @@ GameObject:
   - component: {fileID: 2019188824}
   - component: {fileID: 2019188826}
   - component: {fileID: 2019188825}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30733,7 +30733,7 @@ GameObject:
   - component: {fileID: 6085243953673564517}
   - component: {fileID: 6085243953673564516}
   - component: {fileID: 237037431}
-  m_Layer: 3
+  m_Layer: 2
   m_Name: RightHand Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31051,7 +31051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6085243954206308423}
   - component: {fileID: 6085243954206308422}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: XR Interaction Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31094,7 +31094,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6085243954252957663}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Camera Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31645,7 +31645,7 @@ GameObject:
   - component: {fileID: 6085243954336230089}
   - component: {fileID: 6085243954336230088}
   - component: {fileID: 6085243954336230091}
-  m_Layer: 3
+  m_Layer: 2
   m_Name: LeftHand Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31726,7 +31726,7 @@ GameObject:
   - component: {fileID: 6085243954591651007}
   - component: {fileID: 6085243954591650994}
   - component: {fileID: 6085243954591650995}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Locomotion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31863,7 +31863,7 @@ GameObject:
   - component: {fileID: 6085243954600843297}
   - component: {fileID: 534870800}
   - component: {fileID: 6085243954600843300}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: XR Origin V2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32039,7 +32039,7 @@ GameObject:
   - component: {fileID: 6085243954930217690}
   - component: {fileID: 6085243954930217637}
   - component: {fileID: 6085243954930217636}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}

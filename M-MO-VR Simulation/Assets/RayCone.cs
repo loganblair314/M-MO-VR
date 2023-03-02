@@ -45,6 +45,8 @@ public class RayCone : MonoBehaviour
 
     void RaycastSweep()
     {
+        int ignoreLayer = 1 << 2;
+        ignoreLayer = ~ignoreLayer;
         Vector3 startPos = cam.position; // start position
         Vector3 targetPos = Vector3.zero; // variable for calculated end position
 
@@ -55,74 +57,89 @@ public class RayCone : MonoBehaviour
 
         float ClDis = 999; // the closest distance between the object and a player
 
-        for (int j = startAngle; j <= finishAngle; j += inc) // Angle from forward
+        for (int i = startAngle; i <= finishAngle; i += inc) // Angle from forward
         {
             // step through and find each target point
-            for (int i = startAngle; i <= finishAngle; i += inc) // Angle from forward
+            for (int j = startAngle; j <= finishAngle; j += inc) // Angle from forward
             {
-                targetPos = new Vector3(j, i, j) + (cam.forward * 90);
-                Vector3 newTarg = transform.TransformDirection(targetPos);
-                RaycastHit hit;
-                Ray ray = new Ray(startPos, targetPos);
-
-                // If a Raycast of length 1 detectes a hit.
-                if (Physics.Raycast(startPos, targetPos, out hit, 1))
+                // step through and find each target point
+                for (int k = startAngle; k <= finishAngle; k += inc) // Angle from forward
                 {
-                    var hitPoint = hit.point;
-                    hitPoint.y = 0;
+                    targetPos = new Vector3(i, j, k) + (cam.forward * 90);
+                    Vector3 newTarg = transform.TransformDirection(targetPos);
+                    Ray ray = new Ray(startPos, targetPos);
 
-                    var playerPosition = startPos;
-                    playerPosition.y = 0;
-
-                    // Distance between player and object
-                    float distance = Vector3.Distance(hitPoint, playerPosition);
-
-                    // Update the closest distance
-                    // As long as it is not detecting the floor or the player, and the distance is shorter
-                    if (distance < ClDis && (hit.transform.tag != "Floor" && hit.transform.name != "LeftHand Controller" && hit.transform.name != "RightHand Controller" && hit.transform.name != "Main Camera" && hit.transform.name != "Feet (For Collision)" && hit.transform.name != "Capsule" && hit.transform.name != "XR Origin V2"))
+                    // If a Raycast of length 15 units detectes a hit.
+                    if (Physics.Raycast(startPos, targetPos, out RaycastHit hit, 15, ignoreLayer))
                     {
-                        Debug.Log(distance);
-                        Debug.Log(hit.transform.name);
-                        ClDis = distance;
-                    }
-                }
+                        var hitPoint = hit.point;
+                        hitPoint.y = 0;
 
-                Debug.Log(targetPos);
-                // to show ray just for testing
-                Debug.DrawRay(startPos, targetPos, Color.red);
+                        var playerPosition = startPos;
+                        playerPosition.y = 0;
+
+                        // Distance between player and object
+                        float distance = Vector3.Distance(hitPoint, playerPosition);
+
+                        // Update the closest distance
+                        // As long as it is not detecting the floor or cei or the player, and the distance is shorter
+                        if (distance <= ClDis && hit.transform.tag != "Floor" && hit.transform.tag != "Ceiling")
+                        {
+                            Debug.Log(distance);
+                            Debug.Log(hit.transform.name);
+                            ClDis = distance;
+                        }
+                    }
+                    // to show ray just for testing
+                    Debug.DrawRay(startPos, targetPos, Color.red);
+                }
             }
         }
 
-        // Intervals below:
-        // 0 < x <= 0.25 (Consistent)
-        // 0.25 < x <= 0.5 (0.33 second)
-        // 0.5 < x <= 0.75 (0.66 second)
-        // 0.75 < x <= 1 (1 second)
-        // 1 < x (no sound)
+        // PUTTING NOTE AS THE CLIP TEMPORARILY UNTIL AUDITOY TOOL IMPLEMENTED
+        AudSrc.clip = note;
+
+        // Intervals (Delay):
+        // 0 < x <= 3 (none)
+        // 3 < x <= 6 (0.4 second)
+        // 6 < x <= 9 (0.75 second)
+        // 9 < x <= 12 (1.125 second)
+        // 12 < x <= 15 (1.5 second)
+        // 15 < x (NO SOUND)
         // The closer the object, the more frequent the beeps.
 
         if (AudSrc.isPlaying == false)
         {
-            if (ClDis > 0 && ClDis <= 0.25)
+            if (ClDis > 0 && ClDis <= 3)
             {
-                Debug.Log("Object is between 0 and 0.25 units away.");
+                Debug.Log("Object is between 0 and 3 units away.");
                 AudSrc.PlayOneShot(note);
             }
-            else if (ClDis > 0.25 && ClDis <= 0.5)
+            else if (ClDis > 3 && ClDis <= 6)
             {
-                Debug.Log("Object is between 0.25 and 0.5 units away.");
-                AudSrc.PlayDelayed(0.33F);
+                Debug.Log("Object is between 3 and 6 units away.");
+                AudSrc.PlayDelayed(0.4F);
             }
-            else if (ClDis > 0.5 && ClDis <= 0.75)
+            else if (ClDis > 6 && ClDis <= 9)
             {
-                Debug.Log("Object is between 0.5 and 0.75 units away.");
-                AudSrc.PlayDelayed(0.66F);
+                Debug.Log("Object is between 6 and 9 units away.");
+                AudSrc.PlayDelayed(0.75F);
             }
-            else if (ClDis > 0.75 && ClDis <= 1)
+            else if (ClDis > 9 && ClDis <= 12)
             {
-                Debug.Log("Object is between 0.75 and 1 units away.");
+                Debug.Log("Object is between 9.6 and 12.8 units away.");
+                AudSrc.PlayDelayed(1.125F);
+            }
+            else if (ClDis > 12 && ClDis <= 15)
+            {
+                Debug.Log("Object is between 12 and 15 units away.");
+                AudSrc.PlayDelayed(1.5F);
+            }/*
+            else if (ClDis > 16 && ClDis <= 20)
+            {
+                Debug.Log("Object is between 16 and 20 units away.");
                 AudSrc.PlayDelayed(1F);
-            }
+            }*/
             else
             {
                 Debug.Log("No object detected");
