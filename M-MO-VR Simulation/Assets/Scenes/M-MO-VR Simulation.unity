@@ -5293,7 +5293,7 @@ GameObject:
   - component: {fileID: 384273012}
   - component: {fileID: 384273013}
   m_Layer: 9
-  m_Name: Waypoint 3
+  m_Name: Waypoint 2.1
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5343,7 +5343,6 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 384273010}
-  count: 0
 --- !u!1 &391057304
 GameObject:
   m_ObjectHideFlags: 0
@@ -5873,7 +5872,7 @@ GameObject:
   - component: {fileID: 445084120}
   - component: {fileID: 445084121}
   m_Layer: 9
-  m_Name: Waypoint 18
+  m_Name: Waypoint 6.4
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5923,7 +5922,6 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 445084118}
-  count: 0
 --- !u!1 &461128973
 GameObject:
   m_ObjectHideFlags: 0
@@ -6769,7 +6767,7 @@ GameObject:
   - component: {fileID: 489103956}
   - component: {fileID: 489103957}
   m_Layer: 9
-  m_Name: Waypoint 11
+  m_Name: Waypoint 5.3
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6819,7 +6817,6 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 489103954}
-  count: 0
 --- !u!1 &496676373
 GameObject:
   m_ObjectHideFlags: 0
@@ -7347,7 +7344,7 @@ GameObject:
   - component: {fileID: 536061238}
   - component: {fileID: 536061239}
   m_Layer: 9
-  m_Name: Waypoint 16
+  m_Name: Waypoint 6.2
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7397,7 +7394,6 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 536061236}
-  count: 0
 --- !u!1001 &548015878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7726,7 +7722,7 @@ GameObject:
   - component: {fileID: 556989734}
   - component: {fileID: 556989735}
   m_Layer: 9
-  m_Name: Waypoint 12
+  m_Name: Waypoint 5.4
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7776,7 +7772,6 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 556989732}
-  count: 0
 --- !u!1 &561072394
 GameObject:
   m_ObjectHideFlags: 0
@@ -9867,7 +9862,7 @@ GameObject:
   - component: {fileID: 728205744}
   - component: {fileID: 728205745}
   m_Layer: 9
-  m_Name: Waypoint 2
+  m_Name: Waypoint 1.2
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9917,7 +9912,6 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 728205742}
-  count: 0
 --- !u!1 &733649520
 GameObject:
   m_ObjectHideFlags: 0
@@ -11461,7 +11455,7 @@ GameObject:
   - component: {fileID: 790518502}
   - component: {fileID: 790518503}
   m_Layer: 9
-  m_Name: Waypoint 5
+  m_Name: Waypoint 3.1
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11511,7 +11505,6 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 790518500}
-  count: 0
 --- !u!1 &800942048
 GameObject:
   m_ObjectHideFlags: 0
@@ -14705,7 +14698,7 @@ GameObject:
   - component: {fileID: 1002070721}
   - component: {fileID: 1002070722}
   m_Layer: 9
-  m_Name: Waypoint 10
+  m_Name: Waypoint 5.2
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14755,7 +14748,6 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1002070719}
-  count: 0
 --- !u!1 &1007740015
 GameObject:
   m_ObjectHideFlags: 0
@@ -15273,7 +15265,7 @@ GameObject:
   - component: {fileID: 1069930084}
   - component: {fileID: 1069930085}
   m_Layer: 9
-  m_Name: Waypoint 14
+  m_Name: Waypoint 5.6
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15323,7 +15315,6 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1069930082}
-  count: 0
 --- !u!1 &1071037180
 GameObject:
   m_ObjectHideFlags: 0
@@ -17849,7 +17840,7 @@ GameObject:
   - component: {fileID: 1249304728}
   - component: {fileID: 1249304729}
   m_Layer: 9
-  m_Name: Waypoint 8
+  m_Name: Waypoint 4.2
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17899,7 +17890,6 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1249304726}
-  count: 0
 --- !u!1 &1266985957
 GameObject:
   m_ObjectHideFlags: 0
@@ -19505,7 +19495,7 @@ GameObject:
   - component: {fileID: 1376875106}
   - component: {fileID: 1376875107}
   m_Layer: 9
-  m_Name: Waypoint 6
+  m_Name: Waypoint 3.2
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19555,7 +19545,6 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1376875104}
-  count: 0
 --- !u!1 &1392760338
 GameObject:
   m_ObjectHideFlags: 0
@@ -19812,7 +19801,7 @@ GameObject:
   - component: {fileID: 1410629874}
   - component: {fileID: 1410629875}
   m_Layer: 9
-  m_Name: Waypoint 4
+  m_Name: Waypoint 2.2
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19862,7 +19851,6 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1410629872}
-  count: 0
 --- !u!1 &1413428190
 GameObject:
   m_ObjectHideFlags: 0
@@ -20242,7 +20230,7 @@ GameObject:
   - component: {fileID: 1432517313}
   - component: {fileID: 1432517314}
   m_Layer: 9
-  m_Name: Waypoint 15
+  m_Name: Waypoint 6.1
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20292,7 +20280,6 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1432517311}
-  count: 0
 --- !u!1 &1445045795
 GameObject:
   m_ObjectHideFlags: 0
@@ -20535,7 +20522,7 @@ GameObject:
   - component: {fileID: 1462335685}
   - component: {fileID: 1462335686}
   m_Layer: 9
-  m_Name: Waypoint 17
+  m_Name: Waypoint 6.3
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20585,7 +20572,6 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1462335683}
-  count: 0
 --- !u!1 &1484550059
 GameObject:
   m_ObjectHideFlags: 0
@@ -21545,7 +21531,7 @@ GameObject:
   - component: {fileID: 1584311385}
   - component: {fileID: 1584311386}
   m_Layer: 9
-  m_Name: Waypoint 1
+  m_Name: Waypoint 1.1
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21595,7 +21581,6 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1584311383}
-  count: 0
 --- !u!1 &1584655702
 GameObject:
   m_ObjectHideFlags: 0
@@ -21608,7 +21593,7 @@ GameObject:
   - component: {fileID: 1584655704}
   - component: {fileID: 1584655705}
   m_Layer: 9
-  m_Name: Waypoint 13
+  m_Name: Waypoint 5.5
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21658,7 +21643,6 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1584655702}
-  count: 0
 --- !u!1 &1585405157
 GameObject:
   m_ObjectHideFlags: 0
@@ -22262,7 +22246,7 @@ GameObject:
   - component: {fileID: 1618567651}
   - component: {fileID: 1618567652}
   m_Layer: 9
-  m_Name: Waypoint 7
+  m_Name: Waypoint 4.1
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22312,7 +22296,6 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1618567649}
-  count: 0
 --- !u!1 &1624593108
 GameObject:
   m_ObjectHideFlags: 0
@@ -25594,7 +25577,7 @@ GameObject:
   - component: {fileID: 1930770996}
   - component: {fileID: 1930770997}
   m_Layer: 9
-  m_Name: Waypoint 9
+  m_Name: Waypoint 5.1
   m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25644,7 +25627,6 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1930770994}
-  count: 0
 --- !u!1 &1939558168
 GameObject:
   m_ObjectHideFlags: 0
