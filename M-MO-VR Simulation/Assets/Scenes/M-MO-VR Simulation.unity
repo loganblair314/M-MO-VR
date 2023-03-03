@@ -32278,9 +32278,12 @@ MonoBehaviour:
   lvl4Des: {fileID: 1800774069}
   lvl5Des: {fileID: 1713558515}
   lvl6Des: {fileID: 766564636}
-  pVBase: {fileID: 643156102}
-  pVInt: {fileID: 637095552}
-  pVDet: {fileID: 1275907049}
+  pVLabel1: {fileID: 738553803}
+  pVLabel2: {fileID: 643156102}
+  pVLabel3: {fileID: 2053483466}
+  pVName: {fileID: 13183113}
+  pVInteractable: {fileID: 637095552}
+  pVDetails: {fileID: 1275907049}
   lvl1Time: {fileID: 1642503389}
   lvl2Time: {fileID: 1624593110}
   lvl3Time: {fileID: 868601353}
