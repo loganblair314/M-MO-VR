@@ -17,7 +17,6 @@ public class WayPointHaptics : MonoBehaviour
     public GameObject waypoint;
     private bool activeWaypoint;
     private float timer;
-    public float count;
     GameObject[] waypoints;
 
     private void Start()
@@ -117,7 +116,11 @@ public class WayPointHaptics : MonoBehaviour
         // Reset all waypoints' active status on level reset / second tries.
         for (int i = 0; i < waypoints.Length; i++)
         {
-            waypoints[i].SetActive(true);
+            if (!waypoints[i].activeSelf)
+            {
+                waypoints[i].SetActive(true);
+            }
+            //waypoints[i].SetActive(true);
         }
     }
 }
