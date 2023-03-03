@@ -9,7 +9,7 @@ using System.Linq;
 public class WayPointHaptics : MonoBehaviour
 {
     [SerializeField] XRController controller;
-    private int count;
+    //private int count;
     private Animator animatorController;
     private InputDevice targetDevice;
     public Transform raycastOrigin;
@@ -17,10 +17,18 @@ public class WayPointHaptics : MonoBehaviour
     public GameObject waypoint;
     private bool activeWaypoint;
     private float timer;
+    public float count;
+    GameObject[] waypoints;
 
     private void Start()
     {
-        waypoint.SetActive(true);
+        // Store all waypoints in array and set all to active.
+        waypoints = GameObject.FindGameObjectsWithTag("Waypoint");
+        for (int i = 0; i < waypoints.Length; i++)
+        {
+            waypoints[i].SetActive(true);
+        }
+        //waypoint.SetActive(true);
     }
 
 
@@ -28,8 +36,16 @@ public class WayPointHaptics : MonoBehaviour
     {
         if (other.gameObject.tag == objectTag)
         {
-           waypoint.SetActive(false);
-            Debug.Log("Disabling waypoint.");
+            // Deactivate the specific waypoint the user walks into.
+            for (int i = 0; i < waypoints.Length; i++)
+            {
+                if (waypoint.name == waypoints[i].name)
+                {
+                    waypoints[i].SetActive(false);
+                }
+            }
+           //waypoint.SetActive(false);
+           Debug.Log("Disabling waypoint.");
         }
     }
 
@@ -93,6 +109,15 @@ public class WayPointHaptics : MonoBehaviour
                     }
                 }
             }
+        }
+    }
+
+    public void ResetWaypoints()
+    {
+        // Reset all waypoints' active status on level reset / second tries.
+        for (int i = 0; i < waypoints.Length; i++)
+        {
+            waypoints[i].SetActive(true);
         }
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731892, g: 0.13414863, b: 0.12107824, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731941, g: 0.13414887, b: 0.12107834, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5343,6 +5343,7 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 384273010}
+  count: 0
 --- !u!1 &391057304
 GameObject:
   m_ObjectHideFlags: 0
@@ -5922,6 +5923,7 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 445084118}
+  count: 0
 --- !u!1 &461128973
 GameObject:
   m_ObjectHideFlags: 0
@@ -6817,6 +6819,7 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 489103954}
+  count: 0
 --- !u!1 &496676373
 GameObject:
   m_ObjectHideFlags: 0
@@ -7394,6 +7397,7 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 536061236}
+  count: 0
 --- !u!1001 &548015878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7772,6 +7776,7 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 556989732}
+  count: 0
 --- !u!1 &561072394
 GameObject:
   m_ObjectHideFlags: 0
@@ -9912,6 +9917,7 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 728205742}
+  count: 0
 --- !u!1 &733649520
 GameObject:
   m_ObjectHideFlags: 0
@@ -11505,6 +11511,7 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 790518500}
+  count: 0
 --- !u!1 &800942048
 GameObject:
   m_ObjectHideFlags: 0
@@ -14748,6 +14755,7 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1002070719}
+  count: 0
 --- !u!1 &1007740015
 GameObject:
   m_ObjectHideFlags: 0
@@ -15315,6 +15323,7 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1069930082}
+  count: 0
 --- !u!1 &1071037180
 GameObject:
   m_ObjectHideFlags: 0
@@ -17890,6 +17899,7 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1249304726}
+  count: 0
 --- !u!1 &1266985957
 GameObject:
   m_ObjectHideFlags: 0
@@ -19545,6 +19555,7 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1376875104}
+  count: 0
 --- !u!1 &1392760338
 GameObject:
   m_ObjectHideFlags: 0
@@ -19632,6 +19643,18 @@ MonoBehaviour:
       - m_Target: {fileID: 877571531}
         m_TargetAssemblyTypeName: TeleportManager, Assembly-CSharp
         m_MethodName: resetPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1584311386}
+        m_TargetAssemblyTypeName: WayPointHaptics, Assembly-CSharp
+        m_MethodName: ResetWaypoints
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19839,6 +19862,7 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1410629872}
+  count: 0
 --- !u!1 &1413428190
 GameObject:
   m_ObjectHideFlags: 0
@@ -20268,6 +20292,7 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1432517311}
+  count: 0
 --- !u!1 &1445045795
 GameObject:
   m_ObjectHideFlags: 0
@@ -20560,6 +20585,7 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1462335683}
+  count: 0
 --- !u!1 &1484550059
 GameObject:
   m_ObjectHideFlags: 0
@@ -21569,6 +21595,7 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1584311383}
+  count: 0
 --- !u!1 &1584655702
 GameObject:
   m_ObjectHideFlags: 0
@@ -21631,6 +21658,7 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1584655702}
+  count: 0
 --- !u!1 &1585405157
 GameObject:
   m_ObjectHideFlags: 0
@@ -22284,6 +22312,7 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1618567649}
+  count: 0
 --- !u!1 &1624593108
 GameObject:
   m_ObjectHideFlags: 0
@@ -25615,6 +25644,7 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1930770994}
+  count: 0
 --- !u!1 &1939558168
 GameObject:
   m_ObjectHideFlags: 0
@@ -28386,6 +28416,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1584311386}
+        m_TargetAssemblyTypeName: WayPointHaptics, Assembly-CSharp
+        m_MethodName: ResetWaypoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &480484477151399248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29187,6 +29229,18 @@ MonoBehaviour:
       - m_Target: {fileID: 334458880}
         m_TargetAssemblyTypeName: TimerHandler, Assembly-CSharp
         m_MethodName: ResetTimerOnLevelChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1584311386}
+        m_TargetAssemblyTypeName: WayPointHaptics, Assembly-CSharp
+        m_MethodName: ResetWaypoints
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
