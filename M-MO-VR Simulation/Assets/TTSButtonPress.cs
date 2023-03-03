@@ -17,7 +17,7 @@ public class TTSButtonPress : MonoBehaviour
     private int currLevel;
     private float time;
     public GameObject partialVis;
-    [SerializeField] private TextMeshProUGUI lvl1Des, lvl2Des, lvl3Des, lvl4Des, lvl5Des, lvl6Des, pVBase, pVInt, pVDet, lvl1Time, lvl2Time, lvl3Time, lvl4Time, lvl5Time, lvl6Time;
+    [SerializeField] private TextMeshProUGUI lvl1Des, lvl2Des, lvl3Des, lvl4Des, lvl5Des, lvl6Des, pVLabel1, pVLabel2, pVLabel3, pVName, pVInteractable, pVDetails, lvl1Time, lvl2Time, lvl3Time, lvl4Time, lvl5Time, lvl6Time;
 
     // Start is called before the first frame update
     void Start()
@@ -82,9 +82,13 @@ public class TTSButtonPress : MonoBehaviour
             if (currLevel == 3)
             {
                 // Edge case: If details field is blank / clicking on walls.
-                if (partialVis.activeSelf && (pVDet.text != ""))
+                if (partialVis.activeSelf && (pVDetails.text != ""))
                 {
                     StartCoroutine(SpeakDetails());
+                }
+                else if (partialVis.activeSelf && (pVDetails.text == ""))
+                {
+                    StartCoroutine(SpeakNoDetails());
                 }
                 else
                 {
@@ -93,9 +97,13 @@ public class TTSButtonPress : MonoBehaviour
             }
             if (currLevel == 4)
             {
-                if (partialVis.activeSelf && (pVDet.text != ""))
+                if (partialVis.activeSelf && (pVDetails.text != ""))
                 {
                     StartCoroutine(SpeakDetails());
+                }
+                else if (partialVis.activeSelf && (pVDetails.text == ""))
+                {
+                    StartCoroutine(SpeakNoDetails());
                 }
                 else
                 {
@@ -104,9 +112,13 @@ public class TTSButtonPress : MonoBehaviour
             }
             if (currLevel == 5)
             {
-                if (partialVis.activeSelf && (pVDet.text != ""))
+                if (partialVis.activeSelf && (pVDetails.text != ""))
                 {
                     StartCoroutine(SpeakDetails());
+                }
+                else if (partialVis.activeSelf && (pVDetails.text == ""))
+                {
+                    StartCoroutine(SpeakNoDetails());
                 }
                 else
                 {
@@ -123,10 +135,20 @@ public class TTSButtonPress : MonoBehaviour
 
     IEnumerator SpeakDetails()
     {
-        string[] details = new string[] { pVBase.text, pVInt.text, pVDet.text };
+        string[] details = new string[] { pVLabel1.text, pVName.text, pVLabel2.text, pVInteractable.text, pVLabel3.text, pVDetails.text };
         for (int i = 0; i < details.Length; i++)
         {
             _speaker.Speak(details[i]);
+            yield return new WaitForSeconds(3);
+        }
+    }
+
+    IEnumerator SpeakNoDetails()
+    {
+        string[] noDetails = new string[] { pVLabel1.text, pVName.text, pVLabel2.text, pVInteractable.text, pVLabel3.text };
+        for (int i = 0; i < noDetails.Length; i++)
+        {
+            _speaker.Speak(noDetails[i]);
             yield return new WaitForSeconds(3);
         }
     }
