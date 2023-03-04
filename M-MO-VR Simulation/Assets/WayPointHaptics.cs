@@ -41,6 +41,50 @@ public class WayPointHaptics : MonoBehaviour
                 if (waypoint.name == waypoints[i].name)
                 {
                     waypoints[i].SetActive(false);
+                    if (waypoint.name == "Waypoint 2.1")
+                    {
+                        for (int j = 0; j < waypoints.Length; j++)
+                        {
+                            if (waypoints[j].name == "Waypoint 2.2")
+                            {
+                                Debug.Log("Disabled Waypoint 2.2");
+                                waypoints[j].SetActive(false);
+                            }
+                        }
+                    }
+                    else if (waypoint.name == "Waypoint 2.2")
+                    {
+                        for (int j = 0; j < waypoints.Length; j++)
+                        {
+                            if (waypoints[j].name == "Waypoint 2.1")
+                            {
+                                Debug.Log("Disabled Waypoint 2.1");
+                                waypoints[j].SetActive(false);
+                            }
+                        }
+                    }
+                    else if (waypoint.name == "Waypoint 6.1")
+                    {
+                        for (int j = 0; j < waypoints.Length; j++)
+                        {
+                            if (waypoints[j].name == "Waypoint 6.2")
+                            {
+                                Debug.Log("Disabled Waypoint 6.2");
+                                waypoints[j].SetActive(false);
+                            }
+                        }
+                    }
+                    else if (waypoint.name == "Waypoint 6.2")
+                    {
+                        for (int j = 0; j < waypoints.Length; j++)
+                        {
+                            if (waypoints[j].name == "Waypoint 6.1")
+                            {
+                                Debug.Log("Disabled Waypoint 6.1");
+                                waypoints[j].SetActive(false);
+                            }
+                        }
+                    }
                 }
             }
            //waypoint.SetActive(false);
