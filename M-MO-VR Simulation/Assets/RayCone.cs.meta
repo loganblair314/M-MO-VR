@@ -3,7 +3,19 @@ guid: c546c0588f0ab8c4a889791227360a43
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - cam: {instanceID: 0}
+  - controller: {instanceID: 0}
+  - a4: {fileID: 8300000, guid: 3f1aba9877a021c4283990e5e07c9422, type: 3}
+  - a5: {fileID: 8300000, guid: 5e34b4a7ee32c7c4d8b39005aee144f5, type: 3}
+  - b4: {fileID: 8300000, guid: fae99bd5c08351c498d9e9d9727c67c1, type: 3}
+  - b5: {fileID: 8300000, guid: 50e7f982d4b91e9468ff9c17009e5782, type: 3}
+  - c4: {fileID: 8300000, guid: ef367db1df726e047ba57fad6c884c19, type: 3}
+  - c5: {fileID: 8300000, guid: 99a9a2a4522b93c40af2e3bb1d84dbca, type: 3}
+  - d4: {fileID: 8300000, guid: a825889d6e5925745b3fcc2af2a6cb53, type: 3}
+  - d5: {fileID: 8300000, guid: e69249a8c8d58da4d89b273e5bc21085, type: 3}
+  - e4: {fileID: 8300000, guid: d16954d9980769c40a8270e443ad9a7b, type: 3}
+  - e5: {fileID: 8300000, guid: 31a8389a010a94347b4109fe39b04827, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
