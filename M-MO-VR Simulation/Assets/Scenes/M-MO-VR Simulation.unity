@@ -21368,6 +21368,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1576091975}
+  - component: {fileID: 1576091978}
   - component: {fileID: 1576091976}
   - component: {fileID: 1576091977}
   m_Layer: 0
@@ -21399,7 +21400,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576091973}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c546c0588f0ab8c4a889791227360a43, type: 3}
   m_Name: 
@@ -21409,16 +21410,16 @@ MonoBehaviour:
   cam: {fileID: 6085243954930217639}
   controller: {fileID: 0}
   audioClips: []
-  a4: {fileID: 8300000, guid: 9c58505d91161b947a9de61f6f80da7a, type: 3}
-  a5: {fileID: 8300000, guid: 41035945585bd234595b741c01bfa503, type: 3}
-  b4: {fileID: 8300000, guid: 5af50f3fbac1f29458991e04806eaf8f, type: 3}
-  b5: {fileID: 8300000, guid: da2597bf916c43a4e98621ec4d664b1f, type: 3}
-  c4: {fileID: 8300000, guid: c6ae734ea49a4994c83c5db43aad1f50, type: 3}
-  c5: {fileID: 8300000, guid: 95d4ef117c3dcb3488ceb821691a4dc9, type: 3}
-  d4: {fileID: 8300000, guid: 788119fb39360634fb3ad84652f4d1eb, type: 3}
-  d5: {fileID: 8300000, guid: 3158908956a339c41ace05e3e4445885, type: 3}
-  e4: {fileID: 8300000, guid: 8ea335999e599064aa4073d5b33dd103, type: 3}
-  e5: {fileID: 8300000, guid: 1265804b39848924a81fda5f259ca63d, type: 3}
+  a4: {fileID: 8300000, guid: f81ebdc3af7d54640842b2a53b5d2b71, type: 3}
+  a5: {fileID: 8300000, guid: f81ebdc3af7d54640842b2a53b5d2b71, type: 3}
+  b4: {fileID: 8300000, guid: f81ebdc3af7d54640842b2a53b5d2b71, type: 3}
+  b5: {fileID: 8300000, guid: f81ebdc3af7d54640842b2a53b5d2b71, type: 3}
+  c4: {fileID: 8300000, guid: f81ebdc3af7d54640842b2a53b5d2b71, type: 3}
+  c5: {fileID: 8300000, guid: f81ebdc3af7d54640842b2a53b5d2b71, type: 3}
+  d4: {fileID: 8300000, guid: f81ebdc3af7d54640842b2a53b5d2b71, type: 3}
+  d5: {fileID: 8300000, guid: f81ebdc3af7d54640842b2a53b5d2b71, type: 3}
+  e4: {fileID: 8300000, guid: f81ebdc3af7d54640842b2a53b5d2b71, type: 3}
+  e5: {fileID: 8300000, guid: f81ebdc3af7d54640842b2a53b5d2b71, type: 3}
 --- !u!82 &1576091977
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21515,6 +21516,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1576091978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576091973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c546c0588f0ab8c4a889791227360a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theAngle: 45
+  segments: 10
+  cam: {fileID: 6085243954930217639}
+  controller: {fileID: 0}
+  audioClips: []
+  a4: {fileID: 8300000, guid: 3f1aba9877a021c4283990e5e07c9422, type: 3}
+  a5: {fileID: 8300000, guid: 5e34b4a7ee32c7c4d8b39005aee144f5, type: 3}
+  b4: {fileID: 8300000, guid: fae99bd5c08351c498d9e9d9727c67c1, type: 3}
+  b5: {fileID: 8300000, guid: 50e7f982d4b91e9468ff9c17009e5782, type: 3}
+  c4: {fileID: 8300000, guid: ef367db1df726e047ba57fad6c884c19, type: 3}
+  c5: {fileID: 8300000, guid: 99a9a2a4522b93c40af2e3bb1d84dbca, type: 3}
+  d4: {fileID: 8300000, guid: a825889d6e5925745b3fcc2af2a6cb53, type: 3}
+  d5: {fileID: 8300000, guid: e69249a8c8d58da4d89b273e5bc21085, type: 3}
+  e4: {fileID: 8300000, guid: d16954d9980769c40a8270e443ad9a7b, type: 3}
+  e5: {fileID: 8300000, guid: 31a8389a010a94347b4109fe39b04827, type: 3}
 --- !u!1 &1581754119
 GameObject:
   m_ObjectHideFlags: 0
@@ -26509,7 +26537,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2020268190
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28582,7 +28610,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -29141,7 +29169,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
