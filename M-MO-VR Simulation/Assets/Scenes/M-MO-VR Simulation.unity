@@ -32973,6 +32973,8 @@ MonoBehaviour:
   controller: {fileID: 0}
   _speaker: {fileID: 75668700}
   partialVis: {fileID: 281191878}
+  lvl4Door: {fileID: 5471596053685283541}
+  lvl5Door: {fileID: 707471697}
   lvl1Des: {fileID: 780501910}
   lvl2Des: {fileID: 97972799}
   lvl3Des: {fileID: 1121948944}
