@@ -173,4 +173,12 @@ public class TTSButtonPress : MonoBehaviour
             yield return new WaitForSeconds(4);
         }
     }
+
+    public void ResetDoors()
+    {
+        lvl4Door.transform.position = lvl4DoorPos;
+        lvl4Door.transform.rotation = lvl4DoorRot;
+        lvl5Door.transform.position = lvl5DoorPos;
+        lvl5Door.transform.rotation = lvl5DoorRot;
+    }
 }
