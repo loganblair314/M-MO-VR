@@ -55,6 +55,14 @@ public class MenuManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (((TeleportManager.index == 0) || (TeleportManager.index == 1) || (TeleportManager.index == 2) || (TeleportManager.index == 6)) || (MenuManager.MenuOpen))
+        {
+            for (int i = 0; i < OtherUi.Length; i++)
+            {
+                OtherUi[i].SetActive(false);
+            }
+        }
+
         if(showButton.action.WasPressedThisFrame()){
             
             //If the menu is closed upon button press
@@ -72,9 +80,7 @@ public class MenuManager : MonoBehaviour
                 }
                 //locomotion.SetActive(false);
                 movement.moveSpeed = 0;
-                //pVOpen = true;
                 MenuOpen = true;
-                pVOpen = false;
 
                 foreach(GameObject collider in walls){
                     if(collider.GetComponent<Collider>() != null)
@@ -102,7 +108,6 @@ public class MenuManager : MonoBehaviour
                 //locomotion.SetActive(true);
                 movement.moveSpeed = 2;
                 MenuOpen = false;
-                pVOpen = true;
 
                 foreach (GameObject collider in walls){
                     if(collider.GetComponent<Collider>() != null)
@@ -119,13 +124,7 @@ public class MenuManager : MonoBehaviour
                         collider.GetComponent<Collider>().enabled = true;
                 }
             }
-            
-
             menu.SetActive(!menu.activeSelf);
-            
-            
-
-
         } else if(display.action.WasPerformedThisFrame() && !menu.activeSelf){
             menu.SetActive(true);
         } else if(hide.action.WasPerformedThisFrame()){

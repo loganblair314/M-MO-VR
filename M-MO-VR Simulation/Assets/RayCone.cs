@@ -52,7 +52,10 @@ public class RayCone : MonoBehaviour
         // If we find a device we are looking for and if the trigger is pulled.
         if ((targetDevice.TryGetFeatureValue(UnityEngine.XR.CommonUsages.trigger, out float triggerValue) && triggerValue > 0.1f) || Input.GetKey("space"))
         {
-            RaycastSweep();
+            if (((TeleportManager.index == 0) || (TeleportManager.index == 1) || (TeleportManager.index == 4) || (TeleportManager.index == 5)) && (!MenuManager.MenuOpen))
+            {
+                RaycastSweep();
+            }  
         }
     }
 
