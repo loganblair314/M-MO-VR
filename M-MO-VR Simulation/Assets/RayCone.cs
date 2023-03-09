@@ -10,6 +10,7 @@ using Unity.VisualScripting;
 
 public class RayCone : MonoBehaviour
 {
+    public LayerMask ignoreLayer;
     public int theAngle;
     public int segments;
     public Transform cam;
@@ -33,6 +34,7 @@ public class RayCone : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ignoreLayer = ~ignoreLayer;
         AudSrc = gameObject.GetComponent<AudioSource>();
     }
 
@@ -61,8 +63,6 @@ public class RayCone : MonoBehaviour
 
     void RaycastSweep()
     {
-        int ignoreLayer = 1 << 9;
-        ignoreLayer = ~ignoreLayer;
         Vector3 startPos = cam.position; // start position
         Vector3 targetPos = Vector3.zero; // variable for calculated end position
 
@@ -86,7 +86,7 @@ public class RayCone : MonoBehaviour
                     Ray ray = new Ray(startPos, targetPos);
 
                     // If a Raycast of length 15 units detectes a hit.
-                    if (Physics.Raycast(startPos, targetPos, out RaycastHit hit, 15, ignoreLayer))
+                    if (Physics.Raycast(ray, out RaycastHit hit, 10, ignoreLayer))
                     {
                         var hitPoint = hit.point;
                         float ObjY = hit.transform.position.y;
@@ -100,10 +100,11 @@ public class RayCone : MonoBehaviour
 
                         // Update the closest distance
                         // As long as it is not detecting the floor or cei or the player, and the distance is shorter
-                        if (distance <= ClDis && hit.transform.tag != "Floor" && hit.transform.tag != "Ceiling")
+                        if (distance <= ClDis && hit.transform.tag != "Floor" && hit.transform.tag != "Ceiling" && hit.transform.name != "XR Origin V2")
                         {
                             Debug.Log(distance);
                             Debug.Log(hit.transform.name);
+                            Debug.Log(hit.transform.gameObject.layer);
                             ClDis = distance;
 
                             //Selects audio Clip by Height
@@ -168,30 +169,30 @@ public class RayCone : MonoBehaviour
 
         if (AudSrc.isPlaying == false)
         {
-            if (ClDis > 0 && ClDis <= 3)
+            if (ClDis > 0 && ClDis <= 2)
             {
                 Debug.Log("Object is between 0 and 3 units away.");
                 AudSrc.PlayOneShot(note);
             }
-            else if (ClDis > 3 && ClDis <= 6)
+            else if (ClDis > 2 && ClDis <= 4)
             {
                 Debug.Log("Object is between 3 and 6 units away.");
-                AudSrc.PlayDelayed(0.4F);
+                AudSrc.PlayDelayed(0.25F);
             }
-            else if (ClDis > 6 && ClDis <= 9)
+            else if (ClDis > 4 && ClDis <= 6)
             {
                 Debug.Log("Object is between 6 and 9 units away.");
-                AudSrc.PlayDelayed(0.75F);
+                AudSrc.PlayDelayed(0.5F);
             }
-            else if (ClDis > 9 && ClDis <= 12)
+            else if (ClDis > 6 && ClDis <= 8)
             {
                 Debug.Log("Object is between 9.6 and 12.8 units away.");
-                AudSrc.PlayDelayed(1.125F);
+                AudSrc.PlayDelayed(0.75F);
             }
-            else if (ClDis > 12 && ClDis <= 15)
+            else if (ClDis > 8 && ClDis <= 10)
             {
                 Debug.Log("Object is between 12 and 15 units away.");
-                AudSrc.PlayDelayed(1.5F);
+                AudSrc.PlayDelayed(1F);
             }/*
             else if (ClDis > 16 && ClDis <= 20)
             {

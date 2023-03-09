@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731941, g: 0.13414887, b: 0.12107834, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731892, g: 0.13414863, b: 0.12107824, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1080,7 +1080,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 79904912}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5585,7 +5585,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 421763425}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15693,7 +15693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1068889825}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21883,6 +21883,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c546c0588f0ab8c4a889791227360a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignoreLayer:
+    serializedVersion: 2
+    m_Bits: 512
   theAngle: 45
   segments: 10
   cam: {fileID: 6085243954930217639}
@@ -22006,6 +22009,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c546c0588f0ab8c4a889791227360a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignoreLayer:
+    serializedVersion: 2
+    m_Bits: 512
   theAngle: 45
   segments: 10
   cam: {fileID: 6085243954930217639}
@@ -25749,7 +25755,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1884862466}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26597,7 +26603,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1960241222}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27408,7 +27414,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2073014816}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Waypoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
