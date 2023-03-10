@@ -85,8 +85,8 @@ public class RayCone : MonoBehaviour
                     Vector3 newTarg = transform.TransformDirection(targetPos);
                     Ray ray = new Ray(startPos, targetPos);
 
-                    // If a Raycast of length 15 units detectes a hit.
-                    if (Physics.Raycast(ray, out RaycastHit hit, 10, ignoreLayer))
+                    // If a Raycast of length 16 units detectes a hit.
+                    if (Physics.Raycast(ray, out RaycastHit hit, 16, ignoreLayer))
                     {
                         var hitPoint = hit.point;
                         float ObjY = hit.transform.position.y;
@@ -159,12 +159,12 @@ public class RayCone : MonoBehaviour
         AudSrc.clip = note;
 
         // Intervals (Delay):
-        // 0 < x <= 3 (none)
-        // 3 < x <= 6 (0.4 second)
-        // 6 < x <= 9 (0.75 second)
-        // 9 < x <= 12 (1.125 second)
-        // 12 < x <= 15 (1.5 second)
-        // 15 < x (NO SOUND)
+        // 0 < x <= 2 (none)
+        // 2 < x <= 4 (0.25 second)
+        // 4 < x <= 7 (0.5 second)
+        // 7 < x <= 11 (0.75 second)
+        // 11 < x <= 16 (1 second)
+        // 16 < x (NO SOUND)
         // The closer the object, the more frequent the beeps.
 
         if (AudSrc.isPlaying == false)
@@ -179,17 +179,17 @@ public class RayCone : MonoBehaviour
                 Debug.Log("Object is between 3 and 6 units away.");
                 AudSrc.PlayDelayed(0.25F);
             }
-            else if (ClDis > 4 && ClDis <= 6)
+            else if (ClDis > 4 && ClDis <= 7)
             {
                 Debug.Log("Object is between 6 and 9 units away.");
                 AudSrc.PlayDelayed(0.5F);
             }
-            else if (ClDis > 6 && ClDis <= 8)
+            else if (ClDis > 7 && ClDis <= 11)
             {
                 Debug.Log("Object is between 9.6 and 12.8 units away.");
                 AudSrc.PlayDelayed(0.75F);
             }
-            else if (ClDis > 8 && ClDis <= 10)
+            else if (ClDis > 11 && ClDis <= 16)
             {
                 Debug.Log("Object is between 12 and 15 units away.");
                 AudSrc.PlayDelayed(1F);
