@@ -132,7 +132,7 @@ public class WayPointHaptics : MonoBehaviour
                 }
                 else
                 {
-                    if (((TeleportManager.index == 2) || (TeleportManager.index == 4) || (TeleportManager.index == 5)) && (!MenuManager.MenuOpen))
+                    if (((TeleportManager.index >= 2) && (TeleportManager.index < 6)) && (!MenuManager.MenuOpen))
                     {
                         if (distance > 0 && distance <= 0.67)
                         {

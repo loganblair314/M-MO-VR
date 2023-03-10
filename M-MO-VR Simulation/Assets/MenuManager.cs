@@ -55,7 +55,7 @@ public class MenuManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (((TeleportManager.index == 0) || (TeleportManager.index == 1) || (TeleportManager.index == 2) || (TeleportManager.index == 6)) || (MenuManager.MenuOpen))
+        if (((TeleportManager.index <= 2) || (TeleportManager.index == 6)) || (MenuManager.MenuOpen))
         {
             for (int i = 0; i < OtherUi.Length; i++)
             {
