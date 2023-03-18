@@ -17,8 +17,10 @@ public class MenuManager : MonoBehaviour
     public InputActionProperty hide;
     public GameObject pvManager;
     public GameObject locomotion;
+    public GameObject JoyNav;
     PartialVis pv;
     ContinuousMoveProviderBase movement;
+    JoystickNav Joy;
 
     GameObject[] walls;
     GameObject[] inter;
@@ -27,6 +29,8 @@ public class MenuManager : MonoBehaviour
 
     public static bool MenuOpen;
     public static bool pVOpen;
+
+    private bool JoyLoaded;
 
     // Start is called before the first frame update
     void Start()
@@ -44,8 +48,19 @@ public class MenuManager : MonoBehaviour
         if(locomotion.GetComponent<ContinuousMoveProviderBase>() != null){
             movement = locomotion.GetComponent<ContinuousMoveProviderBase>();
         }
+
+        
+        if(JoyNav.GetComponent<JoystickNav>() != null){
+            Joy = JoyNav.GetComponent<JoystickNav>();
+            JoyLoaded = true;
+        }
+        else
+            JoyLoaded = false;
+            
+
         pVOpen = false;
         MenuOpen = false;
+        
 
         walls = GameObject.FindGameObjectsWithTag("Wall");
         inter = GameObject.FindGameObjectsWithTag("Interactable");
@@ -81,6 +96,14 @@ public class MenuManager : MonoBehaviour
                 //locomotion.SetActive(false);
                 movement.moveSpeed = 0;
                 MenuOpen = true;
+                if(JoyLoaded){
+                    Joy.setState(true);
+                
+                    Debug.Log("Joy Loaded");
+                }
+                else   
+                    Debug.Log("Sumthin Fucked Up");
+
 
                 foreach(GameObject collider in walls){
                     if(collider.GetComponent<Collider>() != null)
@@ -108,6 +131,8 @@ public class MenuManager : MonoBehaviour
                 //locomotion.SetActive(true);
                 movement.moveSpeed = 2;
                 MenuOpen = false;
+                if(JoyLoaded)
+                    Joy.setState(false);
 
                 foreach (GameObject collider in walls){
                     if(collider.GetComponent<Collider>() != null)

@@ -19255,6 +19255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1291278572}
+  - component: {fileID: 1291278573}
   m_Layer: 0
   m_Name: Joystick Nav
   m_TagString: Untagged
@@ -19277,6 +19278,31 @@ Transform:
   m_Father: {fileID: 480484478088346023}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1291278573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291278571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa0ebeb48837f9e46aa7a917890aa6f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Joystick:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Joystick
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 19c70193-a3bf-43db-b2ae-b999c4555418
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -7894883066211916919, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
 --- !u!1 &1294633032
 GameObject:
   m_ObjectHideFlags: 0
