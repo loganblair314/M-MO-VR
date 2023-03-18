@@ -296,6 +296,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Menu Joystick Nav",
+                    "type": "Value",
+                    "id": "f2aeb716-deb9-475c-9e64-05fd9908cff7",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -494,6 +503,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Sonar",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c63d91a7-554d-41f6-88ce-dfe4359a37be",
+                    "path": "<XRController>{LeftHand}/Primary2DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu Joystick Nav",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
