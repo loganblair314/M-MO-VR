@@ -63,6 +63,28 @@ public class WayPointHaptics : MonoBehaviour
                             }
                         }
                     }
+                    else if (waypoint.name == "Waypoint 4.1")
+                    {
+                        for (int j = 0; j < waypoints.Length; j++)
+                        {
+                            if (waypoints[j].name == "Waypoint 4.2")
+                            {
+                                Debug.Log("Disabled Waypoint 4.2");
+                                waypoints[j].SetActive(false);
+                            }
+                        }
+                    }
+                    else if (waypoint.name == "Waypoint 4.2")
+                    {
+                        for (int j = 0; j < waypoints.Length; j++)
+                        {
+                            if (waypoints[j].name == "Waypoint 4.1")
+                            {
+                                Debug.Log("Disabled Waypoint 4.1");
+                                waypoints[j].SetActive(false);
+                            }
+                        }
+                    }
                     else if (waypoint.name == "Waypoint 6.1")
                     {
                         for (int j = 0; j < waypoints.Length; j++)
