@@ -14,6 +14,7 @@ public class PartialVis : MonoBehaviour
 
     public TextMeshProUGUI interactable;
     public TextMeshProUGUI details;
+    public TextMeshProUGUI obj_name;
 
     Object objectInfo;
     
@@ -64,9 +65,11 @@ public class PartialVis : MonoBehaviour
                 Debug.Log("This is a "+objectInfo.objectName);
 
                 details.text = objectInfo.description + "\n";
+                obj_name.text = objectInfo.objectName;
             } 
             else {
                 details.text = "";
+                obj_name.text = "";
             }
         }
     }

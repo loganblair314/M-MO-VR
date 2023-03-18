@@ -22164,6 +22164,7 @@ MonoBehaviour:
       type: 3}
   interactable: {fileID: 637095552}
   details: {fileID: 1275907049}
+  obj_name: {fileID: 13183113}
 --- !u!114 &1548537458
 MonoBehaviour:
   m_ObjectHideFlags: 0
