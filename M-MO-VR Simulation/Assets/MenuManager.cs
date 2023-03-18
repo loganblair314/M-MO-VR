@@ -98,11 +98,10 @@ public class MenuManager : MonoBehaviour
                 MenuOpen = true;
                 if(JoyLoaded){
                     Joy.setState(true);
-                
-                    Debug.Log("Joy Loaded");
+                    //Debug.Log("Joy Loaded");
                 }
                 else   
-                    Debug.Log("Sumthin Fucked Up");
+                    //Debug.Log("Sumthin Fucked Up");
 
 
                 foreach(GameObject collider in walls){
