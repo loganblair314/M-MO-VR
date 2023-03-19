@@ -305,6 +305,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Menu Select",
+                    "type": "Button",
+                    "id": "bf44ec97-b992-45e3-b4e5-225bca5c7e55",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -514,6 +523,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Menu Joystick Nav",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "38c93024-8b32-4a4d-a249-9c8832353c17",
+                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu Select",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

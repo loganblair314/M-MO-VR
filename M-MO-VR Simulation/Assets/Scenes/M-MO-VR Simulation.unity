@@ -19537,6 +19537,19 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -7894883066211916919, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+  button:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Button
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: a20e94b4-3636-4865-816e-57e3d74543ae
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -2943796246775281747, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
   uiMan: {fileID: 8886024367714383527}
   Highlights:
   - {fileID: 472736393}
@@ -19545,6 +19558,11 @@ MonoBehaviour:
   - {fileID: 883824221}
   - {fileID: 1468776982}
   - {fileID: 2090060413}
+  Tele: {fileID: 877571529}
+  TeleRings: {fileID: 314635925}
+  Waypoints: {fileID: 1584311383}
+  MenuM: {fileID: 480484478088346017}
+  XR: {fileID: 6085243954600843298}
 --- !u!1 &1294633032
 GameObject:
   m_ObjectHideFlags: 0

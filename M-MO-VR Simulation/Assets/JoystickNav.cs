@@ -9,6 +9,8 @@ public class JoystickNav : MonoBehaviour
     private bool active;
     private bool firstCall;
     public InputActionProperty Joystick;
+
+    public InputActionProperty button;
     private Vector2 input;
     private bool reset;
     public GameObject uiMan;
@@ -25,6 +27,17 @@ public class JoystickNav : MonoBehaviour
 
     int selectionIndex;
 
+    public GameObject Tele;
+    public GameObject TeleRings;
+    public GameObject Waypoints;
+    public GameObject MenuM;
+    public GameObject XR;
+
+    TeleportManager teleManager;
+    TimerHandler timer;
+    WayPointHaptics way;
+    MenuManager menu;
+    TTSButtonPress tts;
 
     // Start is called before the first frame update
     void Start()
@@ -36,31 +49,59 @@ public class JoystickNav : MonoBehaviour
             ui = uiMan.GetComponent<UI>();
         }
 
+        if(Tele.GetComponent<TeleportManager>() != null){
+           teleManager = Tele.GetComponent<TeleportManager>();
+        }
+
+        if(TeleRings.GetComponent<TimerHandler>() != null){
+           timer = TeleRings.GetComponent<TimerHandler>();
+        }
+
+        if(Waypoints.GetComponent<WayPointHaptics>() != null){
+           way = Waypoints.GetComponent<WayPointHaptics>();
+        }
+
+        if(MenuM.GetComponent<MenuManager>() != null){
+           menu = MenuM.GetComponent<MenuManager>();
+        }
+
+        if(XR.GetComponent<TTSButtonPress>() != null){
+           tts = XR.GetComponent<TTSButtonPress>();
+        }
+
         max = Highlights.Length - 1;
     }
 
     // Update is called once per frame
     void Update()
     {   
-        checkIndex();
-        
-
-        input = ReadInput();
+   
         if(active){
+
+            //Initialize
             checkIndex();
             if(skipPrev)
                 min = 1;
             else   
                 min = 0;
 
-
+            //Check if this immediately after opening the menu
             if(firstCall){
                 selectionIndex = min;
                 resetAll();
                 Highlights[selectionIndex].SetActive(true);
                 //Debug.Log(min + " and " + max);
             }
+            
+            //If an option is selected
+            if(button.action.WasPressedThisFrame()){
+                //Execute command.
+                execute();
+            }
 
+
+            //Read Joystick position and move selection as required
+            input = ReadInput();
             if(input.y > 0.25){
                 //Debug.Log("UP");
                 setInput(1);
@@ -153,6 +194,8 @@ public class JoystickNav : MonoBehaviour
         if(ui.index == 0){
             //Disable selection for Prev Button;
             skipPrev = true;
+            if(selectionIndex == 0)
+                doDown();
             
         }
         else if(ui.index == 6){
@@ -176,6 +219,40 @@ public class JoystickNav : MonoBehaviour
         foreach (var item in Highlights)
         {
             item.SetActive(false);
+        }
+    }
+
+    private void execute(){
+        switch(selectionIndex){
+            case 0:
+                ui.testPrev();
+                teleManager.previousRoomTP();
+                timer.ResetTimerOnLevelChange();
+                way.ResetWaypoints();
+                break;
+            case 1:
+                teleManager.resetPosition();
+                way.ResetWaypoints();
+                tts.ResetDoors();
+                break; 
+            case 2:
+                ui.testNext();
+                teleManager.nextRoomTP();
+                timer.ResetTimerOnLevelChange();
+                way.ResetWaypoints();
+                break; 
+            case 3:
+                menu.zoomIn();
+                break; 
+            case 4:
+                menu.zoomOut();
+                break; 
+            case 5:
+                menu.quitGame();
+                break; 
+            default:
+                Debug.Log("Somehow the Switch broke");
+                break;  
         }
     }
 }
