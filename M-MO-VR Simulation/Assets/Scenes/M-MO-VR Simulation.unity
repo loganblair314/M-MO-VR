@@ -7569,7 +7569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Has a flat and rough blade.
 --- !u!1 &520785612
 GameObject:
   m_ObjectHideFlags: 0
@@ -10496,7 +10496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Has a round and rough blade.
 --- !u!1 &728205742
 GameObject:
   m_ObjectHideFlags: 0
@@ -32513,6 +32513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f005aa87dbdf08d41b9982445d7760b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controller: {fileID: 0}
   door4: {fileID: 706591352}
   handle41: {fileID: 213614576}
   handle42: {fileID: 1812654971}
