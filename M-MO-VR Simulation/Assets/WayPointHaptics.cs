@@ -142,16 +142,28 @@ public class WayPointHaptics : MonoBehaviour
 
                 float distance = Vector3.Distance(hitPoint, playerPosition);
 
-                if ((hit.transform.tag == "Waypoint") && (waypoint.activeSelf))
+                if ((hit.transform.tag == "Waypoint") && (waypoint.activeSelf) && ((hit.transform.name != "Door") || (hit.transform.name != "Handle (In)") || (hit.transform.name != "Handle (Out)")))
                 {
                     timer += Time.deltaTime;
-                    if (timer > 0.5)
+                    if (timer > 0.5) // 0.1)
                     {
                         Debug.Log("Detected waypoint.");
                         targetDevice.SendHapticImpulse(0, 1.0f, 0.1f);
                         timer = 0;
                     }
                 }
+                /*
+                else if ((distance <= 2) && ((hit.transform.name == "Door") || (hit.transform.name == "Handle (In)") || (hit.transform.name == "Handle (Out)")))
+                {
+                    timer += Time.deltaTime;
+                    if (timer > 0.5)
+                    {
+                        Debug.Log("Door detected.");
+                        targetDevice.SendHapticImpulse(0, 1.0f, 0.1f);
+                        timer = 0;
+                    }
+                }
+                */
                 else
                 {
                     if (((TeleportManager.index >= 2) && (TeleportManager.index < 6)) && (!MenuManager.MenuOpen))
