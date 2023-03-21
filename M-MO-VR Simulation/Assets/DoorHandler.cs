@@ -8,9 +8,9 @@ public class DoorHandler : MonoBehaviour
 {
     [SerializeField] XRController controller;
     private InputDevice targetDevice1, targetDevice2;
-    public GameObject door4, handle41, handle42, door5, handle51, handle52;
-    public int InterLayer, NonLayer;
-    private float timer;
+    public GameObject door4, handle41, handle42, door5, handle51, handle52, player;
+    public int InterLayer, NonInterLayer, NonLayer;
+    private float timer, distanceD4, distanceD5, distanceP;
     private bool doorGrabbed;
 
     // Start is called before the first frame update
@@ -20,7 +20,10 @@ public class DoorHandler : MonoBehaviour
         door4.GetComponent<BoxCollider>().enabled = true;
         door5.GetComponent<BoxCollider>().enabled = true;
         InterLayer = LayerMask.NameToLayer("Interactable");
-        NonLayer = LayerMask.NameToLayer("Ignore Player");
+        NonInterLayer = LayerMask.NameToLayer("Non-Interactable");
+        NonLayer = LayerMask.NameToLayer("Ignore Player"); 
+        door4.GetComponent<XRGrabInteractable>().enabled = false;
+        door5.GetComponent<XRGrabInteractable>().enabled = false;
     }
 
     // Update is called once per frame
@@ -43,6 +46,24 @@ public class DoorHandler : MonoBehaviour
         if (devicesLeft.Count > 0)
         {
             targetDevice2 = devicesLeft[0];
+        }
+    
+        if (TeleportManager.index == 3)
+        {
+            distanceD4 = Vector3.Distance(player.transform.position, door4.transform.position);
+            if (distanceD4 < 3)
+            {
+                door4.GetComponent<XRGrabInteractable>().enabled = true;
+            }
+        }
+
+        if (TeleportManager.index == 4)
+        {
+            distanceD5 = Vector3.Distance(player.transform.position, door5.transform.position);
+            if (distanceD5 < 3)
+            {
+                door5.GetComponent<XRGrabInteractable>().enabled = true;
+            }
         }
 
         if (doorGrabbed)

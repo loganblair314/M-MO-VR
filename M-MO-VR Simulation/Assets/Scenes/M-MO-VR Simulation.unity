@@ -12413,7 +12413,7 @@ MonoBehaviour:
   m_ThrowVelocityScale: 1.5
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
-  m_RetainTransformParent: 1
+  m_RetainTransformParent: 0
   m_AttachPointCompatibilityMode: 0
 --- !u!59 &706591355
 HingeJoint:
@@ -38038,7 +38038,9 @@ MonoBehaviour:
   door5: {fileID: 757824610}
   handle51: {fileID: 432427686}
   handle52: {fileID: 858065036}
+  player: {fileID: 6085243954600843298}
   InterLayer: 0
+  NonInterLayer: 0
   NonLayer: 0
 --- !u!1 &6085243954206308417
 GameObject:
