@@ -14,7 +14,7 @@ public class DisplayBoard : MonoBehaviour
 
     public Slider mainSlider;
 
-    public int size = 5;
+    public int size = 3;
     [SerializeField] private int index;
 
     
