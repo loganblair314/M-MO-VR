@@ -59,10 +59,13 @@ public class TTSButtonPress : MonoBehaviour
         time += Time.deltaTime;
         if (time >= 2)
         {
-            if (targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue) && primaryButtonValue == true)
+            if ((!MenuManager.MenuOpen))
             {
-                SayPhrase();
-                time = 0;
+                if (targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue) && primaryButtonValue == true)
+                {
+                    SayPhrase();
+                    time = 0;
+                }
             }
         }
     }
