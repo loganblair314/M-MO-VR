@@ -68,8 +68,8 @@ public class PartialVis : MonoBehaviour
                 obj_name.text = objectInfo.objectName;
             } 
             else {
-                details.text = "";
-                obj_name.text = "";
+                details.text = "None";
+                obj_name.text = "None";
             }
         }
     }

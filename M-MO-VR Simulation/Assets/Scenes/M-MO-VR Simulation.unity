@@ -11965,6 +11965,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Not Interactable
       objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 164019ee72ba6df4b934f413f2374e40, type: 3}
+      propertyPath: m_Name
+      value: Laptop Base
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 164019ee72ba6df4b934f413f2374e40, type: 3}
+      propertyPath: m_Name
+      value: Laptop Screen
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 164019ee72ba6df4b934f413f2374e40, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -33637,7 +33645,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Additional:'
+  m_text: 'Additional Info:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
