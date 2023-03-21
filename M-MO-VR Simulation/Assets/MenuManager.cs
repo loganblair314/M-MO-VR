@@ -103,28 +103,30 @@ public class MenuManager : MonoBehaviour
                     //Debug.Log("Joy Loaded");
                 }
                 else   
-                    //Debug.Log("Sumthin Fucked Up");
+                    Debug.Log("Sumthin Fucked Up");
 
-
+            
                 foreach(GameObject collider in walls){
-                    if(collider.GetComponent<Collider>() != null)
-                        collider.GetComponent<Collider>().enabled = false;
+                        //Debug.Log("Test");
+                        collider.layer = LayerMask.NameToLayer("Ignore Raycast");
+                        //Debug.Log(collider.name + "has been updated to have the layer of "+ collider.layer);
                 }
 
                 foreach(GameObject collider in inter){
                     if(collider.GetComponent<Collider>() != null)
-                        collider.GetComponent<Collider>().enabled = false;
+                        collider.layer = LayerMask.NameToLayer("Ignore Raycast");
                 }
 
                 foreach(GameObject collider in nonInter){
                     if(collider.GetComponent<Collider>() != null)
-                        collider.GetComponent<Collider>().enabled = false;
+                        collider.layer = LayerMask.NameToLayer("Ignore Raycast");
                 }
 
                 foreach(GameObject collider in obs){
                     if(collider.GetComponent<Collider>() != null)
-                        collider.GetComponent<Collider>().enabled = false;
+                        collider.layer = LayerMask.NameToLayer("Ignore Raycast");
                 }
+                Debug.Log("Menu Open Sequence Completed");
             }
             //If the menu is open
             else{
@@ -137,27 +139,28 @@ public class MenuManager : MonoBehaviour
                 //locomotion.SetActive(true);
                 movement.moveSpeed = 2;
                 MenuOpen = false;
-                if(JoyLoaded)
+                if(JoyLoaded){
                     Joy.setState(false);
+                }
 
                 foreach (GameObject collider in walls){
                     if(collider.GetComponent<Collider>() != null)
-                        collider.GetComponent<Collider>().enabled = true;
+                        collider.layer = LayerMask.NameToLayer("Default");
                 }
 
                 foreach(GameObject collider in inter){
                     if(collider.GetComponent<Collider>() != null)
-                        collider.GetComponent<Collider>().enabled = true;
+                        collider.layer = LayerMask.NameToLayer("Default");
                 }
 
                 foreach(GameObject collider in nonInter){
                     if(collider.GetComponent<Collider>() != null)
-                        collider.GetComponent<Collider>().enabled = true;
+                        collider.layer = LayerMask.NameToLayer("Default");
                 }
 
                 foreach(GameObject collider in obs){
                     if(collider.GetComponent<Collider>() != null)
-                        collider.GetComponent<Collider>().enabled = true;
+                        collider.layer = LayerMask.NameToLayer("Default");
                 }
             }
             menu.SetActive(!menu.activeSelf);

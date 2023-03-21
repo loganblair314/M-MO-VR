@@ -2585,7 +2585,7 @@ PrefabInstance:
     - target: {fileID: 5396861717727628756, guid: db66b66f761249347b45ef948710e295,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
@@ -3443,7 +3443,7 @@ PrefabInstance:
     - target: {fileID: -6343758879165999463, guid: 74a52ff3cc18f844489a93c033cc4f69,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1017308439657246, guid: 74a52ff3cc18f844489a93c033cc4f69, type: 3}
       propertyPath: m_Name
@@ -3459,15 +3459,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4431790218621932, guid: 74a52ff3cc18f844489a93c033cc4f69, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4431790218621932, guid: 74a52ff3cc18f844489a93c033cc4f69, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4431790218621932, guid: 74a52ff3cc18f844489a93c033cc4f69, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4431790218621932, guid: 74a52ff3cc18f844489a93c033cc4f69, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3541,6 +3541,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: 
   description: Has a curved blade.
+--- !u!65 &233197804
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233197802}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04, y: 0.04, z: 0.2}
+  m_Center: {x: 0, y: 0.02, z: 0.02}
 --- !u!1 &233414718
 GameObject:
   m_ObjectHideFlags: 0
@@ -8908,7 +8921,7 @@ PrefabInstance:
     - target: {fileID: -1490082806506639150, guid: 44dca16095177fc48a2c8a38cfabcca7,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1873792850386078, guid: 44dca16095177fc48a2c8a38cfabcca7, type: 3}
       propertyPath: m_Name
@@ -8924,15 +8937,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4628172161808422, guid: 44dca16095177fc48a2c8a38cfabcca7, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4628172161808422, guid: 44dca16095177fc48a2c8a38cfabcca7, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4628172161808422, guid: 44dca16095177fc48a2c8a38cfabcca7, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4628172161808422, guid: 44dca16095177fc48a2c8a38cfabcca7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9006,6 +9019,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: 
   description: Has a flat and rough blade.
+--- !u!65 &511683301
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511683299}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04, y: 0.04, z: 0.25}
+  m_Center: {x: 0, y: 0.02, z: 0.04}
 --- !u!1 &520785612
 GameObject:
   m_ObjectHideFlags: 0
@@ -10823,7 +10849,7 @@ PrefabInstance:
     - target: {fileID: 4917387778864392607, guid: f7d49d5d637949741803377a17232282,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5978910447518482905, guid: f7d49d5d637949741803377a17232282,
         type: 3}
@@ -10873,22 +10899,22 @@ PrefabInstance:
     - target: {fileID: 6458161794608450097, guid: f7d49d5d637949741803377a17232282,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.98671776
+      value: 0.99049205
       objectReference: {fileID: 0}
     - target: {fileID: 6458161794608450097, guid: f7d49d5d637949741803377a17232282,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0054658744
+      value: 0.017107513
       objectReference: {fileID: 0}
     - target: {fileID: 6458161794608450097, guid: f7d49d5d637949741803377a17232282,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.13744354
+      value: 0.13648193
       objectReference: {fileID: 0}
     - target: {fileID: 6458161794608450097, guid: f7d49d5d637949741803377a17232282,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.08641433
+      value: -0.0023572794
       objectReference: {fileID: 0}
     - target: {fileID: 6458161794608450097, guid: f7d49d5d637949741803377a17232282,
         type: 3}
@@ -10903,7 +10929,7 @@ PrefabInstance:
     - target: {fileID: 6458161794608450097, guid: f7d49d5d637949741803377a17232282,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -9.737
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6458161794608450097, guid: f7d49d5d637949741803377a17232282,
         type: 3}
@@ -10951,8 +10977,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.08, y: 0.08, z: 0.4}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.08, y: 0.04, z: 0.4}
+  m_Center: {x: 0, y: 0.02, z: 0}
 --- !u!1 &637095550
 GameObject:
   m_ObjectHideFlags: 0
@@ -12089,7 +12115,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: 
+  objectName: Laptop
+  description: Runs Windows.
+--- !u!114 &674193049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674193041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Laptop
+  description: Runs Windows.
+--- !u!114 &674193052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674193042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Laptop
   description: Runs Windows.
 --- !u!1001 &677815257
 PrefabInstance:
@@ -12101,7 +12155,7 @@ PrefabInstance:
     - target: {fileID: 4695115338499694039, guid: ddfa315221cd51d43a26448bea82567e,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5164938851966598240, guid: ddfa315221cd51d43a26448bea82567e,
         type: 3}
@@ -12250,6 +12304,7 @@ GameObject:
   - component: {fileID: 706591356}
   - component: {fileID: 706591355}
   - component: {fileID: 706591354}
+  - component: {fileID: 706591360}
   m_Layer: 7
   m_Name: Door
   m_TagString: Untagged
@@ -12530,6 +12585,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706591352}
   m_Mesh: {fileID: 4300000, guid: 9aa7871f668788849a181aa513447ce3, type: 3}
+--- !u!114 &706591360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706591352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: 
 --- !u!1001 &707472836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12701,15 +12770,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4870444074187968, guid: 5107af7df784c6745920d67fc3675ef1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4870444074187968, guid: 5107af7df784c6745920d67fc3675ef1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4870444074187968, guid: 5107af7df784c6745920d67fc3675ef1, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4870444074187968, guid: 5107af7df784c6745920d67fc3675ef1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12758,7 +12827,7 @@ PrefabInstance:
     - target: {fileID: 5860746424624795004, guid: 5107af7df784c6745920d67fc3675ef1,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5107af7df784c6745920d67fc3675ef1, type: 3}
@@ -12788,6 +12857,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: 
   description: Has a round and rough blade.
+--- !u!65 &726842969
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726842967}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04, y: 0.04, z: 0.25}
+  m_Center: {x: 0, y: 0.02, z: 0.05}
 --- !u!1 &728205742
 GameObject:
   m_ObjectHideFlags: 0
@@ -13599,6 +13681,7 @@ GameObject:
   - component: {fileID: 757824614}
   - component: {fileID: 757824613}
   - component: {fileID: 757824612}
+  - component: {fileID: 757824618}
   m_Layer: 7
   m_Name: Door
   m_TagString: Untagged
@@ -13879,6 +13962,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757824610}
   m_Mesh: {fileID: 4300000, guid: 9aa7871f668788849a181aa513447ce3, type: 3}
+--- !u!114 &757824618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757824610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: 
 --- !u!1 &760590153
 GameObject:
   m_ObjectHideFlags: 0
@@ -16416,7 +16513,7 @@ PrefabInstance:
     - target: {fileID: -723017507427555834, guid: a342d99e47b41314382990be9f28fcfe,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1069215874758778, guid: a342d99e47b41314382990be9f28fcfe, type: 3}
       propertyPath: m_Name
@@ -16432,15 +16529,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4954631387241202, guid: a342d99e47b41314382990be9f28fcfe, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4954631387241202, guid: a342d99e47b41314382990be9f28fcfe, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4954631387241202, guid: a342d99e47b41314382990be9f28fcfe, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4954631387241202, guid: a342d99e47b41314382990be9f28fcfe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16514,6 +16611,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: 
   description: Has a flat and broad blade.
+--- !u!65 &871950107
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871950105}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04, y: 0.04, z: 0.2}
+  m_Center: {x: 0, y: 0.02, z: 0.02}
 --- !u!1 &877571529
 GameObject:
   m_ObjectHideFlags: 0
@@ -18318,7 +18428,7 @@ PrefabInstance:
     - target: {fileID: 7302555634527748851, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
@@ -28856,7 +28966,7 @@ PrefabInstance:
     - target: {fileID: 1509416221597966384, guid: 7f267e1d230150340a654e923cf2609a,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f267e1d230150340a654e923cf2609a, type: 3}
@@ -29701,15 +29811,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4142845833602576, guid: 7f0ac61f2e78f14438a74d2cd1715f87, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4142845833602576, guid: 7f0ac61f2e78f14438a74d2cd1715f87, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4142845833602576, guid: 7f0ac61f2e78f14438a74d2cd1715f87, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4142845833602576, guid: 7f0ac61f2e78f14438a74d2cd1715f87, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29758,7 +29868,7 @@ PrefabInstance:
     - target: {fileID: 1498611872304667239, guid: 7f0ac61f2e78f14438a74d2cd1715f87,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f0ac61f2e78f14438a74d2cd1715f87, type: 3}
@@ -29788,6 +29898,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: 
   description: Has a narrow blade.
+--- !u!65 &1723889254
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723889252}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04, y: 0.04, z: 0.2}
+  m_Center: {x: 0, y: 0.02, z: 0.02}
 --- !u!1001 &1724054143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29808,7 +29931,7 @@ PrefabInstance:
     - target: {fileID: 7576404032510074757, guid: fb3e220f766859947b81df91ed527f96,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7889252507155606644, guid: fb3e220f766859947b81df91ed527f96,
         type: 3}
@@ -29926,8 +30049,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.08, y: 0.08, z: 0.4}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.08, y: 0.04, z: 0.4}
+  m_Center: {x: 0, y: 0.02, z: 0}
 --- !u!1001 &1727466974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34835,7 +34958,7 @@ PrefabInstance:
     - target: {fileID: 6204051434897261051, guid: 205900fadbb091d4bb74b3a6253cfbdc,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7242734902216313324, guid: 205900fadbb091d4bb74b3a6253cfbdc,
         type: 3}
@@ -37056,8 +37179,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.08, y: 0.08, z: 0.4}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.08, y: 0.04, z: 0.4}
+  m_Center: {x: 0, y: 0.02, z: 0}
 --- !u!64 &1876566757167763823
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -37125,7 +37248,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -37829,7 +37952,7 @@ MonoBehaviour:
   m_SphereCastRadius: 0.1
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2043
   m_RaycastTriggerInteraction: 1
   m_HitClosestOnly: 0
   m_HoverToSelect: 0
@@ -38326,7 +38449,7 @@ MonoBehaviour:
   m_SphereCastRadius: 0.1
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 2043
   m_RaycastTriggerInteraction: 1
   m_HitClosestOnly: 0
   m_HoverToSelect: 0
@@ -39460,8 +39583,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.08, y: 0.08, z: 0.4}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.08, y: 0.04, z: 0.4}
+  m_Center: {x: 0, y: 0.02, z: 0}
 --- !u!114 &8194668543816443244
 MonoBehaviour:
   m_ObjectHideFlags: 0
