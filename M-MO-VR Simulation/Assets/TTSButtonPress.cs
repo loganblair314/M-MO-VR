@@ -153,7 +153,7 @@ public class TTSButtonPress : MonoBehaviour
         for (int i = 0; i < details.Length; i++)
         {
             _speaker.Speak(details[i]);
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(1);
         }
     }
 
@@ -163,7 +163,7 @@ public class TTSButtonPress : MonoBehaviour
         for (int i = 0; i < noDetails.Length; i++)
         {
             _speaker.Speak(noDetails[i]);
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(2);
         }
     }
 
@@ -173,7 +173,7 @@ public class TTSButtonPress : MonoBehaviour
         for (int i = 0; i < texts.Length; i++)
         {
             _speaker.Speak(texts[i]);
-            yield return new WaitForSeconds(4);
+            yield return new WaitForSeconds(2);
         }
     }
 

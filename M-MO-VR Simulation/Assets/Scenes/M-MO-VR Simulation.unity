@@ -14762,7 +14762,7 @@ PrefabInstance:
     - target: {fileID: 9016400247530179280, guid: ce507b0043d01df4182a13d6d7eec7b7,
         type: 3}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9016400248071283241, guid: ce507b0043d01df4182a13d6d7eec7b7,
         type: 3}
@@ -27614,7 +27614,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   theAngle: 45
-  segments: 10
+  segments: 5
   cam: {fileID: 6085243954930217639}
   controller: {fileID: 0}
   audioClips: []

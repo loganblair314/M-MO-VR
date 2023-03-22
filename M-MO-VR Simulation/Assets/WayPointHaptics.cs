@@ -142,7 +142,7 @@ public class WayPointHaptics : MonoBehaviour
 
                 float distance = Vector3.Distance(hitPoint, playerPosition);
 
-                if ((hit.transform.tag == "Waypoint") && (waypoint.activeSelf) && ((hit.transform.name != "Door") || (hit.transform.name != "Handle (In)") || (hit.transform.name != "Handle (Out)")))
+                if ((hit.transform.tag == "Waypoint") && (waypoint.activeSelf) && ((hit.transform.name != "Handle (In)") || (hit.transform.name != "Handle (Out)")))
                 {
                     timer += Time.deltaTime;
                     if (timer > 0.6) // 0.1)
