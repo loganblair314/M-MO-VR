@@ -19,19 +19,30 @@ public class JoystickNav : MonoBehaviour
 
     private int min;
     private int max;
+    private float time;
 
 
     private bool skipPrev;
     private bool skipNext;
 
 
-    int selectionIndex;
+    public int selectionIndex;
 
     public GameObject Tele;
     public GameObject TeleRings;
     public GameObject Waypoints;
     public GameObject MenuM;
     public GameObject XR;
+    public GameObject highlight1, highlight2, highlight3, highlight4, highlight5, highlight6;
+
+    public AudioSource source;
+
+    public AudioClip prevButton;
+    public AudioClip resetButton;
+    public AudioClip nextButton;
+    public AudioClip zoomOutButton;
+    public AudioClip zoomInButton;
+    public AudioClip exitButton;
 
     TeleportManager teleManager;
     TimerHandler timer;
@@ -42,6 +53,7 @@ public class JoystickNav : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        source = gameObject.GetComponent<AudioSource>();
         active = false;
         reset = false;
 
@@ -105,11 +117,13 @@ public class JoystickNav : MonoBehaviour
             if(input.y > 0.25){
                 //Debug.Log("UP");
                 setInput(1);
-                
+                readButton();
+
             }
             else if(input.y < -0.25){
                 //Debug.Log("DOWN");
                 setInput(-1);
+                readButton();
             }
             else{
                 //Debug.Log("ZEROED");
@@ -170,6 +184,7 @@ public class JoystickNav : MonoBehaviour
             selectionIndex --;
         Highlights[selectionIndex].SetActive(true);
         firstCall = false;
+        //readButton();
     }
 
     private void doDown(){
@@ -187,6 +202,7 @@ public class JoystickNav : MonoBehaviour
 
         Highlights[selectionIndex].SetActive(true);
         firstCall = false;
+        //readButton();
     }
 
     private void checkIndex(){
@@ -253,6 +269,43 @@ public class JoystickNav : MonoBehaviour
             default:
                 Debug.Log("Somehow the Switch broke");
                 break;  
+        }
+    }
+
+    private void readButton()
+    {
+        if ((source.isPlaying == false))
+        {
+            if (highlight1.activeSelf)
+            {
+                Debug.Log("Previous button.");
+                source.PlayOneShot(prevButton);
+            }
+            else if (highlight2.activeSelf)
+            {
+                Debug.Log("Reset button.");
+                source.PlayOneShot(resetButton);
+            }
+            else if (highlight3.activeSelf)
+            {
+                Debug.Log("Next button.");
+                source.PlayOneShot(nextButton);
+            }
+            else if (highlight4.activeSelf)
+            {
+                Debug.Log("Zoom In button.");
+                source.PlayOneShot(zoomInButton);
+            }
+            else if (highlight5.activeSelf)
+            {
+                Debug.Log("Zoom Out button.");
+                source.PlayOneShot(zoomOutButton);
+            }
+            else if (highlight6.activeSelf)
+            {
+                Debug.Log("Quit button.");
+                source.PlayOneShot(exitButton);
+            }
         }
     }
 }

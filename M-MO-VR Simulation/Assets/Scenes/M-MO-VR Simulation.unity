@@ -23465,6 +23465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1291278572}
   - component: {fileID: 1291278573}
+  - component: {fileID: 1291278574}
   m_Layer: 0
   m_Name: Joystick Nav
   m_TagString: Untagged
@@ -23533,11 +23534,121 @@ MonoBehaviour:
   - {fileID: 883824221}
   - {fileID: 1468776982}
   - {fileID: 2090060413}
+  selectionIndex: 0
   Tele: {fileID: 877571529}
   TeleRings: {fileID: 314635925}
   Waypoints: {fileID: 1584311383}
   MenuM: {fileID: 480484478088346017}
   XR: {fileID: 6085243954600843298}
+  highlight1: {fileID: 472736393}
+  highlight2: {fileID: 356485450}
+  highlight3: {fileID: 2006803942}
+  highlight4: {fileID: 883824221}
+  highlight5: {fileID: 1468776982}
+  highlight6: {fileID: 2090060413}
+  source: {fileID: 0}
+  prevButton: {fileID: 8300000, guid: 9cec1fffb3ef8814d9d3ea1020f70f05, type: 3}
+  resetButton: {fileID: 8300000, guid: 005f442eff218a24491b6dda97688acc, type: 3}
+  nextButton: {fileID: 8300000, guid: f60171b4535ba824e910d588fa5e0201, type: 3}
+  zoomOutButton: {fileID: 8300000, guid: 1d8b87cc0a76eb34384bbcf17cfe9692, type: 3}
+  zoomInButton: {fileID: 8300000, guid: ff24b51af2b945445aad077c08229337, type: 3}
+  exitButton: {fileID: 8300000, guid: c482b7e25bdfcb14fb918f9ce10d328c, type: 3}
+--- !u!82 &1291278574
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291278571}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1294633032
 GameObject:
   m_ObjectHideFlags: 0
@@ -39550,6 +39661,7 @@ MonoBehaviour:
   lvl4Time: {fileID: 1543947197}
   lvl5Time: {fileID: 824230516}
   lvl6Time: {fileID: 285755764}
+  nextButton: {fileID: 0}
 --- !u!114 &6085243954930217636
 MonoBehaviour:
   m_ObjectHideFlags: 0
