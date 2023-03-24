@@ -32,6 +32,8 @@ public class UI : MonoBehaviour
     {
         uiDisplay.text = text[index];
         prevButton.SetActive(false);
+        testLights();
+        testLights();
     }
     
 
