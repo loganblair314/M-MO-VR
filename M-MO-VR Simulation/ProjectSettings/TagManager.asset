@@ -14,6 +14,7 @@ TagManager:
   - Ceiling
   - Obstacle
   - Waypoint
+  - Background3D
   layers:
   - Default
   - TransparentFX
@@ -27,8 +28,8 @@ TagManager:
   - Ignore Sonar
   - Ignore Player
   - 
-  - 
-  - 
+  - UI-Foreground
+  - UI-Background
   - 
   - 
   - 
