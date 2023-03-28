@@ -15,6 +15,9 @@ TagManager:
   - Obstacle
   - Waypoint
   - Background3D
+  - BackgroundUI
+  - Foreground
+  - Foreground Interactable
   layers:
   - Default
   - TransparentFX
@@ -28,8 +31,8 @@ TagManager:
   - Ignore Sonar
   - Ignore Player
   - 
-  - UI-Foreground
-  - UI-Background
+  - 
+  - 
   - 
   - 
   - 

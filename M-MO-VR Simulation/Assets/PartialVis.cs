@@ -16,12 +16,16 @@ public class PartialVis : MonoBehaviour
     public TextMeshProUGUI details;
     public TextMeshProUGUI obj_name;
 
+    [SerializeField] Color32 trueColor;
+    [SerializeField] Color32 falseColor;
+
     Object objectInfo;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        trueColor = Color.green;
+        falseColor = Color.red;
     }
 
     // Update is called once per frame
@@ -50,10 +54,10 @@ public class PartialVis : MonoBehaviour
             //Set the interactable field appropriately
             if(hit.collider.tag == "Interactable"){
                 interactable.text = "True";
-                interactable.color = new Color32(0,255,0,255);
+                interactable.color = trueColor;
             } else{
                 interactable.text = "False";
-                interactable.color = new Color32(255,0,0,255);
+                interactable.color = falseColor;
             }
 
 
@@ -76,6 +80,13 @@ public class PartialVis : MonoBehaviour
     public void resetText(){
         interactable.text = "";
         details.text = "";
+    }
+
+    public void setColors(Color32 trueC, Color32 falseC){
+        trueColor = trueC;
+        falseColor = falseC;
+        
+        return;
     }
     
 }
