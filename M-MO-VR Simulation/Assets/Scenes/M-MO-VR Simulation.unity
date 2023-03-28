@@ -27172,7 +27172,6 @@ MonoBehaviour:
   pvManager: {fileID: 1694093676}
   locomotion: {fileID: 1694093676}
   JoyNav: {fileID: 1694093676}
-  pVOpen: 0
 --- !u!1001 &1556273075
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36980,7 +36979,6 @@ MonoBehaviour:
   pvManager: {fileID: 1548537455}
   locomotion: {fileID: 6085243954591651001}
   JoyNav: {fileID: 1291278571}
-  pVOpen: 0
 --- !u!1 &480484478088346017
 GameObject:
   m_ObjectHideFlags: 0
