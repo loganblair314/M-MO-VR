@@ -118,11 +118,11 @@ public class ColorManager : MonoBehaviour
             break;
 
             case 1:
-                changeForegroundColors(Color.cyan, Color.blue, Color.yellow);
+                changeForegroundColors(foregroundColor, tColor, fColor);
             break;
 
             case 2:
-                changeBackgroundColors(Color.cyan);
+                changeBackgroundColors(backgroundColor);
             break;
             
             default:
