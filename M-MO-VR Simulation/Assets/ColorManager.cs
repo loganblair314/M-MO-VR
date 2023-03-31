@@ -8,22 +8,22 @@ using TMPro;
 public class ColorManager : MonoBehaviour
 {
 
-    GameObject[] foreground;
-    GameObject[] background;
+    [SerializeField] GameObject[] foreground;
+    [SerializeField] GameObject[] background;
 
     [SerializeField] Color32 backgroundColor = Color.black;
     [SerializeField] Color32 foregroundColor = Color.white;
     [SerializeField] Color32 tColor = Color.green;
     [SerializeField] Color32 fColor = Color.red;
 
-    //public GameObject test;
+    public GameObject testObj;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        foreground = FindGameObjectsWithTags(new string[]{"Foreground","Foreground Interactable"});
-        background = FindGameObjectsWithTags(new string[]{"Background3D","BackgroundUI"});
+        //foreground = FindGameObjectsWithTags(new string[]{"Foreground","Foreground Interactable"});
+        //background = FindGameObjectsWithTags(new string[]{"Background3D","BackgroundUI"});
     }
 
     // Update is called once per frame
@@ -32,6 +32,8 @@ public class ColorManager : MonoBehaviour
         //Debug.Log(GetComponent<Renderer>().material.color);
         //changeBackgroundColors(Color.cyan);
         //test.GetComponent<Image>().color = Color.cyan;
+        //changeForegroundColors(Color.cyan, Color.blue, Color.yellow);
+        //testObj.GetComponent<TextMeshProUGUI>().color = Color.cyan;
     }
 
     public void defaultColors(){
@@ -69,10 +71,12 @@ public class ColorManager : MonoBehaviour
             //If the foreground is the standard UI text
             if(item.tag == "Foreground"){
                 item.GetComponent<TextMeshProUGUI>().color = color;
+                //Debug.Log("Changed the color of "+item);
             }
             //Else, it is the true/false text
             else{
                 item.GetComponent<PartialVis>().setColors(tColor, fColor);
+                //Debug.Log("Changing the color of"+item);
             }
         }
     }
@@ -92,6 +96,7 @@ public class ColorManager : MonoBehaviour
         }
     }
 
+    //Can't be used due to how we use menus and stuff. This does not detect inactive GameObjects, which is the default state of the menu and pv
     GameObject[] FindGameObjectsWithTags(params string[] tags)
      {
          var all = new List<GameObject>() ;
@@ -103,5 +108,26 @@ public class ColorManager : MonoBehaviour
          }
          
          return all.ToArray() ;
+     }
+
+     public void test(int val){
+        switch (val)
+        {   
+            case 0:
+                defaultColors();
+            break;
+
+            case 1:
+                changeForegroundColors(Color.cyan, Color.blue, Color.yellow);
+            break;
+
+            case 2:
+                changeBackgroundColors(Color.cyan);
+            break;
+            
+            default:
+                Debug.Log("The switch fucked up");
+                break;
+        }
      }
 }
