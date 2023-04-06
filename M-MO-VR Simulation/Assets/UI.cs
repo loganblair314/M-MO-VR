@@ -18,6 +18,7 @@ public class UI : MonoBehaviour
     //private bool hidden = false;
 
     public int index = 0;
+    TeleportManager manager;
 
 
 
@@ -29,7 +30,8 @@ public class UI : MonoBehaviour
     
     // Start is called before the first frame update
     void Start()
-    {
+    {   
+        manager = GameObject.FindGameObjectWithTag("TeleportManager").GetComponent<TeleportManager>();
         uiDisplay.text = text[index];
         prevButton.SetActive(false);
         testLights();
@@ -61,10 +63,10 @@ public class UI : MonoBehaviour
     }
 
     public void testNext(){
-        if(index != 6){
+        if(index != manager.roomNum()-1){
             index ++;
             uiDisplay.text = text[index];
-            if(index == 6){
+            if(index == manager.roomNum()-1){
                 nextButton.SetActive(false);
             }
             if(index == 1){
@@ -84,7 +86,7 @@ public class UI : MonoBehaviour
             if(index == 0){
                 prevButton.SetActive(false);
             }
-            if(index == 5){
+            if(index == manager.roomNum()-2){
                 nextButton.SetActive(true);
             }
         }

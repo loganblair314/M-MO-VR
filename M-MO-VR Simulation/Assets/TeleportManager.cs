@@ -9,6 +9,8 @@ public class TeleportManager : MonoBehaviour
     public GameObject[] Spawns;
 
     public static int index = 0;
+
+    [SerializeField] int NumRooms;
     
     //public GameObject DDR_Spawn;
 
@@ -56,7 +58,7 @@ public class TeleportManager : MonoBehaviour
     }
 
     public void nextRoom(){
-        if(index != 6){
+        if(index != NumRooms - 1){
             index ++;
             Current_Spawn = Spawns[index];
             //Debug.Log("The current index is" + index);
@@ -64,11 +66,15 @@ public class TeleportManager : MonoBehaviour
     }
 
     public void nextRoomTP(){
-        if(index != 6){
+        if(index != NumRooms - 1){
             index ++;
             Current_Spawn = Spawns[index];
             //Debug.Log("The current index is" + index);
             resetPosition();
         }
+    }
+
+    public int roomNum(){
+        return NumRooms;
     }
 }

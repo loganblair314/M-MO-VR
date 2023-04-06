@@ -214,7 +214,7 @@ public class JoystickNav : MonoBehaviour
                 doDown();
             
         }
-        else if(ui.index == 6){
+        else if(ui.index == teleManager.roomNum()-1){
             //Disable selection for Next Buttom
             skipNext = true;
             if(selectionIndex == 2)

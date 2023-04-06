@@ -19741,6 +19741,8 @@ MonoBehaviour:
   - {fileID: 138695269}
   - {fileID: 129640446}
   - {fileID: 801851325}
+  - {fileID: 1503629586}
+  NumRooms: 8
 --- !u!1 &877985071
 GameObject:
   m_ObjectHideFlags: 0
@@ -50736,8 +50738,10 @@ MonoBehaviour:
     the end. '
   - In this seventh room, the data display room, you can view the amount of time
     it took you to traverse each level.
+  - This last room is the office room
   size: 32
   index: 0
+  NumRooms: 8
 --- !u!114 &9016400247233348048
 MonoBehaviour:
   m_ObjectHideFlags: 0
