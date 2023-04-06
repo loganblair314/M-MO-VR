@@ -73,15 +73,15 @@ public class RayCone : MonoBehaviour
 
         float ClDis = 999; // the closest distance between the object and a player
 
-        for (int i = startAngle; i <= finishAngle; i += inc) // Angle from forward
+        for (int x = startAngle; x <= finishAngle; x += inc) // Angle from forward, X position
         {
             // step through and find each target point
-            for (int j = startAngle; j <= finishAngle; j += inc) // Angle from forward
+            for (int y = startAngle; y <= finishAngle; y += inc) // Angle from forward, Y position
             {
                 // step through and find each target point
-                for (int k = startAngle; k <= finishAngle; k += inc) // Angle from forward
+                for (int z = startAngle; z <= finishAngle; z += inc) // Angle from forward, Z position
                 {
-                    targetPos = new Vector3(i, j, k) + (cam.forward * 90);
+                    targetPos = new Vector3(x, y, z) + (cam.forward * 90);
                     Vector3 newTarg = transform.TransformDirection(targetPos);
                     Ray ray = new Ray(startPos, targetPos);
 
@@ -171,34 +171,29 @@ public class RayCone : MonoBehaviour
         {
             if (ClDis > 0 && ClDis <= 2)
             {
-                Debug.Log("Object is between 0 and 3 units away.");
+                Debug.Log("Object is between 0 and 2 units away.");
                 AudSrc.PlayOneShot(note);
             }
             else if (ClDis > 2 && ClDis <= 4)
             {
-                Debug.Log("Object is between 3 and 6 units away.");
+                Debug.Log("Object is between 2 and 4 units away.");
                 AudSrc.PlayDelayed(0.25F);
             }
             else if (ClDis > 4 && ClDis <= 7)
             {
-                Debug.Log("Object is between 6 and 9 units away.");
+                Debug.Log("Object is between 4 and 7 units away.");
                 AudSrc.PlayDelayed(0.5F);
             }
             else if (ClDis > 7 && ClDis <= 11)
             {
-                Debug.Log("Object is between 9.6 and 12.8 units away.");
+                Debug.Log("Object is between 7 and 11 units away.");
                 AudSrc.PlayDelayed(0.75F);
             }
             else if (ClDis > 11 && ClDis <= 16)
             {
-                Debug.Log("Object is between 12 and 15 units away.");
+                Debug.Log("Object is between 11 and 16 units away.");
                 AudSrc.PlayDelayed(1F);
-            }/*
-            else if (ClDis > 16 && ClDis <= 20)
-            {
-                Debug.Log("Object is between 16 and 20 units away.");
-                AudSrc.PlayDelayed(1F);
-            }*/
+            }
             else
             {
                 Debug.Log("No object detected");
