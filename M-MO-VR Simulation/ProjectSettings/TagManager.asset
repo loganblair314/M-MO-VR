@@ -18,6 +18,7 @@ TagManager:
   - BackgroundUI
   - Foreground
   - Foreground Interactable
+  - ColorManager
   layers:
   - Default
   - TransparentFX

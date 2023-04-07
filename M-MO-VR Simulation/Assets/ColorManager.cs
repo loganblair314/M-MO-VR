@@ -18,12 +18,22 @@ public class ColorManager : MonoBehaviour
 
     public GameObject testObj;
 
+    List<ColorOption> Colors = new List<ColorOption>();
+    int listIndex;
+
 
     // Start is called before the first frame update
     void Start()
     {
         //foreground = FindGameObjectsWithTags(new string[]{"Foreground","Foreground Interactable"});
         //background = FindGameObjectsWithTags(new string[]{"Background3D","BackgroundUI"});
+
+
+        //Add colors to the list of contrasting colors
+        Colors.Add(new ColorOption());
+        Colors.Add(new ColorOption(Color.yellow,Color.blue));
+        listIndex = 0;
+
     }
 
     // Update is called once per frame
@@ -61,6 +71,22 @@ public class ColorManager : MonoBehaviour
             //Else, it is the true/false text
             else{
                 item.GetComponent<PartialVis>().setColors(Color.green, Color.red);
+            }
+        }
+    }
+
+    void changeForegroundColors(Color32 color){
+        foreach (var item in foreground)
+        {   
+            //If the foreground is the standard UI text
+            if(item.tag == "Foreground"){
+                item.GetComponent<TextMeshProUGUI>().color = color;
+                //Debug.Log("Changed the color of "+item);
+            }
+            //Else, it is the true/false text
+            else{
+                item.GetComponent<PartialVis>().setColors(color, color);
+                //Debug.Log("Changing the color of"+item);
             }
         }
     }
@@ -130,4 +156,40 @@ public class ColorManager : MonoBehaviour
                 break;
         }
      }
+
+    public void cycleColors(){
+        if(listIndex+1 != Colors.Count()){
+            listIndex++;
+        }
+        else{
+            listIndex = 0;
+        }
+
+
+        if(Colors[listIndex].isDefault)
+            changeForegroundColors(Colors[listIndex].foregroundColor, Color.green, Color.red);
+        else   
+            changeForegroundColors(Colors[listIndex].foregroundColor);
+        changeBackgroundColors(Colors[listIndex].backgroundColor);
+    }
+}
+
+//Preset Options for the Colors
+public class ColorOption{
+    public Color32 foregroundColor;
+    public Color32 backgroundColor;
+    public bool isDefault;
+
+    public ColorOption(){
+        foregroundColor = Color.white;
+        backgroundColor = Color.black;
+        isDefault = true;
+
+    }
+
+    public ColorOption(Color fore, Color back){
+        foregroundColor = fore;
+        backgroundColor = back;
+        isDefault = false;
+    }
 }

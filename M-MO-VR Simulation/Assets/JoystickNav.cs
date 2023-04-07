@@ -33,7 +33,7 @@ public class JoystickNav : MonoBehaviour
     public GameObject Waypoints;
     public GameObject MenuM;
     public GameObject XR;
-    public GameObject highlight1, highlight2, highlight3, highlight4, highlight5, highlight6;
+    public GameObject highlight1, highlight2, highlight3, highlight4, highlight5, highlight6, highlight7;
 
     public AudioSource source;
 
@@ -49,6 +49,8 @@ public class JoystickNav : MonoBehaviour
     WayPointHaptics way;
     MenuManager menu;
     TTSButtonPress tts;
+
+    ColorManager colors;
 
     // Start is called before the first frame update
     void Start()
@@ -80,6 +82,7 @@ public class JoystickNav : MonoBehaviour
         if(XR.GetComponent<TTSButtonPress>() != null){
            tts = XR.GetComponent<TTSButtonPress>();
         }
+        colors = GameObject.FindGameObjectWithTag("ColorManager").GetComponent<ColorManager>();
 
         max = Highlights.Length - 1;
     }
@@ -264,8 +267,13 @@ public class JoystickNav : MonoBehaviour
                 menu.zoomOut();
                 break; 
             case 5:
-                menu.quitGame();
+                //Color manager
+                colors.cycleColors();
                 break; 
+
+            case 6:
+                menu.quitGame();
+                break;
             default:
                 Debug.Log("Somehow the Switch broke");
                 break;  
@@ -302,6 +310,12 @@ public class JoystickNav : MonoBehaviour
                 source.PlayOneShot(zoomOutButton);
             }
             else if (highlight6.activeSelf)
+            {
+                Debug.Log("Contrast button.");
+                //Justin - add the audio here;
+            }
+
+            else if (highlight7.activeSelf)
             {
                 Debug.Log("Quit button.");
                 source.PlayOneShot(exitButton);
