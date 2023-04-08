@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589245, b: 0.2978263, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731941, g: 0.13414887, b: 0.12107834, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -61046,6 +61046,9 @@ MonoBehaviour:
   handle712: {fileID: 624742037}
   handle721: {fileID: 2000497344}
   handle722: {fileID: 1115434485}
+  door73: {fileID: 1231764631}
+  handle731: {fileID: 1952191930}
+  handle732: {fileID: 1067169663}
   player: {fileID: 6085243954600843298}
   InterLayer: 0
   NonInterLayer: 0
