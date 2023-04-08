@@ -42,13 +42,15 @@ public class JoystickNav : MonoBehaviour
     public AudioClip nextButton;
     public AudioClip zoomOutButton;
     public AudioClip zoomInButton;
+    public AudioClip contrastButton;
     public AudioClip exitButton;
 
     TeleportManager teleManager;
     TimerHandler timer;
     WayPointHaptics way;
     MenuManager menu;
-    TTSButtonPress tts;
+    //TTSButtonPress tts;
+    DoorHandler door;
 
     ColorManager colors;
 
@@ -79,8 +81,8 @@ public class JoystickNav : MonoBehaviour
            menu = MenuM.GetComponent<MenuManager>();
         }
 
-        if(XR.GetComponent<TTSButtonPress>() != null){
-           tts = XR.GetComponent<TTSButtonPress>();
+        if(XR.GetComponent<DoorHandler>() != null){
+           door = XR.GetComponent<DoorHandler>();
         }
         colors = GameObject.FindGameObjectWithTag("ColorManager").GetComponent<ColorManager>();
 
@@ -252,7 +254,7 @@ public class JoystickNav : MonoBehaviour
             case 1:
                 teleManager.resetPosition();
                 way.ResetWaypoints();
-                tts.ResetDoors();
+                door.ResetDoors();
                 break; 
             case 2:
                 ui.testNext();
@@ -312,7 +314,7 @@ public class JoystickNav : MonoBehaviour
             else if (highlight6.activeSelf)
             {
                 Debug.Log("Contrast button.");
-                //Justin - add the audio here;
+                source.PlayOneShot(contrastButton);
             }
 
             else if (highlight7.activeSelf)

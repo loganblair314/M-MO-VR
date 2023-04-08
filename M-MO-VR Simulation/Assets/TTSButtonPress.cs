@@ -15,21 +15,14 @@ public class TTSButtonPress : MonoBehaviour
     private InputDevice targetDevice;
     [SerializeField] private TTSSpeaker _speaker;
     private int currLevel;
-    private Vector3 lvl4DoorPos, lvl5DoorPos;
-    private Quaternion lvl4DoorRot, lvl5DoorRot;
     private float time;
     public GameObject partialVis;
-    public GameObject lvl4Door, lvl5Door;
     [SerializeField] private TextMeshProUGUI lvl1Des, lvl2Des, lvl3Des, lvl4Des, lvl5Des, lvl6Des, pVLabel1, pVLabel2, pVLabel3, pVName, pVInteractable, pVDetails, lvl1Time, lvl2Time, lvl3Time, lvl4Time, lvl5Time, lvl6Time, nextButton;
 
     // Start is called before the first frame update
     void Start()
     {
         currLevel = TeleportManager.index;
-        lvl4DoorPos = lvl4Door.transform.position;
-        lvl4DoorRot = lvl4Door.transform.rotation;
-        lvl5DoorPos = lvl5Door.transform.position;
-        lvl5DoorRot = lvl5Door.transform.rotation;
     }
 
     // Update is called once per frame
@@ -48,10 +41,6 @@ public class TTSButtonPress : MonoBehaviour
         {
             StopAllCoroutines();
             _speaker.Stop();
-            lvl4Door.transform.position = lvl4DoorPos;
-            lvl4Door.transform.rotation = lvl4DoorRot;
-            lvl5Door.transform.position = lvl5DoorPos;
-            lvl5Door.transform.rotation = lvl5DoorRot;
             currLevel = TeleportManager.index;
             time = 0;
         }
@@ -175,13 +164,5 @@ public class TTSButtonPress : MonoBehaviour
             _speaker.Speak(texts[i]);
             yield return new WaitForSeconds(2);
         }
-    }
-
-    public void ResetDoors()
-    {
-        lvl4Door.transform.position = lvl4DoorPos;
-        lvl4Door.transform.rotation = lvl4DoorRot;
-        lvl5Door.transform.position = lvl5DoorPos;
-        lvl5Door.transform.rotation = lvl5DoorRot;
     }
 }

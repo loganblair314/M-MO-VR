@@ -28745,6 +28745,7 @@ MonoBehaviour:
   nextButton: {fileID: 8300000, guid: f60171b4535ba824e910d588fa5e0201, type: 3}
   zoomOutButton: {fileID: 8300000, guid: 1d8b87cc0a76eb34384bbcf17cfe9692, type: 3}
   zoomInButton: {fileID: 8300000, guid: ff24b51af2b945445aad077c08229337, type: 3}
+  contrastButton: {fileID: 8300000, guid: b6c465713a9f36f418051aa8609ff20c, type: 3}
   exitButton: {fileID: 8300000, guid: c482b7e25bdfcb14fb918f9ce10d328c, type: 3}
 --- !u!82 &1291278574
 AudioSource:
@@ -31373,8 +31374,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6085243954600843300}
-        m_TargetAssemblyTypeName: TTSButtonPress, Assembly-CSharp
+      - m_Target: {fileID: 6085243953673564572}
+        m_TargetAssemblyTypeName: DoorHandler, Assembly-CSharp
         m_MethodName: ResetDoors
         m_Mode: 1
         m_Arguments:
@@ -49231,6 +49232,12 @@ MonoBehaviour:
   door5: {fileID: 757824610}
   handle51: {fileID: 432427686}
   handle52: {fileID: 858065036}
+  door71: {fileID: 587808857}
+  door72: {fileID: 1293903001}
+  handle711: {fileID: 1013104267}
+  handle712: {fileID: 624742037}
+  handle721: {fileID: 2000497344}
+  handle722: {fileID: 1115434485}
   player: {fileID: 6085243954600843298}
   InterLayer: 0
   NonInterLayer: 0
@@ -50096,8 +50103,6 @@ MonoBehaviour:
   controller: {fileID: 0}
   _speaker: {fileID: 75668700}
   partialVis: {fileID: 281191878}
-  lvl4Door: {fileID: 706591352}
-  lvl5Door: {fileID: 757824610}
   lvl1Des: {fileID: 7045975187646959368}
   lvl2Des: {fileID: 7045975187996196513}
   lvl3Des: {fileID: 7045975189186926994}

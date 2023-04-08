@@ -10,9 +10,6 @@ public class TimerHandler : MonoBehaviour
     private float timer1, timer2, timer3, timer4, timer5, timer6;
     private float minutes1, minutes2, minutes3, minutes4, minutes5, minutes6;
     private float seconds1, seconds2, seconds3, seconds4, seconds5, seconds6;
-    private float smallestMin1;
-    private float smallestSec1;
-    private bool resetTime;
     public TextMeshProUGUI textField1, textField2, textField3, textField4, textField5, textField6;
     //private bool levelFinished;
     public string objectTag = "Player";
