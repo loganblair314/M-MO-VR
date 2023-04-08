@@ -8,30 +8,37 @@ public class DoorHandler : MonoBehaviour
 {
     [SerializeField] XRController controller;
     private InputDevice targetDevice1, targetDevice2;
-    public GameObject door4, handle41, handle42, door5, handle51, handle52, door71, door72, handle711, handle712, handle721, handle722, player;
-    private Vector3 lvl4DoorPos, lvl5DoorPos, lvl71DoorPos, lvl72DoorPos;
-    private Quaternion lvl4DoorRot, lvl5DoorRot, lvl71DoorRot, lvl72DoorRot;
+    public GameObject door4, handle41, handle42, door5, handle51, handle52, door71, door72, handle711, handle712, handle721, handle722, door73, handle731, handle732, player;
+    private Vector3 lvl4DoorPos, lvl5DoorPos, lvl71DoorPos, lvl72DoorPos, lvl73DoorPos;
+    private Quaternion lvl4DoorRot, lvl5DoorRot, lvl71DoorRot, lvl72DoorRot, lvl73DoorRot;
     public int InterLayer, NonInterLayer, NonLayer;
     private int currLevel;
-    private float timer, distanceD4, distanceD5, distanceD71, distanceD72, distanceP;
+    private float timer, distanceD4, distanceD5, distanceD71, distanceD72, distanceD73, distanceP;
     private bool doorGrabbed;
 
     // Start is called before the first frame update
     void Start()
     {
         doorGrabbed = false;
+
         door4.GetComponent<BoxCollider>().enabled = true;
         door5.GetComponent<BoxCollider>().enabled = true;
         door71.GetComponent<BoxCollider>().enabled = true;
         door72.GetComponent<BoxCollider>().enabled = true;
+        door73.GetComponent<BoxCollider>().enabled = true;
+
         InterLayer = LayerMask.NameToLayer("Interactable");
         NonInterLayer = LayerMask.NameToLayer("Non-Interactable");
         NonLayer = LayerMask.NameToLayer("Ignore Player"); 
+
         door4.GetComponent<XRGrabInteractable>().enabled = false;
         door5.GetComponent<XRGrabInteractable>().enabled = false;
         door71.GetComponent<XRGrabInteractable>().enabled = false;
         door72.GetComponent<XRGrabInteractable>().enabled = false;
+        door73.GetComponent<XRGrabInteractable>().enabled = false;
+
         currLevel = TeleportManager.index;
+
         lvl4DoorPos = door4.transform.position;
         lvl4DoorRot = door4.transform.rotation;
         lvl5DoorPos = door5.transform.position;
@@ -40,6 +47,8 @@ public class DoorHandler : MonoBehaviour
         lvl71DoorRot = door71.transform.rotation;
         lvl72DoorPos = door72.transform.position;
         lvl72DoorRot = door72.transform.rotation;
+        lvl73DoorPos = door73.transform.position;
+        lvl73DoorRot = door73.transform.rotation;
     }
 
     // Update is called once per frame
@@ -74,6 +83,8 @@ public class DoorHandler : MonoBehaviour
             door71.transform.rotation = lvl71DoorRot;
             door72.transform.position = lvl72DoorPos;
             door72.transform.rotation = lvl72DoorRot;
+            door73.transform.position = lvl73DoorPos;
+            door73.transform.rotation = lvl73DoorRot;
             currLevel = TeleportManager.index;
         }
     
@@ -84,6 +95,10 @@ public class DoorHandler : MonoBehaviour
             {
                 door4.GetComponent<XRGrabInteractable>().enabled = true;
             }
+            else
+            {
+                door4.GetComponent<XRGrabInteractable>().enabled = false;
+            }
         }
 
         if (TeleportManager.index == 4)
@@ -93,20 +108,43 @@ public class DoorHandler : MonoBehaviour
             {
                 door5.GetComponent<XRGrabInteractable>().enabled = true;
             }
+            else
+            {
+                door5.GetComponent<XRGrabInteractable>().enabled = false;
+            }
         }
 
         if (TeleportManager.index == 7)
         {
             distanceD71 = Vector3.Distance(player.transform.position, door71.transform.position);
             distanceD72 = Vector3.Distance(player.transform.position, door72.transform.position);
+            distanceD73 = Vector3.Distance(player.transform.position, door73.transform.position);
+
             if (distanceD71 < 3)
             {
-                Debug.Log("Activating door.");
                 door71.GetComponent<XRGrabInteractable>().enabled = true;
             }
-            else if (distanceD72 < 3)
+            else
+            {
+                door71.GetComponent<XRGrabInteractable>().enabled = false;
+            }
+            
+            if (distanceD72 < 3)
             {
                 door72.GetComponent<XRGrabInteractable>().enabled = true;
+            }
+            else
+            {
+                door72.GetComponent<XRGrabInteractable>().enabled = false;
+            }
+
+            if (distanceD73 < 3)
+            {
+                door73.GetComponent<XRGrabInteractable>().enabled = true;
+            }
+            else
+            {
+                door73.GetComponent<XRGrabInteractable>().enabled = false;
             }
         }
 
@@ -147,8 +185,12 @@ public class DoorHandler : MonoBehaviour
             handle712.layer = NonLayer;
             handle721.layer = NonLayer;
             handle722.layer = NonLayer;
+            handle731.layer = NonLayer;
+            handle732.layer = NonLayer;
+
             door71.GetComponent<BoxCollider>().enabled = false;
             door72.GetComponent<BoxCollider>().enabled = false;
+            door73.GetComponent<BoxCollider>().enabled = false;
         }
     }
 
@@ -171,13 +213,17 @@ public class DoorHandler : MonoBehaviour
         }
         else if (TeleportManager.index == 7)
         {
-            Debug.Log("Door in Office Grabbed");
+            Debug.Log("Door in Office let go.");
             handle711.layer = InterLayer;
             handle712.layer = InterLayer;
             handle721.layer = InterLayer;
             handle722.layer = InterLayer;
+            handle731.layer = InterLayer;
+            handle732.layer = InterLayer;
+
             door71.GetComponent<BoxCollider>().enabled = true;
             door72.GetComponent<BoxCollider>().enabled = true;
+            door73.GetComponent<BoxCollider>().enabled = true;
         }
     }
 
@@ -191,5 +237,7 @@ public class DoorHandler : MonoBehaviour
         door71.transform.rotation = lvl71DoorRot;
         door72.transform.position = lvl72DoorPos;
         door72.transform.rotation = lvl72DoorRot;
+        door73.transform.position = lvl73DoorPos;
+        door73.transform.rotation = lvl73DoorRot;
     }
 }
