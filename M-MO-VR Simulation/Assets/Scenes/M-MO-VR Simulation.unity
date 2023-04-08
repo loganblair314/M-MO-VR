@@ -4827,20 +4827,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 233414718}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &237037431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6085243953673564518}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c535e7a7716376428325afd9e9e8e30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 0}
-  raycastOrigin: {fileID: 6085243953673564519}
 --- !u!1 &238933989
 GameObject:
   m_ObjectHideFlags: 0
@@ -7371,7 +7357,6 @@ Transform:
   - {fileID: 801851326}
   - {fileID: 1657173697}
   - {fileID: 2083167006880833578}
-  - {fileID: 1598590908}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9087,20 +9072,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423871822}
   m_CullTransparentMesh: 1
---- !u!114 &430062956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9016400249087185491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097ee0417184e4c4784876607f379713, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speaker: {fileID: 75668700}
-  textField: {fileID: 7045975188759506216}
 --- !u!1 &432427686
 GameObject:
   m_ObjectHideFlags: 0
@@ -18075,19 +18046,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 782946902}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2083167008010707884}
-        m_TargetAssemblyTypeName: TTSSpeakerInput, Assembly-CSharp
-        m_MethodName: SayPhrase
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &782946902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21312,19 +21271,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 942835696}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1803574981}
-        m_TargetAssemblyTypeName: TTSSpeakerInputBoard, Assembly-CSharp
-        m_MethodName: SayPhrase
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &942835696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21980,7 +21927,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2083167008010707884}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TTSSpeakerInput, Assembly-CSharp
         m_MethodName: SayPhrase
         m_Mode: 1
@@ -35146,121 +35093,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590822306}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1598590907
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 349328824}
-    m_Modifications:
-    - target: {fileID: 9016400248071283241, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.15384616
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016400248071283241, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016400248071283241, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.15384616
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016400248445369936, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.15384616
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016400248445369936, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016400248699416680, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: m_Name
-      value: Display Board v2 (Room 7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016400248699416680, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016400248699416682, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: index
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016400248699416682, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: UI_Manager
-      value: 
-      objectReference: {fileID: 8886024367714383527}
-    - target: {fileID: 9016400248699416683, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016400248699416683, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.985
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016400248699416683, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.010049999
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016400248699416683, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.992
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016400248699416683, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016400248699416683, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016400248699416683, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016400248699416683, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016400248699416683, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016400248699416683, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016400248699416683, guid: ce507b0043d01df4182a13d6d7eec7b7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ce507b0043d01df4182a13d6d7eec7b7, type: 3}
---- !u!4 &1598590908 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9016400248699416683, guid: ce507b0043d01df4182a13d6d7eec7b7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1598590907}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1604749788
 GameObject:
   m_ObjectHideFlags: 0
@@ -38603,20 +38435,6 @@ Transform:
   m_Father: {fileID: 671895048}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1803574981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9016400247924322419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097ee0417184e4c4784876607f379713, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speaker: {fileID: 75668700}
-  textField: {fileID: 7045975187646959368}
 --- !u!1 &1805376087
 GameObject:
   m_ObjectHideFlags: 0
@@ -40287,19 +40105,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1919488473}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 430062956}
-        m_TargetAssemblyTypeName: TTSSpeakerInputBoard, Assembly-CSharp
-        m_MethodName: SayPhrase
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1919488473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46891,7 +46697,6 @@ GameObject:
   - component: {fileID: 2083167008010707881}
   - component: {fileID: 2083167008010707880}
   - component: {fileID: 2083167008010707883}
-  - component: {fileID: 2083167008010707884}
   - component: {fileID: 1867204342}
   m_Layer: 0
   m_Name: BoardDisplay
@@ -46995,25 +46800,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
---- !u!114 &2083167008010707884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2083167008010707878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59486b8db0e4b8d4c829296d9bb79690, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speaker: {fileID: 75668700}
-  textField1: {fileID: 1642503389}
-  textField2: {fileID: 1624593110}
-  textField3: {fileID: 868601353}
-  textField4: {fileID: 1543947197}
-  textField5: {fileID: 824230516}
-  textField6: {fileID: 285755764}
 --- !u!1 &2083167008400257639
 GameObject:
   m_ObjectHideFlags: 0
@@ -48903,7 +48689,6 @@ GameObject:
   - component: {fileID: 6085243953673564570}
   - component: {fileID: 6085243953673564517}
   - component: {fileID: 6085243953673564516}
-  - component: {fileID: 237037431}
   - component: {fileID: 6085243953673564572}
   m_Layer: 3
   m_Name: RightHand Controller
@@ -50109,6 +49894,7 @@ MonoBehaviour:
   lvl4Des: {fileID: 7045975188759506216}
   lvl5Des: {fileID: 7045975188576313197}
   lvl6Des: {fileID: 7045975187595761030}
+  officeDes: {fileID: 480484477659818818}
   pVLabel1: {fileID: 738553803}
   pVLabel2: {fileID: 643156102}
   pVLabel3: {fileID: 2053483466}
@@ -50121,7 +49907,6 @@ MonoBehaviour:
   lvl4Time: {fileID: 1543947197}
   lvl5Time: {fileID: 824230516}
   lvl6Time: {fileID: 285755764}
-  nextButton: {fileID: 0}
 --- !u!114 &6085243954930217636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50660,20 +50445,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7045975187287244122}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 9016400247294817261, guid: ce507b0043d01df4182a13d6d7eec7b7,
-          type: 3}
-        m_TargetAssemblyTypeName: TTSSpeakerInput, Assembly-CSharp
-        m_MethodName: SayPhrase
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!222 &7045975187364220672
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -50766,7 +50538,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9016400248874115100}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TTSSpeakerInput, Assembly-CSharp
         m_MethodName: SayPhrase
         m_Mode: 1
@@ -51502,7 +51274,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9016400248391591651}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TTSSpeakerInput, Assembly-CSharp
         m_MethodName: SayPhrase
         m_Mode: 1
@@ -51779,7 +51551,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9016400247910345463}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TTSSpeakerInput, Assembly-CSharp
         m_MethodName: SayPhrase
         m_Mode: 1
@@ -52087,20 +51859,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7045975188313792378}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 9016400247294817261, guid: ce507b0043d01df4182a13d6d7eec7b7,
-          type: 3}
-        m_TargetAssemblyTypeName: TTSSpeakerInput, Assembly-CSharp
-        m_MethodName: SayPhrase
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &7045975188576313195
 GameObject:
   m_ObjectHideFlags: 0
@@ -52463,7 +52222,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9016400247233348048}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TTSSpeakerInput, Assembly-CSharp
         m_MethodName: SayPhrase
         m_Mode: 1
@@ -53093,25 +52852,6 @@ MonoBehaviour:
   - This last room is the office room
   size: 32
   index: 0
---- !u!114 &9016400247233348048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9016400247233348058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59486b8db0e4b8d4c829296d9bb79690, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speaker: {fileID: 5804931227662041035}
-  textField1: {fileID: 0}
-  textField2: {fileID: 0}
-  textField3: {fileID: 0}
-  textField4: {fileID: 0}
-  textField5: {fileID: 0}
-  textField6: {fileID: 0}
 --- !u!114 &9016400247233348052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53212,7 +52952,6 @@ GameObject:
   - component: {fileID: 9016400247233348053}
   - component: {fileID: 9016400247233348052}
   - component: {fileID: 9016400247233348055}
-  - component: {fileID: 9016400247233348048}
   m_Layer: 0
   m_Name: BoardDisplay
   m_TagString: Untagged
@@ -54595,25 +54334,6 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 1
---- !u!114 &9016400247910345463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9016400247910345469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59486b8db0e4b8d4c829296d9bb79690, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speaker: {fileID: 5804931228062192876}
-  textField1: {fileID: 0}
-  textField2: {fileID: 0}
-  textField3: {fileID: 0}
-  textField4: {fileID: 0}
-  textField5: {fileID: 0}
-  textField6: {fileID: 0}
 --- !u!1 &9016400247910345469
 GameObject:
   m_ObjectHideFlags: 0
@@ -54626,7 +54346,6 @@ GameObject:
   - component: {fileID: 9016400247910345458}
   - component: {fileID: 9016400247910345459}
   - component: {fileID: 9016400247910345456}
-  - component: {fileID: 9016400247910345463}
   m_Layer: 0
   m_Name: BoardDisplay
   m_TagString: Untagged
@@ -54646,7 +54365,6 @@ GameObject:
   - component: {fileID: 9016400247924322428}
   - component: {fileID: 9016400247924322429}
   - component: {fileID: 9016400247924322430}
-  - component: {fileID: 1803574981}
   m_Layer: 0
   m_Name: BoardDisplay
   m_TagString: Untagged
@@ -56108,25 +55826,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &9016400248391591651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9016400248391591657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59486b8db0e4b8d4c829296d9bb79690, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speaker: {fileID: 5804931228785662200}
-  textField1: {fileID: 0}
-  textField2: {fileID: 0}
-  textField3: {fileID: 0}
-  textField4: {fileID: 0}
-  textField5: {fileID: 0}
-  textField6: {fileID: 0}
 --- !u!114 &9016400248391591652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56227,7 +55926,6 @@ GameObject:
   - component: {fileID: 9016400248391591654}
   - component: {fileID: 9016400248391591655}
   - component: {fileID: 9016400248391591652}
-  - component: {fileID: 9016400248391591651}
   m_Layer: 0
   m_Name: BoardDisplay
   m_TagString: Untagged
@@ -57262,7 +56960,6 @@ GameObject:
   - component: {fileID: 9016400248874115097}
   - component: {fileID: 9016400248874115096}
   - component: {fileID: 9016400248874115099}
-  - component: {fileID: 9016400248874115100}
   m_Layer: 0
   m_Name: BoardDisplay
   m_TagString: Untagged
@@ -57358,25 +57055,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
---- !u!114 &9016400248874115100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9016400248874115094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59486b8db0e4b8d4c829296d9bb79690, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speaker: {fileID: 5804931229260848647}
-  textField1: {fileID: 0}
-  textField2: {fileID: 0}
-  textField3: {fileID: 0}
-  textField4: {fileID: 0}
-  textField5: {fileID: 0}
-  textField6: {fileID: 0}
 --- !u!222 &9016400248907802440
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -57737,7 +57415,6 @@ GameObject:
   - component: {fileID: 9016400249087185500}
   - component: {fileID: 9016400249087185501}
   - component: {fileID: 9016400249087185502}
-  - component: {fileID: 430062956}
   m_Layer: 0
   m_Name: BoardDisplay
   m_TagString: Untagged

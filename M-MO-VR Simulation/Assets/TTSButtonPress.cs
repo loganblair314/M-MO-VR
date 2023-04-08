@@ -17,7 +17,7 @@ public class TTSButtonPress : MonoBehaviour
     private int currLevel;
     private float time;
     public GameObject partialVis;
-    [SerializeField] private TextMeshProUGUI lvl1Des, lvl2Des, lvl3Des, lvl4Des, lvl5Des, lvl6Des, pVLabel1, pVLabel2, pVLabel3, pVName, pVInteractable, pVDetails, lvl1Time, lvl2Time, lvl3Time, lvl4Time, lvl5Time, lvl6Time, nextButton;
+    [SerializeField] private TextMeshProUGUI lvl1Des, lvl2Des, lvl3Des, lvl4Des, lvl5Des, lvl6Des, officeDes, pVLabel1, pVLabel2, pVLabel3, pVName, pVInteractable, pVDetails, lvl1Time, lvl2Time, lvl3Time, lvl4Time, lvl5Time, lvl6Time;
 
     // Start is called before the first frame update
     void Start()
@@ -132,6 +132,21 @@ public class TTSButtonPress : MonoBehaviour
             {
                 // Have to do a coroutine to speak multiple text boxes.
                 StartCoroutine(SpeakTimes());
+            }
+            if (currLevel == 7)
+            {
+                if (partialVis.activeSelf && (pVDetails.text != ""))
+                {
+                    StartCoroutine(SpeakDetails());
+                }
+                else if (partialVis.activeSelf && (pVDetails.text == ""))
+                {
+                    StartCoroutine(SpeakNoDetails());
+                }
+                else
+                {
+                    _speaker.Speak(officeDes.text);
+                }
             }
         }
     }
