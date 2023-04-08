@@ -4533,7 +4533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Cherry flavor.
 --- !u!1 &174638559
 GameObject:
   m_ObjectHideFlags: 0
@@ -11070,7 +11070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Standard flavor.
 --- !u!1001 &400125386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52711,7 +52711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Cherry Flavor.
 --- !u!1 &2019188823
 GameObject:
   m_ObjectHideFlags: 0
