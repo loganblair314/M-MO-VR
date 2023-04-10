@@ -19,6 +19,7 @@ TagManager:
   - Foreground
   - Foreground Interactable
   - ColorManager
+  - Controller
   layers:
   - Default
   - TransparentFX

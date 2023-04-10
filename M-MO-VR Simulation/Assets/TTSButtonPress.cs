@@ -157,7 +157,7 @@ public class TTSButtonPress : MonoBehaviour
         for (int i = 0; i < details.Length; i++)
         {
             _speaker.Speak(details[i]);
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(2);
         }
     }
 

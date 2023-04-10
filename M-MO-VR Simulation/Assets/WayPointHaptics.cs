@@ -165,7 +165,7 @@ public class WayPointHaptics : MonoBehaviour
             Ray ray = new Ray(raycastOrigin.position, raycastOrigin.forward);
 
             // If a Raycast of length 2 detectes a hit.
-            if (Physics.Raycast(ray, out hit, 10))
+            if (Physics.Raycast(ray, out hit, 50))
             {
                 var hitPoint = hit.point;
                 hitPoint.y = 0;
@@ -196,10 +196,16 @@ public class WayPointHaptics : MonoBehaviour
                         timer = 0;
                     }
                 }
-            
+
+                if (hit.transform.tag == "Controller")
+                {
+                    Debug.Log("Controller!");
+                }
+
                 else
                 {
-                    if (((TeleportManager.index >= 2) && (TeleportManager.index < 6)) && (!MenuManager.MenuOpen))
+                    if ((TeleportManager.index == 2 || TeleportManager.index == 3 || TeleportManager.index == 4 || TeleportManager.index == 5 || TeleportManager.index == 7) && (hit.transform.tag != "Floor") && (!MenuManager.MenuOpen))
+                    //if ((((TeleportManager.index >= 2) && (TeleportManager.index < 6)) && (!MenuManager.MenuOpen)) || (TeleportManager.index == 7))
                     {
                         if (distance > 0 && distance <= 0.67)
                         {
