@@ -13,6 +13,7 @@ public class TeleportScript : MonoBehaviour
 	private Transform subject;
 	//add a sound component if you want the teleport playing a sound when teleporting
 	public AudioSource teleportSound;
+	public AudioSource source;
 	//simple enable/disable function in case you want the teleport not working at some point
 	//without disabling the entire script, so receiving objects still works
 	public bool teleportPadOn = true;
@@ -26,7 +27,8 @@ public class TeleportScript : MonoBehaviour
 	{
         manager = GameObject.FindGameObjectWithTag("TeleportManager").GetComponent<TeleportManager>();
         uiManager = GameObject.FindGameObjectWithTag("UI-Manager").GetComponent<UI>();
-		teleportSound = gameObject.GetComponent<AudioSource>();
+		GameObject obj = GameObject.Find("XR Origin V2");
+		source = obj.GetComponent<AudioSource>();
 	}
 
 
@@ -48,9 +50,14 @@ public class TeleportScript : MonoBehaviour
         uiManager.testNext();
 		//play teleport sound
 		//teleportSound.Play();
-		if ((teleportSound.isPlaying == false))
+		if ((source.isPlaying == false))
 		{
-			teleportSound.PlayOneShot(teleportDing);
+			source.PlayOneShot(teleportDing);
+		}
+		else
+        {
+			source.Stop();
+			source.PlayOneShot(teleportDing);
 		}
 		Debug.Log("Player Entered the Teleporter");
 			
