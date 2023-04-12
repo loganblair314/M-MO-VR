@@ -5821,8 +5821,9 @@ GameObject:
   - component: {fileID: 213614580}
   - component: {fileID: 213614579}
   - component: {fileID: 213614578}
+  - component: {fileID: 213614581}
   m_Layer: 7
-  m_Name: Handle (In)
+  m_Name: Door Handle
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5906,6 +5907,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213614576}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &213614581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213614576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: 
 --- !u!1 &214215945
 GameObject:
   m_ObjectHideFlags: 0
@@ -11434,8 +11449,9 @@ GameObject:
   - component: {fileID: 432427690}
   - component: {fileID: 432427689}
   - component: {fileID: 432427688}
+  - component: {fileID: 432427691}
   m_Layer: 7
-  m_Name: Handle (In)
+  m_Name: Door Handle
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11519,6 +11535,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 432427686}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &432427691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432427686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: 
 --- !u!1001 &432934087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15637,6 +15667,7 @@ GameObject:
   - component: {fileID: 587808861}
   - component: {fileID: 587808860}
   - component: {fileID: 587808859}
+  - component: {fileID: 587808865}
   m_Layer: 7
   m_Name: Door
   m_TagString: Untagged
@@ -15917,6 +15948,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 587808857}
   m_Mesh: {fileID: 4300000, guid: 9aa7871f668788849a181aa513447ce3, type: 3}
+--- !u!114 &587808865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587808857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: 
 --- !u!1001 &588241857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16682,8 +16727,9 @@ GameObject:
   - component: {fileID: 624742041}
   - component: {fileID: 624742040}
   - component: {fileID: 624742039}
+  - component: {fileID: 624742042}
   m_Layer: 7
-  m_Name: Handle (Out)
+  m_Name: Door Handle
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16767,6 +16813,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624742037}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &624742042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624742037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: 
 --- !u!1 &626819995
 GameObject:
   m_ObjectHideFlags: 0
@@ -23878,8 +23938,9 @@ GameObject:
   - component: {fileID: 858065039}
   - component: {fileID: 858065038}
   - component: {fileID: 858065037}
+  - component: {fileID: 858065041}
   m_Layer: 7
-  m_Name: Handle (Out)
+  m_Name: Door Handle
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23963,6 +24024,20 @@ Transform:
   m_Father: {fileID: 757824611}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &858065041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858065036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: 
 --- !u!1001 &859218623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27880,8 +27955,9 @@ GameObject:
   - component: {fileID: 1013104271}
   - component: {fileID: 1013104270}
   - component: {fileID: 1013104269}
+  - component: {fileID: 1013104272}
   m_Layer: 7
-  m_Name: Handle (In)
+  m_Name: Door Handle
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27965,6 +28041,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013104267}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1013104272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013104267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: 
 --- !u!1001 &1022497061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28888,8 +28978,9 @@ GameObject:
   - component: {fileID: 1067169667}
   - component: {fileID: 1067169666}
   - component: {fileID: 1067169665}
+  - component: {fileID: 1067169668}
   m_Layer: 7
-  m_Name: Handle (Out)
+  m_Name: Door Handle
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28973,6 +29064,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067169663}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1067169668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067169663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: 
 --- !u!1 &1068889824
 GameObject:
   m_ObjectHideFlags: 0
@@ -30295,8 +30400,9 @@ GameObject:
   - component: {fileID: 1115434489}
   - component: {fileID: 1115434488}
   - component: {fileID: 1115434487}
+  - component: {fileID: 1115434490}
   m_Layer: 7
-  m_Name: Handle (Out)
+  m_Name: Door Handle
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30380,6 +30486,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115434485}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1115434490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115434485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: 
 --- !u!1 &1119866866
 GameObject:
   m_ObjectHideFlags: 0
@@ -33446,6 +33566,7 @@ GameObject:
   - component: {fileID: 1231764635}
   - component: {fileID: 1231764634}
   - component: {fileID: 1231764633}
+  - component: {fileID: 1231764639}
   m_Layer: 7
   m_Name: Door
   m_TagString: Untagged
@@ -33726,6 +33847,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231764631}
   m_Mesh: {fileID: 4300000, guid: 9aa7871f668788849a181aa513447ce3, type: 3}
+--- !u!114 &1231764639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231764631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: 
 --- !u!1 &1232333011
 GameObject:
   m_ObjectHideFlags: 0
@@ -35903,6 +36038,7 @@ GameObject:
   - component: {fileID: 1293903005}
   - component: {fileID: 1293903004}
   - component: {fileID: 1293903003}
+  - component: {fileID: 1293903009}
   m_Layer: 7
   m_Name: Door
   m_TagString: Untagged
@@ -36183,6 +36319,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293903001}
   m_Mesh: {fileID: 4300000, guid: 9aa7871f668788849a181aa513447ce3, type: 3}
+--- !u!114 &1293903009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293903001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: 
 --- !u!1 &1294633032
 GameObject:
   m_ObjectHideFlags: 0
@@ -48147,8 +48297,9 @@ GameObject:
   - component: {fileID: 1812654975}
   - component: {fileID: 1812654974}
   - component: {fileID: 1812654973}
+  - component: {fileID: 1812654976}
   m_Layer: 7
-  m_Name: Handle (Out)
+  m_Name: Door Handle
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48232,6 +48383,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812654971}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1812654976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812654971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: 
 --- !u!1 &1816405650
 GameObject:
   m_ObjectHideFlags: 0
@@ -51062,8 +51227,9 @@ GameObject:
   - component: {fileID: 1952191934}
   - component: {fileID: 1952191933}
   - component: {fileID: 1952191932}
+  - component: {fileID: 1952191935}
   m_Layer: 7
-  m_Name: Handle (In)
+  m_Name: Door Handle
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51147,6 +51313,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952191930}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1952191935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952191930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: 
 --- !u!1001 &1958958551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52333,8 +52513,9 @@ GameObject:
   - component: {fileID: 2000497348}
   - component: {fileID: 2000497347}
   - component: {fileID: 2000497346}
+  - component: {fileID: 2000497349}
   m_Layer: 7
-  m_Name: Handle (In)
+  m_Name: Door Handle
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52418,6 +52599,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000497344}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2000497349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000497344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: 
 --- !u!1 &2006803942
 GameObject:
   m_ObjectHideFlags: 0
