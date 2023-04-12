@@ -1086,7 +1086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: A large bowl of succulents.
 --- !u!1 &40561967
 GameObject:
   m_ObjectHideFlags: 0
@@ -2598,7 +2598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: It staples paper together.
 --- !u!1001 &106757049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3842,7 +3842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Has notes from the last meeting written down.
 --- !u!1001 &154039198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4822,7 +4822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Potted plant.
 --- !u!1 &177347931
 GameObject:
   m_ObjectHideFlags: 0
@@ -5231,7 +5231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: A book about doggies.
 --- !u!1 &194857568
 GameObject:
   m_ObjectHideFlags: 0
@@ -5728,7 +5728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Has notes from the last meeting written down.
 --- !u!1001 &208678494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9037,6 +9037,7 @@ MonoBehaviour:
   teleportationHeightOffset: 1
   teleportSound: {fileID: 0}
   teleportPadOn: 1
+  teleportDing: {fileID: 8300000, guid: 0238b8a3bd011fb4f8424026222b7dd0, type: 3}
 --- !u!114 &334458880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9853,7 +9854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Has notes from the last meeting written down.
 --- !u!1001 &362402796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9948,7 +9949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: It staples paper together.
 --- !u!1 &370910261
 GameObject:
   m_ObjectHideFlags: 0
@@ -10081,6 +10082,7 @@ MonoBehaviour:
   teleportationHeightOffset: 1
   teleportSound: {fileID: 0}
   teleportPadOn: 1
+  teleportDing: {fileID: 8300000, guid: 0238b8a3bd011fb4f8424026222b7dd0, type: 3}
 --- !u!114 &379221252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10395,6 +10397,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 384273010}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!1 &391057304
 GameObject:
   m_ObjectHideFlags: 0
@@ -11668,7 +11672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Someone made a fresh batch.
 --- !u!1 &433380961
 GameObject:
   m_ObjectHideFlags: 0
@@ -12156,6 +12160,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 445084118}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!1 &447821337
 GameObject:
   m_ObjectHideFlags: 0
@@ -12494,6 +12500,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 461570657}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!65 &461570660
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13033,6 +13041,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9121940783575042333, guid: cf995dd17b72eff40b7eb24b4c388aac,
+        type: 3}
+      propertyPath: teleportDing
+      value: 
+      objectReference: {fileID: 8300000, guid: 0238b8a3bd011fb4f8424026222b7dd0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf995dd17b72eff40b7eb24b4c388aac, type: 3}
 --- !u!4 &481011293 stripped
@@ -13535,6 +13548,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 489103954}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!1 &490294811
 GameObject:
   m_ObjectHideFlags: 0
@@ -14605,6 +14620,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 536061236}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!1001 &541308223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15337,6 +15354,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 556989732}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!1 &559430408
 GameObject:
   m_ObjectHideFlags: 0
@@ -16440,7 +16459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Has notes from the last meeting written down.
 --- !u!1001 &617746127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16980,6 +16999,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 625837608}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!65 &625837611
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17638,7 +17659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Has notes from the last meeting written down.
 --- !u!1001 &636441228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20172,7 +20193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: A green, striped fruit.
 --- !u!1001 &726842965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20393,6 +20414,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 728205742}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!1 &733649520
 GameObject:
   m_ObjectHideFlags: 0
@@ -22343,6 +22366,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 790518500}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!1 &800942048
 GameObject:
   m_ObjectHideFlags: 0
@@ -22883,7 +22908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Has notes from the last meeting written down.
 --- !u!1 &824230514
 GameObject:
   m_ObjectHideFlags: 0
@@ -23068,6 +23093,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 837385613}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!65 &837385616
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23506,7 +23533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: It staples paper together.
 --- !u!1 &845748613
 GameObject:
   m_ObjectHideFlags: 0
@@ -24393,7 +24420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: A rosey, fuzzy fruit.
 --- !u!1 &866325671
 GameObject:
   m_ObjectHideFlags: 0
@@ -27973,6 +28000,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1002070719}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!1 &1007740015
 GameObject:
   m_ObjectHideFlags: 0
@@ -28634,7 +28663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: It staples paper together.
 --- !u!1 &1037784170
 GameObject:
   m_ObjectHideFlags: 0
@@ -28925,7 +28954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Has notes from the last meeting written down.
 --- !u!1001 &1049547187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29028,6 +29057,7 @@ MonoBehaviour:
   teleportationHeightOffset: 1
   teleportSound: {fileID: 0}
   teleportPadOn: 1
+  teleportDing: {fileID: 8300000, guid: 0238b8a3bd011fb4f8424026222b7dd0, type: 3}
 --- !u!114 &1051214532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29341,6 +29371,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1069930082}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!1 &1071037180
 GameObject:
   m_ObjectHideFlags: 0
@@ -31350,6 +31382,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1144576050}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!65 &1144576053
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31588,7 +31622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: A little too spiky.
 --- !u!1 &1157911472
 GameObject:
   m_ObjectHideFlags: 0
@@ -32363,6 +32397,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1183225164}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!65 &1183225167
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32425,6 +32461,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1186129088}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!65 &1186129091
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32571,7 +32609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: Depcits a black grid and purple circle.
+  description: Depicts a black grid and purple circle.
 --- !u!1 &1192051382
 GameObject:
   m_ObjectHideFlags: 0
@@ -34861,6 +34899,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1249304726}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!1001 &1249739335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35196,7 +35236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Plant with snakey leaves.
 --- !u!1001 &1254546393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35910,6 +35950,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9121940783575042333, guid: cf995dd17b72eff40b7eb24b4c388aac,
+        type: 3}
+      propertyPath: teleportDing
+      value: 
+      objectReference: {fileID: 8300000, guid: 0238b8a3bd011fb4f8424026222b7dd0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf995dd17b72eff40b7eb24b4c388aac, type: 3}
 --- !u!4 &1279908368 stripped
@@ -36217,6 +36262,7 @@ MonoBehaviour:
   zoomInButton: {fileID: 8300000, guid: ff24b51af2b945445aad077c08229337, type: 3}
   contrastButton: {fileID: 8300000, guid: b6c465713a9f36f418051aa8609ff20c, type: 3}
   exitButton: {fileID: 8300000, guid: c482b7e25bdfcb14fb918f9ce10d328c, type: 3}
+  controller: {fileID: 0}
 --- !u!82 &1291278574
 AudioSource:
   m_ObjectHideFlags: 0
@@ -37247,7 +37293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Has notes from the last meeting written down.
 --- !u!1 &1322099310
 GameObject:
   m_ObjectHideFlags: 0
@@ -37521,7 +37567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Plant with snakey leaves.
 --- !u!1 &1335954440
 GameObject:
   m_ObjectHideFlags: 0
@@ -37571,6 +37617,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1335954440}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!65 &1335954443
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37928,6 +37976,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1351300629}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!65 &1351300632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38356,6 +38406,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1364496370}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!65 &1364496373
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39127,6 +39179,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1376875104}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!1001 &1381860295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39814,6 +39868,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1410629872}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!1 &1413428190
 GameObject:
   m_ObjectHideFlags: 0
@@ -40375,6 +40431,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1432517311}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!1 &1445045795
 GameObject:
   m_ObjectHideFlags: 0
@@ -40925,6 +40983,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1462335683}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!1 &1468776982
 GameObject:
   m_ObjectHideFlags: 0
@@ -41193,7 +41253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: It staples paper together.
 --- !u!1001 &1475193237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41459,6 +41519,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1490952444}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!65 &1490952447
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42521,7 +42583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: It staples paper together.
 --- !u!1001 &1562400216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43329,7 +43391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: It staples paper together.
 --- !u!1 &1583692888
 GameObject:
   m_ObjectHideFlags: 0
@@ -43423,6 +43485,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1584311383}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!1 &1584655702
 GameObject:
   m_ObjectHideFlags: 0
@@ -43485,6 +43549,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1584655702}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!1 &1585405157
 GameObject:
   m_ObjectHideFlags: 0
@@ -44193,6 +44259,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1618567649}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!1 &1624593108
 GameObject:
   m_ObjectHideFlags: 0
@@ -44778,7 +44846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Has notes from the last meeting written down.
 --- !u!1 &1635532421
 GameObject:
   m_ObjectHideFlags: 0
@@ -45677,6 +45745,7 @@ MonoBehaviour:
   teleportationHeightOffset: 1
   teleportSound: {fileID: 0}
   teleportPadOn: 1
+  teleportDing: {fileID: 8300000, guid: 0238b8a3bd011fb4f8424026222b7dd0, type: 3}
 --- !u!1001 &1658583069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46506,7 +46575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: It staples paper together.
 --- !u!1 &1712331588
 GameObject:
   m_ObjectHideFlags: 0
@@ -46734,7 +46803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Has notes from the last meeting written down.
 --- !u!1 &1723228549
 GameObject:
   m_ObjectHideFlags: 0
@@ -48133,6 +48202,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1782845145}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!65 &1782845148
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48371,7 +48442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Has notes from the last meeting written down.
 --- !u!1 &1805376087
 GameObject:
   m_ObjectHideFlags: 0
@@ -50738,7 +50809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: It staples paper together.
 --- !u!1 &1910654140
 GameObject:
   m_ObjectHideFlags: 0
@@ -51154,6 +51225,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1924082837}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!65 &1924082840
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51269,6 +51342,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 6085243953673564519}
   objectTag: Player
   waypoint: {fileID: 1930770994}
+  source: {fileID: 0}
+  waypointReached: {fileID: 8300000, guid: 4d1ab01c062806e418f3a3705f9c21db, type: 3}
 --- !u!1001 &1936849671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51363,7 +51438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Has notes from the last meeting written down.
 --- !u!1 &1939558168
 GameObject:
   m_ObjectHideFlags: 0
@@ -51836,7 +51911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: A little too spiky.
 --- !u!1 &1960241221
 GameObject:
   m_ObjectHideFlags: 0
@@ -52631,7 +52706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: It staples paper together.
 --- !u!1001 &1983949307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53706,7 +53781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Has notes from the last meeting written down.
 --- !u!1001 &2034488169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55684,7 +55759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: A rosey, fuzzy fruit.
 --- !u!1 &2124166493
 GameObject:
   m_ObjectHideFlags: 0
@@ -56341,7 +56416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: Succulents.
 --- !u!1001 &178464128056743464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65488,7 +65563,7 @@ MonoBehaviour:
     the end. '
   - In this seventh room, the data display room, you can view the amount of time
     it took you to traverse each level.
-  - This last room is the office room
+  - This last room is the office room.
   size: 32
   index: 0
 --- !u!4 &8952702552911145444 stripped
@@ -71312,6 +71387,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9121940783575042333, guid: cf995dd17b72eff40b7eb24b4c388aac,
+        type: 3}
+      propertyPath: teleportDing
+      value: 
+      objectReference: {fileID: 8300000, guid: 0238b8a3bd011fb4f8424026222b7dd0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf995dd17b72eff40b7eb24b4c388aac, type: 3}
 --- !u!1 &9121940783859578952 stripped

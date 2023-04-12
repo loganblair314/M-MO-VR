@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+//using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class JoystickNav : MonoBehaviour
@@ -45,11 +46,13 @@ public class JoystickNav : MonoBehaviour
     public AudioClip contrastButton;
     public AudioClip exitButton;
 
+    [SerializeField] XRController controller;
+    private UnityEngine.XR.InputDevice targetDevice;
+
     TeleportManager teleManager;
     TimerHandler timer;
     WayPointHaptics way;
     MenuManager menu;
-    //TTSButtonPress tts;
     DoorHandler door;
 
     ColorManager colors;
@@ -91,9 +94,18 @@ public class JoystickNav : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   
-   
-        if(active){
+    {
+
+        List<UnityEngine.XR.InputDevice> devices = new List<UnityEngine.XR.InputDevice>();
+        UnityEngine.XR.InputDeviceCharacteristics rightControllerCharacteristics = UnityEngine.XR.InputDeviceCharacteristics.Right | UnityEngine.XR.InputDeviceCharacteristics.Controller;
+        UnityEngine.XR.InputDevices.GetDevicesWithCharacteristics(rightControllerCharacteristics, devices);
+
+        if (devices.Count > 0)
+        {
+            targetDevice = devices[0];
+        }
+
+        if (active){
 
             //Initialize
             checkIndex();
@@ -123,12 +135,14 @@ public class JoystickNav : MonoBehaviour
                 //Debug.Log("UP");
                 setInput(1);
                 readButton();
+                targetDevice.SendHapticImpulse(0, 0.67f, 0.1f);
 
             }
             else if(input.y < -0.25){
                 //Debug.Log("DOWN");
                 setInput(-1);
                 readButton();
+                targetDevice.SendHapticImpulse(0, 0.67f, 0.1f);
             }
             else{
                 //Debug.Log("ZEROED");

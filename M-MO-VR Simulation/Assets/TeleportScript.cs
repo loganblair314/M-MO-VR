@@ -17,14 +17,17 @@ public class TeleportScript : MonoBehaviour
 	//without disabling the entire script, so receiving objects still works
 	public bool teleportPadOn = true;
 
-    TeleportManager manager;
+	public AudioClip teleportDing;
+
+	TeleportManager manager;
     UI uiManager;
 
 	void Start ()
 	{
         manager = GameObject.FindGameObjectWithTag("TeleportManager").GetComponent<TeleportManager>();
         uiManager = GameObject.FindGameObjectWithTag("UI-Manager").GetComponent<UI>();
-    }
+		teleportSound = gameObject.GetComponent<AudioSource>();
+	}
 
 
 	void Update ()
@@ -45,7 +48,11 @@ public class TeleportScript : MonoBehaviour
         uiManager.testNext();
 		//play teleport sound
 		//teleportSound.Play();
-        Debug.Log("Player Entered the Teleporter");
+		if ((teleportSound.isPlaying == false))
+		{
+			teleportSound.PlayOneShot(teleportDing);
+		}
+		Debug.Log("Player Entered the Teleporter");
 			
 	}
 

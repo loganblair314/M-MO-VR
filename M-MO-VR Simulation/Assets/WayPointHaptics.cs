@@ -9,8 +9,6 @@ using System.Linq;
 public class WayPointHaptics : MonoBehaviour
 {
     [SerializeField] XRController controller;
-    //private int count;
-    private Animator animatorController;
     private InputDevice targetDevice;
     public Transform raycastOrigin;
     public string objectTag = "Player";
@@ -18,6 +16,8 @@ public class WayPointHaptics : MonoBehaviour
     private bool activeWaypoint;
     private float timer;
     GameObject[] waypoints;
+    public AudioSource source;
+    public AudioClip waypointReached;
 
     private void Start()
     {
@@ -27,6 +27,7 @@ public class WayPointHaptics : MonoBehaviour
         {
             waypoints[i].SetActive(true);
         }
+        source = gameObject.GetComponent<AudioSource>();
         //waypoint.SetActive(true);
     }
 
@@ -141,6 +142,11 @@ public class WayPointHaptics : MonoBehaviour
                         }
                     }
                 }
+            }
+            // Play Audio Signifying Waypoint Has Been Reached
+            if ((source.isPlaying == false))
+            {
+                source.PlayOneShot(waypointReached);
             }
            //waypoint.SetActive(false);
            Debug.Log("Disabling waypoint.");
