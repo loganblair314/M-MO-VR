@@ -16,6 +16,7 @@ public class TTSButtonPress : MonoBehaviour
     [SerializeField] private TTSSpeaker _speaker;
     private int currLevel;
     private float time;
+    // Import menu; if it is active, then play the controls, otherwise play the level description.
     public GameObject partialVis;
     [SerializeField] private TextMeshProUGUI lvl1Des, lvl2Des, lvl3Des, lvl4Des, lvl5Des, lvl6Des, officeDes, pVLabel1, pVLabel2, pVLabel3, pVName, pVInteractable, pVDetails, lvl1Time, lvl2Time, lvl3Time, lvl4Time, lvl5Time, lvl6Time;
 
