@@ -4715,6 +4715,11 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6862430762072407685, guid: db66b66f761249347b45ef948710e295,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &175245976 stripped
@@ -54693,6 +54698,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: 
   description: Made with chocolate chips.
+--- !u!65 &2087234962
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087234956}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3, y: 0.06, z: 0.3}
+  m_Center: {x: 0, y: 0.03, z: 0}
 --- !u!1 &2088673666
 GameObject:
   m_ObjectHideFlags: 0
@@ -58529,7 +58547,7 @@ MeshCollider:
   m_GameObject: {fileID: 5266633487306715071}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -59686,8 +59704,8 @@ Transform:
   m_GameObject: {fileID: 5266633487306715071}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.5, y: 1, z: 7}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1586421660}
   m_RootOrder: 3
@@ -59706,6 +59724,7 @@ GameObject:
   - component: {fileID: 5388157767137232742}
   - component: {fileID: 1876566757167763823}
   - component: {fileID: 1807035300}
+  - component: {fileID: 8499097860689148577}
   m_Layer: 0
   m_Name: Doughnut
   m_TagString: Not Interactable
@@ -65393,6 +65412,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5266633487306715071}
   m_Mesh: {fileID: 452742304724789276, guid: 5f9c4456209377443bf91f23716ae8dc, type: 3}
+--- !u!65 &8499097860689148577
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5266633487306715071}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45, y: 0.1, z: 0.45}
+  m_Center: {x: 0, y: 0.055, z: 0}
 --- !u!1 &8886024367714383527
 GameObject:
   m_ObjectHideFlags: 0
