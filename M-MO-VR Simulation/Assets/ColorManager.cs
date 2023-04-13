@@ -31,7 +31,7 @@ public class ColorManager : MonoBehaviour
 
         //Add colors to the list of contrasting colors
         Colors.Add(new ColorOption());
-        Colors.Add(new ColorOption(Color.yellow,Color.blue));
+        Colors.Add(new ColorOption(new Color32(255,255,0,255),Color.blue));
         listIndex = 0;
 
     }
