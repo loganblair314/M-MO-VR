@@ -18,12 +18,19 @@ public class TTSButtonPress : MonoBehaviour
     private float time;
     // Import menu; if it is active, then play the controls, otherwise play the level description.
     public GameObject partialVis;
-    [SerializeField] private TextMeshProUGUI lvl1Des, lvl2Des, lvl3Des, lvl4Des, lvl5Des, lvl6Des, officeDes, pVLabel1, pVLabel2, pVLabel3, pVName, pVInteractable, pVDetails, lvl1Time, lvl2Time, lvl3Time, lvl4Time, lvl5Time, lvl6Time;
-
+    public GameObject uiMenu;
+    [SerializeField] private TextMeshProUGUI pVName, pVInteractable, pVDetails, lvl1Time, lvl2Time, lvl3Time, lvl4Time, lvl5Time, lvl6Time;
+    public AudioSource source;
+    public AudioClip abstractAbstract, abstractBlack, abstractBlue, abstractCircles, book, chiselCurved, chiselFlat, chiselNarrow, coffee, cookie, dogBook, doughnut, fileFlat, laptopMac, laptopWindows;
+    public AudioClip lvl1Des, lvl1DesWaypoint, lvl2Des, lvl3Des, lvl4Des, lvl5Des, lvl6Des, lvlDesControls, lvlDesDataDisplay, lvlDesDoor, lvlDesDoorDetection, lvlDesMenu, lvlDesOffice, melon, notebook, peach;
+    public AudioClip penBlack, penBlue, penGreen, penRed, pizza, potPlant, raspRound, snakePlant, sodaBottle, sodaCan, spikeSmall, stapler, succulentsBig, succulentsSmall, tomsNotebook;
     // Start is called before the first frame update
     void Start()
     {
         currLevel = TeleportManager.index;
+        GameObject obj = GameObject.Find("XR Origin V2");
+        source = obj.GetComponent<AudioSource>();
+        //StartCoroutine(speakLvl1());
     }
 
     // Update is called once per frame
@@ -42,6 +49,7 @@ public class TTSButtonPress : MonoBehaviour
         {
             StopAllCoroutines();
             _speaker.Stop();
+            //source.Stop();
             currLevel = TeleportManager.index;
             time = 0;
         }
@@ -49,17 +57,15 @@ public class TTSButtonPress : MonoBehaviour
         time += Time.deltaTime;
         if (time >= 2)
         {
-            if ((!MenuManager.MenuOpen))
+            if (targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue) && primaryButtonValue == true)
             {
-                if (targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue) && primaryButtonValue == true)
-                {
-                    SayPhrase();
-                    time = 0;
-                }
+                SayPhrase();
+                time = 0;
             }
         }
     }
 
+    
     public void SayPhrase()
     {
         StopAllCoroutines();
@@ -68,107 +74,276 @@ public class TTSButtonPress : MonoBehaviour
         {
             _speaker.Stop();
         }
+
         // Otherwise, speak the phrases for each respective level.
         else
         {
-            if (currLevel == 0)
+            if ((source.isPlaying == false))
             {
-                _speaker.Speak(lvl1Des.text);
+                PlayAudioClip();
             }
-            if (currLevel == 1)
+            else
             {
-                _speaker.Speak(lvl2Des.text);
-            }
-            if (currLevel == 2)
+                source.Stop();
+                //source.PlayOneShot(teleportDing);
+                PlayAudioClip();
+            } 
+        }
+    }
+
+    public void PlayAudioClip()
+    {
+        // Level 1
+        if (currLevel == 0)
+        {
+            //_speaker.Speak(lvl1Des.text);
+            if (uiMenu.activeSelf)
             {
-                _speaker.Speak(lvl3Des.text);
+                source.PlayOneShot(lvlDesControls);
             }
-            if (currLevel == 3)
+            else
             {
-                // Edge case: If details field is blank / clicking on walls.
-                if (partialVis.activeSelf && (pVDetails.text != ""))
-                {
-                    StartCoroutine(SpeakDetails());
-                }
-                else if (partialVis.activeSelf && (pVDetails.text == ""))
-                {
-                    StartCoroutine(SpeakNoDetails());
-                }
-                else
-                {
-                    _speaker.Speak(lvl4Des.text);
-                }
+                StartCoroutine(speakLvl1());
+                //source.PlayOneShot(lvl1Des);
+                //source.PlayOneShot(lvl1DesWaypoint);
             }
-            if (currLevel == 4)
+        }
+
+        // Level 2
+        if (currLevel == 1)
+        {
+            // _speaker.Speak(lvl2Des.text);
+            if (uiMenu.activeSelf)
             {
-                if (partialVis.activeSelf && (pVDetails.text != ""))
-                {
-                    StartCoroutine(SpeakDetails());
-                }
-                else if (partialVis.activeSelf && (pVDetails.text == ""))
-                {
-                    StartCoroutine(SpeakNoDetails());
-                }
-                else
-                {
-                    _speaker.Speak(lvl5Des.text);
-                }
+                source.PlayOneShot(lvlDesControls);
             }
-            if (currLevel == 5)
+            else
             {
-                if (partialVis.activeSelf && (pVDetails.text != ""))
-                {
-                    StartCoroutine(SpeakDetails());
-                }
-                else if (partialVis.activeSelf && (pVDetails.text == ""))
-                {
-                    StartCoroutine(SpeakNoDetails());
-                }
-                else
-                {
-                    _speaker.Speak(lvl6Des.text);
-                }
+                source.PlayOneShot(lvl2Des);
             }
-            if (currLevel == 6)
+        }
+
+        // Level 3
+        if (currLevel == 2)
+        {
+            //_speaker.Speak(lvl3Des.text);
+            if (uiMenu.activeSelf)
+            {
+                source.PlayOneShot(lvlDesControls);
+            }
+            else
+            {
+                source.PlayOneShot(lvl3Des);
+            }
+        }
+
+        // Level 4
+        if (currLevel == 3)
+        {
+            // Edge case: If details field is blank / clicking on walls.
+            if (partialVis.activeSelf && !uiMenu.activeSelf && (pVDetails.text != ""))
+            {
+                speakPV();
+                //StartCoroutine(SpeakDetails());
+            }
+            else if (partialVis.activeSelf && (pVDetails.text == ""))
+            {
+                //StartCoroutine(SpeakNoDetails());
+                // Check if door. If so, say it is interactable. 
+                // Otherwise, mention there is nothing of note.
+            }
+            else if (uiMenu.activeSelf && !partialVis.activeSelf)
+            {
+                source.PlayOneShot(lvlDesControls);
+            }
+            else
+            {
+                StartCoroutine(speakLvl4());
+            }
+        }
+
+        // Level 5
+        if (currLevel == 4)
+        {
+            if (partialVis.activeSelf && (pVDetails.text != ""))
+            {
+                speakPV();
+                //StartCoroutine(SpeakDetails());
+            }
+            else if (partialVis.activeSelf && (pVDetails.text == ""))
+            {
+                //StartCoroutine(SpeakNoDetails());
+            }
+            else if (uiMenu.activeSelf && !partialVis.activeSelf)
+            {
+                //_speaker.Speak(lvl4Des.text);
+                source.PlayOneShot(lvlDesControls);
+            }
+            else
+            {
+                StartCoroutine(speakLvl5());
+            }
+        }
+
+        // Level 6
+        if (currLevel == 5)
+        {
+            if (partialVis.activeSelf && (pVDetails.text != ""))
+            {
+                speakPV();
+                //StartCoroutine(SpeakDetails());
+            }
+            else if (partialVis.activeSelf && (pVDetails.text == ""))
+            {
+                //StartCoroutine(SpeakNoDetails());
+            }
+            else if (uiMenu.activeSelf && !partialVis.activeSelf)
+            {
+                //_speaker.Speak(lvl4Des.text);
+                source.PlayOneShot(lvlDesControls);
+            }
+            else
+            {
+                source.PlayOneShot(lvl6Des);
+            }
+        }
+
+        // Level 7 - Data Display
+        if (currLevel == 6)
+        {
+            if (uiMenu.activeSelf && !partialVis.activeSelf)
+            {
+                //_speaker.Speak(lvl4Des.text);
+                source.PlayOneShot(lvlDesControls);
+            }
+            else
             {
                 // Have to do a coroutine to speak multiple text boxes.
                 StartCoroutine(SpeakTimes());
             }
-            if (currLevel == 7)
+        }
+
+        // Level 8 - Office
+        if (currLevel == 7)
+        {
+            if (partialVis.activeSelf && (pVDetails.text != ""))
             {
-                if (partialVis.activeSelf && (pVDetails.text != ""))
-                {
-                    StartCoroutine(SpeakDetails());
-                }
-                else if (partialVis.activeSelf && (pVDetails.text == ""))
-                {
-                    StartCoroutine(SpeakNoDetails());
-                }
-                else
-                {
-                    _speaker.Speak(officeDes.text);
-                }
+                //StartCoroutine(SpeakDetails());
+            }
+            else if (partialVis.activeSelf && (pVDetails.text == ""))
+            {
+                //StartCoroutine(SpeakNoDetails());
+            }
+            else if (uiMenu.activeSelf && !partialVis.activeSelf)
+            {
+                source.PlayOneShot(lvlDesControls);
+            }
+            else
+            {
+                StartCoroutine(speakLvl8());
             }
         }
     }
 
-    IEnumerator SpeakDetails()
+    public void speakPV()
     {
-        string[] details = new string[] { pVLabel1.text, pVName.text, pVLabel2.text, pVInteractable.text, pVLabel3.text, pVDetails.text };
-        for (int i = 0; i < details.Length; i++)
+        if (pVName.text == "Door")
         {
-            _speaker.Speak(details[i]);
-            yield return new WaitForSeconds(2);
+            // New audio clip: "This is an interactable door"
+            //source.PlayOneShot(door);
+        }
+        else if (pVName.text == "Pizza")
+        {
+            source.PlayOneShot(pizza);
+        }
+        else if (pVName.text == "Soda Bottle")
+        {
+            source.PlayOneShot(sodaBottle);
+        }
+        else if (pVName.text == "Cookie")
+        {
+            source.PlayOneShot(cookie);
+        }
+        else if (pVName.text == "Doughnut")
+        {
+            source.PlayOneShot(doughnut);
+        }
+        else if (pVName.text == "Apple Laptop")
+        {
+                source.PlayOneShot(laptopMac);
+        }
+        else if (pVName.text == "Black Pen")
+        {
+            source.PlayOneShot(penBlack);
+        }
+        else if (pVName.text == "Blue Pen")
+        {
+            source.PlayOneShot(penBlue);
+        }
+        else if (pVName.text == "Green Pen")
+        {
+            source.PlayOneShot(penGreen);
+        }
+        else if (pVName.text == "Flat Chisel")
+        {
+            source.PlayOneShot(chiselFlat);
+        }
+        else if (pVName.text == "Curved Chisel")
+        {
+            source.PlayOneShot(chiselCurved);
+        }
+        else if (pVName.text == "Narrow Chisel")
+        {
+            source.PlayOneShot(chiselNarrow);
+        }
+        else if (pVName.text == "File")
+        {
+            source.PlayOneShot(fileFlat);
+        }
+        else if (pVName.text == "Rasp")
+        {
+            source.PlayOneShot(raspRound);
         }
     }
 
-    IEnumerator SpeakNoDetails()
+
+    IEnumerator speakLvl1()
     {
-        string[] noDetails = new string[] { pVLabel1.text, pVName.text, pVLabel2.text, pVInteractable.text, pVLabel3.text };
-        for (int i = 0; i < noDetails.Length; i++)
+        AudioClip[] lvl1 = new AudioClip[] { lvl1Des, lvl1DesWaypoint, lvlDesMenu };
+        for (int i = 0; i < lvl1.Length; i++)
         {
-            _speaker.Speak(noDetails[i]);
-            yield return new WaitForSeconds(2);
+            source.PlayOneShot(lvl1[i]);
+            yield return new WaitForSeconds(7.21f);
+        }
+    }
+
+    IEnumerator speakLvl4()
+    {
+        AudioClip[] lvl4 = new AudioClip[] { lvl4Des, lvlDesDoor, lvlDesDoorDetection };
+        for (int i = 0; i < lvl4.Length; i++)
+        {
+            source.PlayOneShot(lvl4[i]);
+            yield return new WaitForSeconds(7);
+        }
+    }
+
+    IEnumerator speakLvl5()
+    {
+        AudioClip[] lvl5 = new AudioClip[] { lvl5Des, lvlDesDoor, lvlDesDoorDetection };
+        for (int i = 0; i < lvl5.Length; i++)
+        {
+            source.PlayOneShot(lvl5[i]);
+            yield return new WaitForSeconds(7);
+        }
+    }
+
+    IEnumerator speakLvl8()
+    {
+        AudioClip[] lvl8 = new AudioClip[] { lvlDesOffice, lvlDesDoor, lvlDesDoorDetection };
+        for (int i = 0; i < lvl8.Length; i++)
+        {
+            source.PlayOneShot(lvl8[i]);
+            yield return new WaitForSeconds(7);
         }
     }
 
