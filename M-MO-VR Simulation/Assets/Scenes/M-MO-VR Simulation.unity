@@ -36714,7 +36714,7 @@ MonoBehaviour:
   zoomOutButton: {fileID: 8300000, guid: 1d8b87cc0a76eb34384bbcf17cfe9692, type: 3}
   zoomInButton: {fileID: 8300000, guid: ff24b51af2b945445aad077c08229337, type: 3}
   contrastButton: {fileID: 8300000, guid: b6c465713a9f36f418051aa8609ff20c, type: 3}
-  closeMenu: {fileID: 0}
+  closeMenu: {fileID: 8300000, guid: 8cb36f1c08727244cb82d3fc42ef4fbc, type: 3}
   exitButton: {fileID: 8300000, guid: c482b7e25bdfcb14fb918f9ce10d328c, type: 3}
   controller: {fileID: 0}
 --- !u!82 &1291278574
@@ -36729,7 +36729,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

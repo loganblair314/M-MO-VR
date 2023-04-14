@@ -340,14 +340,14 @@ public class JoystickNav : MonoBehaviour
             else if (highlight5.activeSelf)
             {
                 //Close
-                Debug.Log("Quit button.");
-                source.PlayOneShot(exitButton);
+                Debug.Log("Close button.");
+                source.PlayOneShot(closeMenu);
             }
 
              else if (highlight4.activeSelf)
             {   
                 //Exit
-                Debug.Log("Quit button.");
+                Debug.Log("Exit button.");
                 source.PlayOneShot(exitButton);
             }
         }
