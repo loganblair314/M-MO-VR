@@ -27,7 +27,7 @@ public class WayPointHaptics : MonoBehaviour
         {
             waypoints[i].SetActive(true);
         }
-        GameObject obj = GameObject.Find("XR Origin V2");
+        GameObject obj = GameObject.Find("Display Board v2 (Room 1)");
         source = obj.GetComponent<AudioSource>();
         //waypoint.SetActive(true);
     }

@@ -44,6 +44,7 @@ public class JoystickNav : MonoBehaviour
     public AudioClip zoomOutButton;
     public AudioClip zoomInButton;
     public AudioClip contrastButton;
+    public AudioClip closeMenu;
     public AudioClip exitButton;
 
     [SerializeField] XRController controller;

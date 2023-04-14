@@ -49,7 +49,7 @@ public class TTSButtonPress : MonoBehaviour
         {
             StopAllCoroutines();
             _speaker.Stop();
-            //source.Stop();
+            source.Stop();
             currLevel = TeleportManager.index;
             time = 0;
         }
