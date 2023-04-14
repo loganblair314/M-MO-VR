@@ -1877,7 +1877,7 @@ PrefabInstance:
     - target: {fileID: 5986207470294127039, guid: 07e8d9006df062b48a8e7301f18020ca,
         type: 3}
       propertyPath: m_Name
-      value: Abstract Art
+      value: Abstract Art (Circles)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07e8d9006df062b48a8e7301f18020ca, type: 3}
@@ -2034,7 +2034,7 @@ PrefabInstance:
     - target: {fileID: 6266086264383613275, guid: fb3e220f766859947b81df91ed527f96,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Green Pen
       objectReference: {fileID: 0}
     - target: {fileID: 6266086264383613275, guid: fb3e220f766859947b81df91ed527f96,
         type: 3}
@@ -3043,7 +3043,7 @@ PrefabInstance:
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Black Pen
       objectReference: {fileID: 0}
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
@@ -3137,7 +3137,7 @@ PrefabInstance:
     - target: {fileID: 5978910447518482905, guid: f7d49d5d637949741803377a17232282,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Red Pen
       objectReference: {fileID: 0}
     - target: {fileID: 5978910447518482905, guid: f7d49d5d637949741803377a17232282,
         type: 3}
@@ -4735,6 +4735,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 563414995}
     m_Modifications:
+    - target: {fileID: 2172965580906695558, guid: 961fc08daceaf394c82ddb2a53571804,
+        type: 3}
+      propertyPath: m_Name
+      value: 'Cement pot medum '
+      objectReference: {fileID: 0}
     - target: {fileID: 3978406803631424046, guid: 961fc08daceaf394c82ddb2a53571804,
         type: 3}
       propertyPath: m_RootOrder
@@ -5453,7 +5458,7 @@ PrefabInstance:
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Black Pen
       objectReference: {fileID: 0}
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
@@ -5925,7 +5930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: This is an interactable door.
 --- !u!1 &214215945
 GameObject:
   m_ObjectHideFlags: 0
@@ -6123,7 +6128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1017308439657246, guid: 74a52ff3cc18f844489a93c033cc4f69, type: 3}
       propertyPath: m_Name
-      value: Chisel
+      value: Curved Chisel
       objectReference: {fileID: 0}
     - target: {fileID: 1017308439657246, guid: 74a52ff3cc18f844489a93c033cc4f69, type: 3}
       propertyPath: m_TagString
@@ -7167,7 +7172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Laptop
-  description: Runs Windows.
+  description: Runs Mac OS.
 --- !u!64 &277280661
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7195,7 +7200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Laptop
-  description: Runs Windows.
+  description: Runs Mac OS.
 --- !u!64 &277280663
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8744,7 +8749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Laptop
-  description: Runs Windows.
+  description: Runs Mac OS.
 --- !u!64 &320372304
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8772,7 +8777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Laptop
-  description: Runs Windows.
+  description: Runs Mac OS.
 --- !u!64 &320372306
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9036,6 +9041,7 @@ MonoBehaviour:
   objectTag: Player
   teleportationHeightOffset: 1
   teleportSound: {fileID: 0}
+  source: {fileID: 0}
   teleportPadOn: 1
   teleportDing: {fileID: 8300000, guid: 0238b8a3bd011fb4f8424026222b7dd0, type: 3}
 --- !u!114 &334458880
@@ -10081,6 +10087,7 @@ MonoBehaviour:
   objectTag: Player
   teleportationHeightOffset: 1
   teleportSound: {fileID: 0}
+  source: {fileID: 0}
   teleportPadOn: 1
   teleportDing: {fileID: 8300000, guid: 0238b8a3bd011fb4f8424026222b7dd0, type: 3}
 --- !u!114 &379221252
@@ -10813,7 +10820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Laptop
-  description: Runs Windows.
+  description: Runs Mac OS.
 --- !u!64 &397597591
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10841,7 +10848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Laptop
-  description: Runs Windows.
+  description: Runs Mac OS.
 --- !u!64 &397597593
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11279,6 +11286,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 410952995}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &418062254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3774468176048109390, guid: d31032f2b3b80b542882d6080dfdd4d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1359597994}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &418062259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418062254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: Runs Windows.
 --- !u!1 &421763424
 GameObject:
   m_ObjectHideFlags: 0
@@ -11557,7 +11584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: This is an interactable door.
 --- !u!1001 &432934087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13353,7 +13380,7 @@ PrefabInstance:
     - target: {fileID: 7242734902216313324, guid: 205900fadbb091d4bb74b3a6253cfbdc,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Blue Pen
       objectReference: {fileID: 0}
     - target: {fileID: 7242734902216313324, guid: 205900fadbb091d4bb74b3a6253cfbdc,
         type: 3}
@@ -14652,7 +14679,7 @@ PrefabInstance:
     - target: {fileID: 5978910447518482905, guid: f7d49d5d637949741803377a17232282,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Red Pen
       objectReference: {fileID: 0}
     - target: {fileID: 5978910447518482905, guid: f7d49d5d637949741803377a17232282,
         type: 3}
@@ -14997,7 +15024,7 @@ PrefabInstance:
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Black Pen
       objectReference: {fileID: 0}
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
@@ -16974,7 +17001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: This is an interactable door.
 --- !u!1 &625837608
 GameObject:
   m_ObjectHideFlags: 0
@@ -19104,7 +19131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Laptop
-  description: Runs Windows.
+  description: Runs Mac OS.
 --- !u!114 &674193052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19118,7 +19145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Laptop
-  description: Runs Windows.
+  description: Runs Mac OS.
 --- !u!1001 &677815257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21077,6 +21104,46 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 749036686}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &749874565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3774468176048109390, guid: d31032f2b3b80b542882d6080dfdd4d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1022497061}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &749874570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749874565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: Runs Windows.
+--- !u!1 &756378527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3774468176048109390, guid: d31032f2b3b80b542882d6080dfdd4d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1867323751}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &756378532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756378527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: Runs Windows.
 --- !u!1 &757418789
 GameObject:
   m_ObjectHideFlags: 0
@@ -22934,6 +23001,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: 
   description: Has notes from the last meeting written down.
+--- !u!1 &822751713 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3774468176048109390, guid: d31032f2b3b80b542882d6080dfdd4d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1650571127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &822751718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822751713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: Runs Windows.
 --- !u!1 &824230514
 GameObject:
   m_ObjectHideFlags: 0
@@ -24255,7 +24342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: This is an interactable door.
 --- !u!1001 &859218623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24813,7 +24900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1069215874758778, guid: a342d99e47b41314382990be9f28fcfe, type: 3}
       propertyPath: m_Name
-      value: Chisel
+      value: Flat Chisel
       objectReference: {fileID: 0}
     - target: {fileID: 1069215874758778, guid: a342d99e47b41314382990be9f28fcfe, type: 3}
       propertyPath: m_TagString
@@ -25830,7 +25917,7 @@ PrefabInstance:
     - target: {fileID: 7677089702739532642, guid: 69175b731b33ce84b8437831c94ce1c4,
         type: 3}
       propertyPath: m_Name
-      value: Abstract Art
+      value: Abstract Art (Lines)
       objectReference: {fileID: 0}
     - target: {fileID: 7946666455718589877, guid: 69175b731b33ce84b8437831c94ce1c4,
         type: 3}
@@ -26814,7 +26901,7 @@ PrefabInstance:
     - target: {fileID: 5978910447518482905, guid: f7d49d5d637949741803377a17232282,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Red Pen
       objectReference: {fileID: 0}
     - target: {fileID: 5978910447518482905, guid: f7d49d5d637949741803377a17232282,
         type: 3}
@@ -27530,7 +27617,7 @@ PrefabInstance:
     - target: {fileID: 5978910447518482905, guid: f7d49d5d637949741803377a17232282,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Red Pen
       objectReference: {fileID: 0}
     - target: {fileID: 5978910447518482905, guid: f7d49d5d637949741803377a17232282,
         type: 3}
@@ -28274,7 +28361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: This is an interactable door.
 --- !u!1001 &1022497061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29081,6 +29168,7 @@ MonoBehaviour:
   objectTag: Player
   teleportationHeightOffset: 1
   teleportSound: {fileID: 0}
+  source: {fileID: 0}
   teleportPadOn: 1
   teleportDing: {fileID: 8300000, guid: 0238b8a3bd011fb4f8424026222b7dd0, type: 3}
 --- !u!114 &1051214532
@@ -29298,7 +29386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: This is an interactable door.
 --- !u!1 &1068889824
 GameObject:
   m_ObjectHideFlags: 0
@@ -29539,7 +29627,7 @@ PrefabInstance:
     - target: {fileID: 6266086264383613275, guid: fb3e220f766859947b81df91ed527f96,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Green Pen
       objectReference: {fileID: 0}
     - target: {fileID: 6266086264383613275, guid: fb3e220f766859947b81df91ed527f96,
         type: 3}
@@ -29759,7 +29847,7 @@ PrefabInstance:
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Black Pen
       objectReference: {fileID: 0}
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
@@ -30561,7 +30649,7 @@ PrefabInstance:
     - target: {fileID: 7242734902216313324, guid: 205900fadbb091d4bb74b3a6253cfbdc,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Blue Pen
       objectReference: {fileID: 0}
     - target: {fileID: 7242734902216313324, guid: 205900fadbb091d4bb74b3a6253cfbdc,
         type: 3}
@@ -30722,7 +30810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: This is an interactable door.
 --- !u!1 &1119866866
 GameObject:
   m_ObjectHideFlags: 0
@@ -30911,7 +30999,7 @@ PrefabInstance:
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Black Pen
       objectReference: {fileID: 0}
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
@@ -31322,6 +31410,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1133712407}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1142384725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3774468176048109390, guid: d31032f2b3b80b542882d6080dfdd4d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 480335151}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1142384730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142384725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: Runs Windows.
 --- !u!1 &1144004692
 GameObject:
   m_ObjectHideFlags: 0
@@ -32605,7 +32713,7 @@ PrefabInstance:
     - target: {fileID: 8371194160422095388, guid: d92440aca582f384baac62187692fbb8,
         type: 3}
       propertyPath: m_Name
-      value: Abstract Art
+      value: Abstract Art (Grid)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d92440aca582f384baac62187692fbb8, type: 3}
@@ -32913,7 +33021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Laptop
-  description: Runs Windows.
+  description: Runs Mac OS.
 --- !u!64 &1198501058
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32941,7 +33049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Laptop
-  description: Runs Windows.
+  description: Runs Mac OS.
 --- !u!64 &1198501060
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -33331,7 +33439,7 @@ PrefabInstance:
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Black Pen
       objectReference: {fileID: 0}
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
@@ -35157,7 +35265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Laptop
-  description: Runs Windows.
+  description: Runs Mac OS.
 --- !u!64 &1250262600
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35185,7 +35293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Laptop
-  description: Runs Windows.
+  description: Runs Mac OS.
 --- !u!64 &1250262602
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35277,7 +35385,7 @@ PrefabInstance:
     - target: {fileID: 5978910447518482905, guid: f7d49d5d637949741803377a17232282,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Red Pen
       objectReference: {fileID: 0}
     - target: {fileID: 5978910447518482905, guid: f7d49d5d637949741803377a17232282,
         type: 3}
@@ -36919,7 +37027,7 @@ PrefabInstance:
     - target: {fileID: 5978910447518482905, guid: f7d49d5d637949741803377a17232282,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Red Pen
       objectReference: {fileID: 0}
     - target: {fileID: 5978910447518482905, guid: f7d49d5d637949741803377a17232282,
         type: 3}
@@ -37747,6 +37855,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1337291057}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1342628808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3774468176048109390, guid: d31032f2b3b80b542882d6080dfdd4d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2051749028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1342628813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342628808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: Runs Windows.
 --- !u!1 &1344499316
 GameObject:
   m_ObjectHideFlags: 0
@@ -38219,7 +38347,7 @@ PrefabInstance:
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Black Pen
       objectReference: {fileID: 0}
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
@@ -40517,7 +40645,7 @@ PrefabInstance:
     - target: {fileID: 6266086264383613275, guid: fb3e220f766859947b81df91ed527f96,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Green Pen
       objectReference: {fileID: 0}
     - target: {fileID: 6266086264383613275, guid: fb3e220f766859947b81df91ed527f96,
         type: 3}
@@ -42058,7 +42186,7 @@ PrefabInstance:
     - target: {fileID: 810163681222526901, guid: f25c9769906acb046b119291f87d99e6,
         type: 3}
       propertyPath: m_Name
-      value: Abstract Art
+      value: Abstract Art (Blue)
       objectReference: {fileID: 0}
     - target: {fileID: 5174393374510787993, guid: f25c9769906acb046b119291f87d99e6,
         type: 3}
@@ -44237,6 +44365,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611763185}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1618052153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3774468176048109390, guid: d31032f2b3b80b542882d6080dfdd4d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 630899578}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1618052158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618052153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: Runs Windows.
 --- !u!1 &1618567649
 GameObject:
   m_ObjectHideFlags: 0
@@ -44667,7 +44815,7 @@ PrefabInstance:
     - target: {fileID: 5978910447518482905, guid: f7d49d5d637949741803377a17232282,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Red Pen
       objectReference: {fileID: 0}
     - target: {fileID: 5978910447518482905, guid: f7d49d5d637949741803377a17232282,
         type: 3}
@@ -45794,6 +45942,7 @@ MonoBehaviour:
   objectTag: Player
   teleportationHeightOffset: 1
   teleportSound: {fileID: 0}
+  source: {fileID: 0}
   teleportPadOn: 1
   teleportDing: {fileID: 8300000, guid: 0238b8a3bd011fb4f8424026222b7dd0, type: 3}
 --- !u!1001 &1658583069
@@ -46894,7 +47043,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1952515198744976, guid: 7f0ac61f2e78f14438a74d2cd1715f87, type: 3}
       propertyPath: m_Name
-      value: Chisel
+      value: Narrow Chisel
       objectReference: {fileID: 0}
     - target: {fileID: 1952515198744976, guid: 7f0ac61f2e78f14438a74d2cd1715f87, type: 3}
       propertyPath: m_TagString
@@ -47467,7 +47616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Laptop
-  description: Runs Windows.
+  description: Runs Mac OS.
 --- !u!64 &1737780284
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -47495,7 +47644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Laptop
-  description: Runs Windows.
+  description: Runs Mac OS.
 --- !u!64 &1737780286
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -48156,7 +48305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Laptop
-  description: Runs Windows.
+  description: Runs Mac OS.
 --- !u!64 &1760646431
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -48184,7 +48333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Laptop
-  description: Runs Windows.
+  description: Runs Mac OS.
 --- !u!64 &1760646433
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -48705,7 +48854,7 @@ PrefabInstance:
     - target: {fileID: 7242734902216313324, guid: 205900fadbb091d4bb74b3a6253cfbdc,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Blue Pen
       objectReference: {fileID: 0}
     - target: {fileID: 7242734902216313324, guid: 205900fadbb091d4bb74b3a6253cfbdc,
         type: 3}
@@ -48941,7 +49090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: This is an interactable door.
 --- !u!1 &1816405650
 GameObject:
   m_ObjectHideFlags: 0
@@ -49453,7 +49602,7 @@ PrefabInstance:
     - target: {fileID: 7242734902216313324, guid: 205900fadbb091d4bb74b3a6253cfbdc,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Blue Pen
       objectReference: {fileID: 0}
     - target: {fileID: 7242734902216313324, guid: 205900fadbb091d4bb74b3a6253cfbdc,
         type: 3}
@@ -49669,7 +49818,7 @@ PrefabInstance:
     - target: {fileID: 7242734902216313324, guid: 205900fadbb091d4bb74b3a6253cfbdc,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Blue Pen
       objectReference: {fileID: 0}
     - target: {fileID: 7242734902216313324, guid: 205900fadbb091d4bb74b3a6253cfbdc,
         type: 3}
@@ -50252,7 +50401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Laptop
-  description: Runs Windows.
+  description: Runs Mac OS.
 --- !u!64 &1882531514
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -50280,7 +50429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: Laptop
-  description: Runs Windows.
+  description: Runs Mac OS.
 --- !u!64 &1882531516
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -51188,7 +51337,7 @@ PrefabInstance:
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Black Pen
       objectReference: {fileID: 0}
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
@@ -51876,7 +52025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: This is an interactable door.
 --- !u!1001 &1958958551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53162,7 +53311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  description: 
+  description: This is an interactable door.
 --- !u!1 &2006803942
 GameObject:
   m_ObjectHideFlags: 0
@@ -53662,6 +53811,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2025385007}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2026559328 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3774468176048109390, guid: d31032f2b3b80b542882d6080dfdd4d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 145040883}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2026559333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026559328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: Runs Windows.
 --- !u!1001 &2028104526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55195,7 +55364,7 @@ PrefabInstance:
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Black Pen
       objectReference: {fileID: 0}
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
@@ -56142,7 +56311,7 @@ PrefabInstance:
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
       propertyPath: m_Name
-      value: Pen
+      value: Black Pen
       objectReference: {fileID: 0}
     - target: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573,
         type: 3}
@@ -62671,6 +62840,7 @@ MonoBehaviour:
   chiselNarrow: {fileID: 8300000, guid: 02dbec8f5866b714e85f3c5eb2d28246, type: 3}
   coffee: {fileID: 8300000, guid: 2f1bf17146bd8dc42805075f39e1b6b9, type: 3}
   cookie: {fileID: 8300000, guid: 56786bd5680f81b4fa35e1dfd72c0922, type: 3}
+  door: {fileID: 8300000, guid: 62d98cfc35e7f1c49873e4ece2fb5143, type: 3}
   dogBook: {fileID: 8300000, guid: 2ce54d2f0949dce40972a7653a02d328, type: 3}
   doughnut: {fileID: 8300000, guid: 6031b5880730dd441a13e15fa12d7ed6, type: 3}
   fileFlat: {fileID: 8300000, guid: c6b8417f1ab03bd4ab9c930f8b09267d, type: 3}
@@ -62707,6 +62877,7 @@ MonoBehaviour:
   succulentsBig: {fileID: 8300000, guid: 04915f5c175f1184b92bdd6ac40be229, type: 3}
   succulentsSmall: {fileID: 8300000, guid: 24e511b8134212344aafa88d23b68c23, type: 3}
   tomsNotebook: {fileID: 8300000, guid: 8f0c4f734a6ece748965ebcc5f1bfd88, type: 3}
+  noDetails: {fileID: 8300000, guid: a1a866240bfa2dc4a896c7725b3694b4, type: 3}
 --- !u!82 &6085243954600843301
 AudioSource:
   m_ObjectHideFlags: 0

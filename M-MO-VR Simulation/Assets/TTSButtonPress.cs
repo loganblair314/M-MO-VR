@@ -21,9 +21,9 @@ public class TTSButtonPress : MonoBehaviour
     public GameObject uiMenu;
     [SerializeField] private TextMeshProUGUI pVName, pVInteractable, pVDetails, lvl1Time, lvl2Time, lvl3Time, lvl4Time, lvl5Time, lvl6Time;
     public AudioSource source;
-    public AudioClip abstractAbstract, abstractBlack, abstractBlue, abstractCircles, book, chiselCurved, chiselFlat, chiselNarrow, coffee, cookie, dogBook, doughnut, fileFlat, laptopMac, laptopWindows;
+    public AudioClip abstractAbstract, abstractBlack, abstractBlue, abstractCircles, book, chiselCurved, chiselFlat, chiselNarrow, coffee, cookie, door, dogBook, doughnut, fileFlat, laptopMac, laptopWindows;
     public AudioClip lvl1Des, lvl1DesWaypoint, lvl2Des, lvl3Des, lvl4Des, lvl5Des, lvl6Des, lvlDesControls, lvlDesDataDisplay, lvlDesDoor, lvlDesDoorDetection, lvlDesMenu, lvlDesOffice, melon, notebook, peach;
-    public AudioClip penBlack, penBlue, penGreen, penRed, pizza, potPlant, raspRound, snakePlant, sodaBottle, sodaCan, spikeSmall, stapler, succulentsBig, succulentsSmall, tomsNotebook;
+    public AudioClip penBlack, penBlue, penGreen, penRed, pizza, potPlant, raspRound, snakePlant, sodaBottle, sodaCan, spikeSmall, stapler, succulentsBig, succulentsSmall, tomsNotebook, noDetails;
     // Start is called before the first frame update
     void Start()
     {
@@ -65,7 +65,7 @@ public class TTSButtonPress : MonoBehaviour
         }
     }
 
-    
+
     public void SayPhrase()
     {
         StopAllCoroutines();
@@ -86,8 +86,8 @@ public class TTSButtonPress : MonoBehaviour
             {
                 source.Stop();
                 //source.PlayOneShot(teleportDing);
-                PlayAudioClip();
-            } 
+                //PlayAudioClip();
+            }
         }
     }
 
@@ -148,9 +148,8 @@ public class TTSButtonPress : MonoBehaviour
             }
             else if (partialVis.activeSelf && (pVDetails.text == ""))
             {
-                //StartCoroutine(SpeakNoDetails());
-                // Check if door. If so, say it is interactable. 
                 // Otherwise, mention there is nothing of note.
+                source.PlayOneShot(noDetails);
             }
             else if (uiMenu.activeSelf && !partialVis.activeSelf)
             {
@@ -170,9 +169,10 @@ public class TTSButtonPress : MonoBehaviour
                 speakPV();
                 //StartCoroutine(SpeakDetails());
             }
-            else if (partialVis.activeSelf && (pVDetails.text == ""))
+            else if (partialVis.activeSelf)
             {
-                //StartCoroutine(SpeakNoDetails());
+                // Otherwise, mention there is nothing of note.
+                source.PlayOneShot(noDetails);
             }
             else if (uiMenu.activeSelf && !partialVis.activeSelf)
             {
@@ -195,7 +195,8 @@ public class TTSButtonPress : MonoBehaviour
             }
             else if (partialVis.activeSelf && (pVDetails.text == ""))
             {
-                //StartCoroutine(SpeakNoDetails());
+                // Otherwise, mention there is nothing of note.
+                source.PlayOneShot(noDetails);
             }
             else if (uiMenu.activeSelf && !partialVis.activeSelf)
             {
@@ -229,10 +230,12 @@ public class TTSButtonPress : MonoBehaviour
             if (partialVis.activeSelf && (pVDetails.text != ""))
             {
                 //StartCoroutine(SpeakDetails());
+                speakPV();
             }
             else if (partialVis.activeSelf && (pVDetails.text == ""))
             {
-                //StartCoroutine(SpeakNoDetails());
+                // Otherwise, mention there is nothing of note.
+                source.PlayOneShot(noDetails);
             }
             else if (uiMenu.activeSelf && !partialVis.activeSelf)
             {
@@ -247,10 +250,10 @@ public class TTSButtonPress : MonoBehaviour
 
     public void speakPV()
     {
-        if (pVName.text == "Door")
+        if (pVName.text == "Door" || pVName.text == "Door Handle")
         {
             // New audio clip: "This is an interactable door"
-            //source.PlayOneShot(door);
+            source.PlayOneShot(door);
         }
         else if (pVName.text == "Pizza")
         {
@@ -268,9 +271,13 @@ public class TTSButtonPress : MonoBehaviour
         {
             source.PlayOneShot(doughnut);
         }
-        else if (pVName.text == "Apple Laptop")
+        else if (pVName.text == "Laptop Base" || pVName.text == "Laptop Screen")
         {
-                source.PlayOneShot(laptopMac);
+            source.PlayOneShot(laptopMac);
+        }
+        else if (pVName.text == "laptop screen" || pVName.text == "Laptop")
+        {
+            source.PlayOneShot(laptopWindows);
         }
         else if (pVName.text == "Black Pen")
         {
@@ -283,6 +290,10 @@ public class TTSButtonPress : MonoBehaviour
         else if (pVName.text == "Green Pen")
         {
             source.PlayOneShot(penGreen);
+        }
+        else if (pVName.text == "Red Pen")
+        {
+            source.PlayOneShot(penRed);
         }
         else if (pVName.text == "Flat Chisel")
         {
@@ -303,6 +314,82 @@ public class TTSButtonPress : MonoBehaviour
         else if (pVName.text == "Rasp")
         {
             source.PlayOneShot(raspRound);
+        }
+        else if (pVName.text == "Stapler")
+        {
+            source.PlayOneShot(stapler);
+        }
+        else if (pVName.text == "Book")
+        {
+            source.PlayOneShot(book);
+        }
+        else if (pVName.text == "Small Spiked Plant")
+        {
+            source.PlayOneShot(spikeSmall);
+        }
+        else if (pVName.text == "Sucklent Plant" || pVName.text == "small pot terracotta")
+        {
+            source.PlayOneShot(succulentsSmall);
+        }
+        else if (pVName.text == "Dog Book")
+        {
+            source.PlayOneShot(dogBook);
+        }
+        else if (pVName.text == "Pot Plant" || pVName.text == "Cement pot medum")
+        {
+            source.PlayOneShot(potPlant);
+        }
+        else if (pVName.text == "Snake Plant" || pVName.text == "Leaves" || pVName.text == "Cement Pot")
+        {
+            source.PlayOneShot(snakePlant);
+        }
+        else if (pVName.text == "Abstract Art (Grid)")
+        {
+            source.PlayOneShot(abstractBlack);
+        }
+        else if (pVName.text == "Notebook")
+        {
+            source.PlayOneShot(notebook);
+        }
+        else if (pVName.text == "Tom's Notebook")
+        {
+            source.PlayOneShot(tomsNotebook);
+        }
+        else if (pVName.text == "Coffee Cup")
+        {
+            source.PlayOneShot(coffee);
+        }
+        else if (pVName.text == "Melon")
+        {
+            source.PlayOneShot(melon);
+        }
+        else if (pVName.text == "Peach")
+        {
+            source.PlayOneShot(peach);
+        }
+        else if (pVName.text == "Soda Can")
+        {
+            source.PlayOneShot(sodaCan);
+        }
+        else if (pVName.text == "Abstract Art (Lines)")
+        {
+            source.PlayOneShot(abstractAbstract);
+        }
+        else if (pVName.text == "Small Spiked Plant")
+        {
+            source.PlayOneShot(spikeSmall);
+        }
+        else if (pVName.text == "Abstract Art (Blue)")
+        {
+            source.PlayOneShot(abstractBlue);
+        }
+        else if (pVName.text == "Abstract Art (Circles)")
+        {
+            source.PlayOneShot(abstractCircles);
+        }
+        else
+        {
+            source.PlayOneShot(noDetails);
         }
     }
 
@@ -349,11 +436,13 @@ public class TTSButtonPress : MonoBehaviour
 
     IEnumerator SpeakTimes()
     {
+        source.PlayOneShot(lvlDesDataDisplay);
+        yield return new WaitForSeconds(6);
         string[] texts = new string[] { lvl1Time.text, lvl2Time.text, lvl3Time.text, lvl4Time.text, lvl5Time.text, lvl6Time.text };
         for (int i = 0; i < texts.Length; i++)
         {
             _speaker.Speak(texts[i]);
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(4);
         }
     }
 }
