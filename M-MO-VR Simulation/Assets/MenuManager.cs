@@ -32,6 +32,7 @@ public class MenuManager : MonoBehaviour
     public static bool pVOpen;
 
     private bool JoyLoaded;
+    private bool MenuOptionSelected;
 
     // Start is called before the first frame update
     void Start()
@@ -61,6 +62,7 @@ public class MenuManager : MonoBehaviour
 
         pVOpen = false;
         MenuOpen = false;
+        MenuOptionSelected = false;
         
 
         walls = GameObject.FindGameObjectsWithTag("Wall");
@@ -80,7 +82,7 @@ public class MenuManager : MonoBehaviour
             }
         }
 
-        if(showButton.action.WasPressedThisFrame()){
+        if(showButton.action.WasPressedThisFrame() || MenuOptionSelected){
             
             //If the menu is closed upon button press
             if(!menu.activeSelf){
@@ -162,6 +164,8 @@ public class MenuManager : MonoBehaviour
                     if(collider.GetComponent<Collider>() != null)
                         collider.layer = LayerMask.NameToLayer("Default");
                 }
+
+                MenuOptionSelected = false;
             }
             menu.SetActive(!menu.activeSelf);
         } else if(display.action.WasPerformedThisFrame() && !menu.activeSelf){
@@ -193,5 +197,9 @@ public class MenuManager : MonoBehaviour
 
     public void quitGame(){
         Application.Quit();
+    }
+
+    public void closeMenu(){
+        MenuOptionSelected = true;
     }
 }

@@ -34,7 +34,7 @@ public class JoystickNav : MonoBehaviour
     public GameObject Waypoints;
     public GameObject MenuM;
     public GameObject XR;
-    public GameObject highlight1, highlight2, highlight3, highlight4, highlight5, highlight6, highlight7;
+    public GameObject highlight1, highlight2, highlight3, highlight4, highlight5, highlight6, highlight7,highlight8;
 
     public AudioSource source;
 
@@ -276,19 +276,24 @@ public class JoystickNav : MonoBehaviour
                 timer.ResetTimerOnLevelChange();
                 way.ResetWaypoints();
                 break; 
-            case 3:
+            case 5:
                 menu.zoomIn();
                 break; 
-            case 4:
+            case 6:
                 menu.zoomOut();
                 break; 
-            case 5:
+            case 7:
                 //Color manager
                 colors.cycleColors();
                 break; 
 
-            case 6:
+            case 3:
                 menu.quitGame();
+                break;
+
+            case 4:
+                //Close menu
+                menu.closeMenu();
                 break;
             default:
                 Debug.Log("Somehow the Switch broke");
@@ -315,24 +320,32 @@ public class JoystickNav : MonoBehaviour
                 Debug.Log("Next button.");
                 source.PlayOneShot(nextButton);
             }
-            else if (highlight4.activeSelf)
+            else if (highlight6.activeSelf)
             {
                 Debug.Log("Zoom In button.");
                 source.PlayOneShot(zoomInButton);
             }
-            else if (highlight5.activeSelf)
+            else if (highlight7.activeSelf)
             {
                 Debug.Log("Zoom Out button.");
                 source.PlayOneShot(zoomOutButton);
             }
-            else if (highlight6.activeSelf)
+            else if (highlight8.activeSelf)
             {
                 Debug.Log("Contrast button.");
                 source.PlayOneShot(contrastButton);
             }
 
-            else if (highlight7.activeSelf)
+            else if (highlight5.activeSelf)
             {
+                //Close
+                Debug.Log("Quit button.");
+                source.PlayOneShot(exitButton);
+            }
+
+             else if (highlight4.activeSelf)
+            {   
+                //Exit
                 Debug.Log("Quit button.");
                 source.PlayOneShot(exitButton);
             }
