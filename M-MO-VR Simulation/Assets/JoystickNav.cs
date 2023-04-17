@@ -98,8 +98,8 @@ public class JoystickNav : MonoBehaviour
     {
 
         List<UnityEngine.XR.InputDevice> devices = new List<UnityEngine.XR.InputDevice>();
-        UnityEngine.XR.InputDeviceCharacteristics rightControllerCharacteristics = UnityEngine.XR.InputDeviceCharacteristics.Right | UnityEngine.XR.InputDeviceCharacteristics.Controller;
-        UnityEngine.XR.InputDevices.GetDevicesWithCharacteristics(rightControllerCharacteristics, devices);
+        UnityEngine.XR.InputDeviceCharacteristics leftControllerCharacteristics = UnityEngine.XR.InputDeviceCharacteristics.Left | UnityEngine.XR.InputDeviceCharacteristics.Controller;
+        UnityEngine.XR.InputDevices.GetDevicesWithCharacteristics(leftControllerCharacteristics, devices);
 
         if (devices.Count > 0)
         {
