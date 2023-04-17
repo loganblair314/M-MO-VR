@@ -9119,7 +9119,7 @@ MonoBehaviour:
   teleportSound: {fileID: 0}
   source: {fileID: 0}
   teleportPadOn: 1
-  teleportDing: {fileID: 8300000, guid: 0238b8a3bd011fb4f8424026222b7dd0, type: 3}
+  teleportDing: {fileID: 8300000, guid: 57459ef96645fd3468136876d7e7503a, type: 3}
 --- !u!114 &334458880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10166,7 +10166,7 @@ MonoBehaviour:
   teleportSound: {fileID: 0}
   source: {fileID: 0}
   teleportPadOn: 1
-  teleportDing: {fileID: 8300000, guid: 0238b8a3bd011fb4f8424026222b7dd0, type: 3}
+  teleportDing: {fileID: 8300000, guid: 57459ef96645fd3468136876d7e7503a, type: 3}
 --- !u!114 &379221252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12581,7 +12581,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 461570657}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 3.9, y: 1.5, z: 19.5}
+  m_LocalPosition: {x: 3.767, y: 1.5, z: 19.5}
   m_LocalScale: {x: 0.099999994, y: 3, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13169,7 +13169,7 @@ PrefabInstance:
         type: 3}
       propertyPath: teleportDing
       value: 
-      objectReference: {fileID: 8300000, guid: 0238b8a3bd011fb4f8424026222b7dd0, type: 3}
+      objectReference: {fileID: 8300000, guid: 57459ef96645fd3468136876d7e7503a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf995dd17b72eff40b7eb24b4c388aac, type: 3}
 --- !u!4 &481011293 stripped
@@ -16093,7 +16093,7 @@ MonoBehaviour:
   m_ThrowVelocityScale: 1.5
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
-  m_RetainTransformParent: 1
+  m_RetainTransformParent: 0
   m_AttachPointCompatibilityMode: 0
 --- !u!59 &587808860
 HingeJoint:
@@ -16107,7 +16107,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 1, z: -0.1}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 249.5, y: 1, z: 8.95}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -17115,7 +17115,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625837608}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 10, y: 1.5, z: 9.1}
+  m_LocalPosition: {x: 10, y: 1.5, z: 9.239}
   m_LocalScale: {x: 0.099999994, y: 3, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19678,8 +19678,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706591352}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 0, z: 0.05}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0.049999237}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -29333,7 +29333,7 @@ MonoBehaviour:
   teleportSound: {fileID: 0}
   source: {fileID: 0}
   teleportPadOn: 1
-  teleportDing: {fileID: 8300000, guid: 0238b8a3bd011fb4f8424026222b7dd0, type: 3}
+  teleportDing: {fileID: 8300000, guid: 57459ef96645fd3468136876d7e7503a, type: 3}
 --- !u!114 &1051214532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32670,7 +32670,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183225164}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 14.4, y: 1.5, z: 10.5}
+  m_LocalPosition: {x: 14.266, y: 1.5, z: 10.5}
   m_LocalScale: {x: 0.099999994, y: 3, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32734,7 +32734,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1186129088}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 4.1, y: 1.5, z: 19.5}
+  m_LocalPosition: {x: 4.248, y: 1.5, z: 19.5}
   m_LocalScale: {x: 0.099999994, y: 3, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36405,7 +36405,7 @@ PrefabInstance:
         type: 3}
       propertyPath: teleportDing
       value: 
-      objectReference: {fileID: 8300000, guid: 0238b8a3bd011fb4f8424026222b7dd0, type: 3}
+      objectReference: {fileID: 8300000, guid: 57459ef96645fd3468136876d7e7503a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf995dd17b72eff40b7eb24b4c388aac, type: 3}
 --- !u!4 &1279908368 stripped
@@ -42073,7 +42073,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490952444}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 14.6, y: 1.5, z: 10.5}
+  m_LocalPosition: {x: 14.725, y: 1.5, z: 10.5}
   m_LocalScale: {x: 0.099999994, y: 3, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46358,7 +46358,7 @@ MonoBehaviour:
   teleportSound: {fileID: 0}
   source: {fileID: 0}
   teleportPadOn: 1
-  teleportDing: {fileID: 8300000, guid: 0238b8a3bd011fb4f8424026222b7dd0, type: 3}
+  teleportDing: {fileID: 8300000, guid: 57459ef96645fd3468136876d7e7503a, type: 3}
 --- !u!1001 &1658583069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48807,7 +48807,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782845145}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 10, y: 1.5, z: 8.9}
+  m_LocalPosition: {x: 10, y: 1.5, z: 8.768}
   m_LocalScale: {x: 0.099999994, y: 3, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -72444,7 +72444,7 @@ PrefabInstance:
         type: 3}
       propertyPath: teleportDing
       value: 
-      objectReference: {fileID: 8300000, guid: 0238b8a3bd011fb4f8424026222b7dd0, type: 3}
+      objectReference: {fileID: 8300000, guid: 57459ef96645fd3468136876d7e7503a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf995dd17b72eff40b7eb24b4c388aac, type: 3}
 --- !u!1 &9121940783859578952 stripped

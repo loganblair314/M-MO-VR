@@ -275,7 +275,7 @@ public class TTSButtonPress : MonoBehaviour
         {
             source.PlayOneShot(laptopMac);
         }
-        else if (pVName.text == "laptop screen" || pVName.text == "Laptop")
+        else if (pVName.text == "laptop screen " || pVName.text == "Laptop")
         {
             source.PlayOneShot(laptopWindows);
         }
