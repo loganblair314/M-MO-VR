@@ -27,7 +27,7 @@ public class TeleportScript : MonoBehaviour
 	{
         manager = GameObject.FindGameObjectWithTag("TeleportManager").GetComponent<TeleportManager>();
         uiManager = GameObject.FindGameObjectWithTag("UI-Manager").GetComponent<UI>();
-		GameObject obj = GameObject.Find("XR Origin V2");
+		GameObject obj = GameObject.Find("Teleporter Rings");
 		source = obj.GetComponent<AudioSource>();
 	}
 

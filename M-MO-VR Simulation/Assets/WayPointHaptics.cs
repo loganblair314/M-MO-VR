@@ -27,7 +27,7 @@ public class WayPointHaptics : MonoBehaviour
         {
             waypoints[i].SetActive(true);
         }
-        GameObject obj = GameObject.Find("XR Origin V2");
+        GameObject obj = GameObject.Find("Display Board v2 (Room 1)");
         source = obj.GetComponent<AudioSource>();
         //waypoint.SetActive(true);
     }
@@ -35,6 +35,9 @@ public class WayPointHaptics : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        // There is an edge case should the user backtrack and the current waypoint needed to progress is disabled.
+        // This can be averted by using a boolean array to keep track, and only send vibrations to the user if the
+        // boolean is false.
         if (other.gameObject.tag == objectTag)
         {
             // Deactivate the specific waypoint the user walks into.
@@ -42,7 +45,7 @@ public class WayPointHaptics : MonoBehaviour
             {
                 if (waypoint.name == waypoints[i].name)
                 {
-                    waypoints[i].SetActive(false);
+                    //waypoints[i].SetActive(false);
                     if (waypoint.name == "Waypoint 2.1")
                     {
                         for (int j = 0; j < waypoints.Length; j++)
@@ -142,6 +145,17 @@ public class WayPointHaptics : MonoBehaviour
                             }
                         }
                     }
+                    else if (waypoint.name == "Waypoint O.1" || waypoint.name == "Waypoint O.2" || waypoint.name == "Waypoint O.3" || waypoint.name == "Waypoint O.4" || waypoint.name == "Waypoint O.5" || waypoint.name == "Waypoint O.6")
+                    {
+                        if ((source.isPlaying == false))
+                        {
+                            source.PlayOneShot(waypointReached);
+                        }
+                        Debug.Log("Office.");
+                        return;
+                    }
+
+                    waypoints[i].SetActive(false);
                 }
             }
             // Play Audio Signifying Waypoint Has Been Reached
@@ -204,14 +218,9 @@ public class WayPointHaptics : MonoBehaviour
                     }
                 }
 
-                if (hit.transform.tag == "Controller")
-                {
-                    Debug.Log("Controller!");
-                }
-
                 else
                 {
-                    if ((TeleportManager.index == 2 || TeleportManager.index == 3 || TeleportManager.index == 4 || TeleportManager.index == 5 || TeleportManager.index == 7) && (hit.transform.tag != "Floor") && (!MenuManager.MenuOpen))
+                    if ((TeleportManager.index == 2 || TeleportManager.index == 3 || TeleportManager.index == 4 || TeleportManager.index == 5 || TeleportManager.index == 6 || TeleportManager.index == 7) && (hit.transform.tag != "Floor") && (!MenuManager.MenuOpen))
                     //if ((((TeleportManager.index >= 2) && (TeleportManager.index < 6)) && (!MenuManager.MenuOpen)) || (TeleportManager.index == 7))
                     {
                         if (distance > 0 && distance <= 0.67)

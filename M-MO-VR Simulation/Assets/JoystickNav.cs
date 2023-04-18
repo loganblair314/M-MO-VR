@@ -34,7 +34,7 @@ public class JoystickNav : MonoBehaviour
     public GameObject Waypoints;
     public GameObject MenuM;
     public GameObject XR;
-    public GameObject highlight1, highlight2, highlight3, highlight4, highlight5, highlight6, highlight7;
+    public GameObject highlight1, highlight2, highlight3, highlight4, highlight5, highlight6, highlight7,highlight8;
 
     public AudioSource source;
 
@@ -44,6 +44,7 @@ public class JoystickNav : MonoBehaviour
     public AudioClip zoomOutButton;
     public AudioClip zoomInButton;
     public AudioClip contrastButton;
+    public AudioClip closeMenu;
     public AudioClip exitButton;
 
     [SerializeField] XRController controller;
@@ -97,8 +98,8 @@ public class JoystickNav : MonoBehaviour
     {
 
         List<UnityEngine.XR.InputDevice> devices = new List<UnityEngine.XR.InputDevice>();
-        UnityEngine.XR.InputDeviceCharacteristics rightControllerCharacteristics = UnityEngine.XR.InputDeviceCharacteristics.Right | UnityEngine.XR.InputDeviceCharacteristics.Controller;
-        UnityEngine.XR.InputDevices.GetDevicesWithCharacteristics(rightControllerCharacteristics, devices);
+        UnityEngine.XR.InputDeviceCharacteristics leftControllerCharacteristics = UnityEngine.XR.InputDeviceCharacteristics.Left | UnityEngine.XR.InputDeviceCharacteristics.Controller;
+        UnityEngine.XR.InputDevices.GetDevicesWithCharacteristics(leftControllerCharacteristics, devices);
 
         if (devices.Count > 0)
         {
@@ -276,19 +277,24 @@ public class JoystickNav : MonoBehaviour
                 timer.ResetTimerOnLevelChange();
                 way.ResetWaypoints();
                 break; 
-            case 3:
+            case 5:
                 menu.zoomIn();
                 break; 
-            case 4:
+            case 6:
                 menu.zoomOut();
                 break; 
-            case 5:
+            case 7:
                 //Color manager
                 colors.cycleColors();
                 break; 
 
-            case 6:
+            case 3:
                 menu.quitGame();
+                break;
+
+            case 4:
+                //Close menu
+                menu.closeMenu();
                 break;
             default:
                 Debug.Log("Somehow the Switch broke");
@@ -315,25 +321,33 @@ public class JoystickNav : MonoBehaviour
                 Debug.Log("Next button.");
                 source.PlayOneShot(nextButton);
             }
-            else if (highlight4.activeSelf)
+            else if (highlight6.activeSelf)
             {
                 Debug.Log("Zoom In button.");
                 source.PlayOneShot(zoomInButton);
             }
-            else if (highlight5.activeSelf)
+            else if (highlight7.activeSelf)
             {
                 Debug.Log("Zoom Out button.");
                 source.PlayOneShot(zoomOutButton);
             }
-            else if (highlight6.activeSelf)
+            else if (highlight8.activeSelf)
             {
                 Debug.Log("Contrast button.");
                 source.PlayOneShot(contrastButton);
             }
 
-            else if (highlight7.activeSelf)
+            else if (highlight5.activeSelf)
             {
-                Debug.Log("Quit button.");
+                //Close
+                Debug.Log("Close button.");
+                source.PlayOneShot(closeMenu);
+            }
+
+             else if (highlight4.activeSelf)
+            {   
+                //Exit
+                Debug.Log("Exit button.");
                 source.PlayOneShot(exitButton);
             }
         }

@@ -26,12 +26,15 @@ public class MenuManager : MonoBehaviour
     GameObject[] inter;
     GameObject[] nonInter;
     GameObject[] obs;
+
+    GameObject[] back;
     
 
     public static bool MenuOpen;
     public static bool pVOpen;
 
     private bool JoyLoaded;
+    private bool MenuOptionSelected;
 
     // Start is called before the first frame update
     void Start()
@@ -61,18 +64,20 @@ public class MenuManager : MonoBehaviour
 
         pVOpen = false;
         MenuOpen = false;
+        MenuOptionSelected = false;
         
 
         walls = GameObject.FindGameObjectsWithTag("Wall");
         inter = GameObject.FindGameObjectsWithTag("Interactable");
         nonInter = GameObject.FindGameObjectsWithTag("Not Interactable");
         obs = GameObject.FindGameObjectsWithTag("Obstacle");
+        back = GameObject.FindGameObjectsWithTag("Background3D");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (((TeleportManager.index <= 2) || (TeleportManager.index == 6)) || (MenuManager.MenuOpen))
+        if (((TeleportManager.index <= 2) || (MenuManager.MenuOpen)))
         {
             for (int i = 0; i < OtherUi.Length; i++)
             {
@@ -80,7 +85,7 @@ public class MenuManager : MonoBehaviour
             }
         }
 
-        if(showButton.action.WasPressedThisFrame()){
+        if(showButton.action.WasPressedThisFrame() || MenuOptionSelected){
             
             //If the menu is closed upon button press
             if(!menu.activeSelf){
@@ -126,6 +131,11 @@ public class MenuManager : MonoBehaviour
                     if(collider.GetComponent<Collider>() != null)
                         collider.layer = LayerMask.NameToLayer("Ignore Raycast");
                 }
+
+                foreach(GameObject collider in back){
+                    if(collider.GetComponent<Collider>() != null)
+                        collider.layer = LayerMask.NameToLayer("Ignore Raycast");
+                }
                 Debug.Log("Menu Open Sequence Completed");
             }
             //If the menu is open
@@ -162,6 +172,8 @@ public class MenuManager : MonoBehaviour
                     if(collider.GetComponent<Collider>() != null)
                         collider.layer = LayerMask.NameToLayer("Default");
                 }
+
+                MenuOptionSelected = false;
             }
             menu.SetActive(!menu.activeSelf);
         } else if(display.action.WasPerformedThisFrame() && !menu.activeSelf){
@@ -193,5 +205,9 @@ public class MenuManager : MonoBehaviour
 
     public void quitGame(){
         Application.Quit();
+    }
+
+    public void closeMenu(){
+        MenuOptionSelected = true;
     }
 }
