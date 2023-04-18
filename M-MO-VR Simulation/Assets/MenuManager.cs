@@ -26,6 +26,8 @@ public class MenuManager : MonoBehaviour
     GameObject[] inter;
     GameObject[] nonInter;
     GameObject[] obs;
+
+    GameObject[] back;
     
 
     public static bool MenuOpen;
@@ -69,6 +71,7 @@ public class MenuManager : MonoBehaviour
         inter = GameObject.FindGameObjectsWithTag("Interactable");
         nonInter = GameObject.FindGameObjectsWithTag("Not Interactable");
         obs = GameObject.FindGameObjectsWithTag("Obstacle");
+        back = GameObject.FindGameObjectsWithTag("Background3D");
     }
 
     // Update is called once per frame
@@ -125,6 +128,11 @@ public class MenuManager : MonoBehaviour
                 }
 
                 foreach(GameObject collider in obs){
+                    if(collider.GetComponent<Collider>() != null)
+                        collider.layer = LayerMask.NameToLayer("Ignore Raycast");
+                }
+
+                foreach(GameObject collider in back){
                     if(collider.GetComponent<Collider>() != null)
                         collider.layer = LayerMask.NameToLayer("Ignore Raycast");
                 }

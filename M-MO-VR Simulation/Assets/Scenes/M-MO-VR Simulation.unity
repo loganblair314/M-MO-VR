@@ -30291,7 +30291,7 @@ GameObject:
   - component: {fileID: 1101328428}
   - component: {fileID: 1101328427}
   - component: {fileID: 1101328426}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plane - Display Board
   m_TagString: Background3D
   m_Icon: {fileID: 0}
@@ -58502,7 +58502,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 480484477705653802}
   m_Direction: 0
   m_MinValue: 32
-  m_MaxValue: 100
+  m_MaxValue: 51
   m_WholeNumbers: 0
   m_Value: 32
   m_OnValueChanged:
@@ -59530,7 +59530,7 @@ GameObject:
   - component: {fileID: 2083167006668309714}
   m_Layer: 0
   m_Name: LeftLeg
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59628,7 +59628,7 @@ GameObject:
   - component: {fileID: 2083167006867300007}
   m_Layer: 0
   m_Name: Board
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59761,7 +59761,7 @@ GameObject:
   - component: {fileID: 2083167006960717450}
   m_Layer: 0
   m_Name: RightLeg
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60085,7 +60085,7 @@ GameObject:
   - component: {fileID: 2083167007768938796}
   m_Layer: 0
   m_Name: Baseboard
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66850,7 +66850,7 @@ GameObject:
   - component: {fileID: 9016400247347235781}
   m_Layer: 0
   m_Name: RightLeg
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67060,7 +67060,7 @@ GameObject:
   - component: {fileID: 9016400247495961424}
   m_Layer: 0
   m_Name: Baseboard
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67195,7 +67195,7 @@ GameObject:
   - component: {fileID: 9016400247585374621}
   m_Layer: 0
   m_Name: LeftLeg
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67471,7 +67471,7 @@ GameObject:
   - component: {fileID: 9016400247659092968}
   m_Layer: 0
   m_Name: Board
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67886,7 +67886,7 @@ GameObject:
   - component: {fileID: 9016400247804202298}
   m_Layer: 0
   m_Name: RightLeg
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68262,7 +68262,7 @@ GameObject:
   - component: {fileID: 9016400247993827199}
   m_Layer: 0
   m_Name: RightLeg
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68489,7 +68489,7 @@ GameObject:
   - component: {fileID: 9016400248069637986}
   m_Layer: 0
   m_Name: LeftLeg
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68643,7 +68643,7 @@ GameObject:
   - component: {fileID: 9016400248087310162}
   m_Layer: 0
   m_Name: Board
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68816,7 +68816,7 @@ GameObject:
   - component: {fileID: 9016400248169005175}
   m_Layer: 0
   m_Name: Baseboard
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69028,7 +69028,7 @@ GameObject:
   - component: {fileID: 9016400248220605177}
   m_Layer: 0
   m_Name: Baseboard
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69205,7 +69205,7 @@ GameObject:
   - component: {fileID: 9016400248264432919}
   m_Layer: 0
   m_Name: Board
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69428,7 +69428,7 @@ GameObject:
   - component: {fileID: 9016400248282035495}
   m_Layer: 0
   m_Name: LeftLeg
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69526,7 +69526,7 @@ GameObject:
   - component: {fileID: 9016400248304119030}
   m_Layer: 0
   m_Name: RightLeg
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69984,7 +69984,7 @@ GameObject:
   - component: {fileID: 9016400248575846062}
   m_Layer: 0
   m_Name: LeftLeg
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70287,7 +70287,7 @@ GameObject:
   - component: {fileID: 9016400248686562403}
   m_Layer: 0
   m_Name: Baseboard
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70508,7 +70508,7 @@ GameObject:
   - component: {fileID: 9016400248783748315}
   m_Layer: 0
   m_Name: Board
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71038,7 +71038,7 @@ GameObject:
   - component: {fileID: 9016400248969299921}
   m_Layer: 0
   m_Name: RightLeg
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71103,7 +71103,7 @@ GameObject:
   - component: {fileID: 9016400249022471519}
   m_Layer: 0
   m_Name: RightLeg
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71362,7 +71362,7 @@ GameObject:
   - component: {fileID: 9016400249149295260}
   m_Layer: 0
   m_Name: Baseboard
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71640,7 +71640,7 @@ GameObject:
   - component: {fileID: 9016400249179707388}
   m_Layer: 0
   m_Name: Board
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71790,7 +71790,7 @@ GameObject:
   - component: {fileID: 9016400249197743474}
   m_Layer: 0
   m_Name: Board
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72095,7 +72095,7 @@ GameObject:
   - component: {fileID: 9016400249253350793}
   m_Layer: 0
   m_Name: LeftLeg
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72263,7 +72263,7 @@ GameObject:
   - component: {fileID: 9016400249266640647}
   m_Layer: 0
   m_Name: LeftLeg
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72416,7 +72416,7 @@ GameObject:
   - component: {fileID: 9016400249333151961}
   m_Layer: 0
   m_Name: Baseboard
-  m_TagString: Untagged
+  m_TagString: Not Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
