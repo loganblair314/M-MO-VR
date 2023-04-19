@@ -9,7 +9,7 @@ using System.Linq;
 public class WayPointHaptics : MonoBehaviour
 {
     [SerializeField] XRController controller;
-    private InputDevice targetDevice;
+    private InputDevice targetDevice, targetDevice2;
     public Transform raycastOrigin;
     public string objectTag = "Player";
     public GameObject waypoint;
@@ -180,6 +180,16 @@ public class WayPointHaptics : MonoBehaviour
             targetDevice = devices[0];
         }
 
+        List<InputDevice> devicesLeft = new List<InputDevice>();
+        InputDeviceCharacteristics leftControllerCharacteristics = InputDeviceCharacteristics.Left | InputDeviceCharacteristics.Controller;
+        InputDevices.GetDevicesWithCharacteristics(leftControllerCharacteristics, devicesLeft);
+
+
+        if (devicesLeft.Count > 0)
+        {
+            targetDevice2 = devicesLeft[0];
+        }
+
         if (targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue) && triggerValue > 0.1f)
         {
             RaycastHit hit;
@@ -196,7 +206,7 @@ public class WayPointHaptics : MonoBehaviour
 
                 float distance = Vector3.Distance(hitPoint, playerPosition);
 
-                if ((hit.transform.tag == "Waypoint") && (waypoint.activeSelf) && ((hit.transform.name != "Handle (In)") || (hit.transform.name != "Handle (Out)")))
+                if ((hit.transform.tag == "Waypoint") && (waypoint.activeSelf) && ((hit.transform.name != "Door Handle") || (hit.transform.name != "Door Handle")))
                 {
                     timer += Time.deltaTime;
                     if (timer > 0.6) // 0.1)
@@ -207,13 +217,14 @@ public class WayPointHaptics : MonoBehaviour
                     }
                 }
                 
-                else if ((distance <= 2) && ((hit.transform.name == "Door") || (hit.transform.name == "Handle (In)") || (hit.transform.name == "Handle (Out)")))
+                else if ((distance <= 2) && ((hit.transform.name == "Door") || (hit.transform.name == "Door Handle") || (hit.transform.name == "Door Handle")))
                 {
                     timer += Time.deltaTime;
                     if (timer > 0.3)
                     {
                         Debug.Log("Door detected.");
                         targetDevice.SendHapticImpulse(0, 1.0f, 0.1f);
+                        targetDevice2.SendHapticImpulse(0, 1.0f, 0.1f);
                         timer = 0;
                     }
                 }

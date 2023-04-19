@@ -15,6 +15,8 @@ public class DoorHandler : MonoBehaviour
     private int currLevel;
     private float timer, distanceD4, distanceD5, distanceD71, distanceD72, distanceD73, distanceP;
     private bool doorGrabbed;
+    public AudioSource source;
+    public AudioClip doorHinge;
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +51,9 @@ public class DoorHandler : MonoBehaviour
         lvl72DoorRot = door72.transform.rotation;
         lvl73DoorPos = door73.transform.position;
         lvl73DoorRot = door73.transform.rotation;
+
+        GameObject obj = GameObject.Find("Door");
+        source = obj.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -150,14 +155,17 @@ public class DoorHandler : MonoBehaviour
 
         if (doorGrabbed)
         {
-            timer += Time.deltaTime;
+            Debug.Log("Door being grabbed.");
+            targetDevice1.SendHapticImpulse(0, 1.0f, 0.1f);
+            targetDevice2.SendHapticImpulse(0, 1.0f, 0.1f);
+            /*timer += Time.deltaTime;
             if (timer > 0.5) // 0.1)
             {
                 Debug.Log("Door being grabbed.");
                 targetDevice1.SendHapticImpulse(0, 1.0f, 0.1f);
                 targetDevice2.SendHapticImpulse(0, 1.0f, 0.1f);
                 timer = 0;
-            }
+            }*/
         }
     }
 
@@ -192,6 +200,7 @@ public class DoorHandler : MonoBehaviour
             door72.GetComponent<BoxCollider>().enabled = false;
             door73.GetComponent<BoxCollider>().enabled = false;
         }
+        source.PlayOneShot(doorHinge);
     }
 
     public void enableDoorColliders()
