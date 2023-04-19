@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731892, g: 0.13414863, b: 0.12107824, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731941, g: 0.13414887, b: 0.12107834, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13109,7 +13109,7 @@ PrefabInstance:
     - target: {fileID: 2951877705707050632, guid: cf995dd17b72eff40b7eb24b4c388aac,
         type: 3}
       propertyPath: m_Volume
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 2951877705707050632, guid: cf995dd17b72eff40b7eb24b4c388aac,
         type: 3}
@@ -14917,7 +14917,7 @@ PrefabInstance:
     - target: {fileID: 6224126357865106197, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
         type: 3}
       propertyPath: m_Volume
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 6224126357865106197, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
         type: 3}
@@ -36409,7 +36409,7 @@ PrefabInstance:
     - target: {fileID: 2951877705707050632, guid: cf995dd17b72eff40b7eb24b4c388aac,
         type: 3}
       propertyPath: m_Volume
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 2951877705707050632, guid: cf995dd17b72eff40b7eb24b4c388aac,
         type: 3}
@@ -46310,7 +46310,7 @@ PrefabInstance:
     - target: {fileID: 6224126357865106197, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
         type: 3}
       propertyPath: m_Volume
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 6224126357865106197, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
         type: 3}
@@ -48386,7 +48386,7 @@ PrefabInstance:
     - target: {fileID: 6224126357865106197, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
         type: 3}
       propertyPath: m_Volume
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 6224126357865106197, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
         type: 3}
@@ -63867,7 +63867,7 @@ PrefabInstance:
     - target: {fileID: 6224126357865106197, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
         type: 3}
       propertyPath: m_Volume
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 6224126357865106197, guid: ec4a9b1fa91fef843a23f826bbb93ea1,
         type: 3}
@@ -72495,7 +72495,7 @@ PrefabInstance:
     - target: {fileID: 2951877705707050632, guid: cf995dd17b72eff40b7eb24b4c388aac,
         type: 3}
       propertyPath: m_Volume
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 2951877705707050632, guid: cf995dd17b72eff40b7eb24b4c388aac,
         type: 3}
