@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2712214571577723885}
   - component: {fileID: 5154570052343097682}
   - component: {fileID: 3958454561271402582}
+  - component: {fileID: 3445580960315876036}
   m_Layer: 0
   m_Name: 'desk chair light '
   m_TagString: Untagged
@@ -99,3 +100,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7677180782551262708, guid: cf991b60bffe4d149b9b71463a44be9c, type: 3}
+--- !u!114 &3445580960315876036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510128748811087622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7111c8896008f914e895257c4354a985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  description: 
