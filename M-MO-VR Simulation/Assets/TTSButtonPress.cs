@@ -23,7 +23,7 @@ public class TTSButtonPress : MonoBehaviour
     public AudioSource source;
     public AudioClip abstractAbstract, abstractBlack, abstractBlue, abstractCircles, book, chiselCurved, chiselFlat, chiselNarrow, coffee, cookie, door, dogBook, doughnut, fileFlat, laptopMac, laptopWindows;
     public AudioClip lvl1Des, lvl1DesWaypoint, lvl2Des, lvl3Des, lvl4Des, lvl5Des, lvl6Des, lvlDesControls, lvlDesDataDisplay, lvlDesDoor, lvlDesDoorDetection, lvlDesMenu, lvlDesOffice, melon, notebook, peach;
-    public AudioClip penBlack, penBlue, penGreen, penRed, pizza, potPlant, raspRound, snakePlant, sodaBottle, sodaCan, spikeSmall, stapler, succulentsBig, succulentsSmall, tomsNotebook, noDetails;
+    public AudioClip penBlack, penBlue, penGreen, penRed, pizza, potPlant, raspRound, snakePlant, sodaBottle, sodaCan, spikeSmall, stapler, succulentsBig, succulentsSmall, tomsNotebook, noDetails, wall, obstacle;
     // Start is called before the first frame update
     void Start()
     {
@@ -386,6 +386,14 @@ public class TTSButtonPress : MonoBehaviour
         else if (pVName.text == "Abstract Art (Circles)")
         {
             source.PlayOneShot(abstractCircles);
+        }
+        else if (pVName.text == "Wall")
+        {
+            source.PlayOneShot(wall);
+        }
+        else if (pVName.text == "Obstacle")
+        {
+            source.PlayOneShot(obstacle);
         }
         else
         {

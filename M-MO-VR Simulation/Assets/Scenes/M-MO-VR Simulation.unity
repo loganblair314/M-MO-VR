@@ -64030,7 +64030,7 @@ MonoBehaviour:
   lvlDesControls: {fileID: 8300000, guid: ddead8631eca2af428e44bcdf1dffbab, type: 3}
   lvlDesDataDisplay: {fileID: 8300000, guid: 039f4c7dbcb4e554691fbef93a3ab2b6, type: 3}
   lvlDesDoor: {fileID: 8300000, guid: a7ebbcab5dd83e74ca5b5c28dbf58242, type: 3}
-  lvlDesDoorDetection: {fileID: 8300000, guid: 17b468b9ee4f2464cb24254c75ae8512, type: 3}
+  lvlDesDoorDetection: {fileID: 8300000, guid: 9e5db3036230a5c42bcd55e0d658f983, type: 3}
   lvlDesMenu: {fileID: 8300000, guid: 1e60af5086877fb4dbce54bc7e91b45a, type: 3}
   lvlDesOffice: {fileID: 8300000, guid: b233191d95d21ec45a50baaa9b38fe54, type: 3}
   melon: {fileID: 8300000, guid: 016e406c3e7f2ac47a246929ad2bc35c, type: 3}
@@ -64052,6 +64052,8 @@ MonoBehaviour:
   succulentsSmall: {fileID: 8300000, guid: 24e511b8134212344aafa88d23b68c23, type: 3}
   tomsNotebook: {fileID: 8300000, guid: 8f0c4f734a6ece748965ebcc5f1bfd88, type: 3}
   noDetails: {fileID: 8300000, guid: a1a866240bfa2dc4a896c7725b3694b4, type: 3}
+  wall: {fileID: 8300000, guid: e6581a10241f6aa43b683ea5a81ce639, type: 3}
+  obstacle: {fileID: 8300000, guid: 34ed904bf520a8d4a9c901509f4a110d, type: 3}
 --- !u!82 &6085243954600843301
 AudioSource:
   m_ObjectHideFlags: 0
