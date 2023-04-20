@@ -20058,7 +20058,7 @@ PrefabInstance:
     - target: {fileID: 910495368175624073, guid: ecc8aeabf12cc9e4ead7b9d987e3affd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.49499512
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 910495368175624073, guid: ecc8aeabf12cc9e4ead7b9d987e3affd,
         type: 3}
@@ -39904,7 +39904,7 @@ PrefabInstance:
     - target: {fileID: 8614800026596330210, guid: c66b252c19f4f6b43a0d24cf039c42a9,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 8
+      value: 8.05
       objectReference: {fileID: 0}
     - target: {fileID: 8614800026596330210, guid: c66b252c19f4f6b43a0d24cf039c42a9,
         type: 3}
@@ -39964,7 +39964,7 @@ PrefabInstance:
     - target: {fileID: 8886340141975800916, guid: c66b252c19f4f6b43a0d24cf039c42a9,
         type: 3}
       propertyPath: m_Name
-      value: Galvanized Ceiling (1)
+      value: Galvanized Ceiling
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c66b252c19f4f6b43a0d24cf039c42a9, type: 3}
