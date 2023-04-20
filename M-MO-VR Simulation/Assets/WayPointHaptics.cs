@@ -154,14 +154,17 @@ public class WayPointHaptics : MonoBehaviour
                         Debug.Log("Office.");
                         return;
                     }
-
                     waypoints[i].SetActive(false);
+
+                    if (waypoint.name != "Waypoint 1.2" && waypoint.name != "Waypoint 2.4" && waypoint.name != "Waypoint 3.2" && waypoint.name != "Waypoint 4.4" && waypoint.name != "Waypoint 5.8" && waypoint.name != "Waypoint 6.4" && waypoint.name != "Waypoint D")
+                    {
+                        // Play Audio Signifying Waypoint Has Been Reached
+                        if ((source.isPlaying == false))
+                        {
+                            source.PlayOneShot(waypointReached);
+                        }
+                    }
                 }
-            }
-            // Play Audio Signifying Waypoint Has Been Reached
-            if ((source.isPlaying == false))
-            {
-                source.PlayOneShot(waypointReached);
             }
            //waypoint.SetActive(false);
            Debug.Log("Disabling waypoint.");
